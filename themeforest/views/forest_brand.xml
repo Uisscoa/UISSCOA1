@@ -1,0 +1,78 @@
+<odoo>
+    <data>
+        <!--        list view of brand -->
+        <record model="ir.ui.view" id="forest_brand_list">
+            <field name="name">forest_product_manager_forest_brand list</field>
+            <field name="model">forest.brand</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="image"/>
+                    <field name="products_count"/>
+                </tree>
+            </field>
+        </record>
+
+        <!--        form view of brands-->
+        <record model="ir.ui.view" id="forest_brand_form">
+            <field name="name">forest_product_manager_forest_brand form</field>
+            <field name="model">forest.brand</field>
+            <field name="arch" type="xml">
+                <form>
+                   <sheet>
+                        <group col="2" colspan="3">
+                            <group>
+                               <field name="image" widget="image"/>
+                                <field name="name"/>
+                            </group>
+                        </group>
+                        <notebook>
+                           <page string="Product">
+                              <field name="product_ids"/>
+                           </page>
+                      </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        
+
+        <record model="ir.actions.act_window" id="forest_brand_action_window">
+            <field name="name">Brand</field>
+            <field name="res_model">forest.brand</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="forest_customization_menu"
+              name="Forest Theme Configuration"
+              groups="base.group_system"
+              action="sale.product_template_action"
+              parent="website.menu_website_global_configuration"
+              sequence="100"/>
+
+        <menuitem sequence="0" name="Forest Brands" parent="themeforest.forest_customization_menu" id="forest_brand_menu"
+                  action="themeforest.forest_brand_action_window"/>
+
+
+        <record id="inherits_product_template_form_view" model="ir.ui.view">
+        <field name="name">product.template.product.form</field>
+        <field name="model">product.template</field>
+        <field name="type">form</field>
+        <field name="inherit_id" ref="product.product_template_only_form_view"/>
+        <field name="arch" type="xml">
+            <data>
+                <xpath expr="//notebook" position="inside">
+                    <page string="Brand info">
+                        <group>
+                            <field name="product_brand_id"/>
+<!--                             <field name='allow_out_of_stock_order' invisible="1"/> -->
+                        </group>
+                    </page>
+                </xpath>
+            </data>
+        </field>
+    </record>
+    
+    </data>
+</odoo>

@@ -1,0 +1,67 @@
+# -*- coding: utf-8 -*-
+{
+    'name': "Themeforest",
+    'summary': """Themeforest""",
+    'description': """Themeforest""",
+    'author': "Spellbound Soft Solutions",
+    'website': "http://spellboundss.com",
+    'category': 'Uncategorized',
+    'version': '0.1',
+    'depends': ['base','web','sale','website','website_sale','website_sale_wishlist','website_sale_comparison'],
+    'data': [
+        'security/ir.model.access.csv',
+        #'views/views.xml',
+        'views/templates.xml',
+        'views/header_footer.xml',
+        'views/product_shop.xml',
+        'views/product_details.xml',
+        'views/forest_brand.xml',
+    ],
+    'assets': {
+        # 'web.assets_backend': [
+            
+        # ],
+        'web.assets_frontend': [
+            'https://fonts.googleapis.com/css?family=Muli%3A400%2C600%2C700%7CPlayfair+Display%3A400%2C400i%7COpen+Sans%3A400%2C600%2C700&amp;subset=latin%2Clatin-ext&amp;ver=20190930',
+            'https://demo4.drfuri.com/farmart2/wp-content/themes/farmart/css/farmartIcon.css?ver=1.0.0',
+            'themeforest/static/src/css/farmartIcon.css',
+            'themeforest/static/src/css/style.css',
+            'themeforest/static/src/css/dokan.css',
+            'themeforest/static/src/css/wcfm-vendor.css',
+            #'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css',
+            'themeforest/static/src/css/woocommerce.css',
+            'themeforest/static/src/css/bootstrap.min.css',
+            'themeforest/static/src/css/photoswipe.css',
+            'themeforest/static/src/css/magnific-popup.css',
+            # 'themeforest/static/src/css/style_inspact.css',
+            'themeforest/static/src/css/head.css',
+            'themeforest/static/src/css/elementor.css',
+            #'themeforest/static/src/css/shop.css',
+            # 'themeforest/static/src/js/plugins/html5shiv.min.js',
+            # 'themeforest/static/src/js/plugins/respond.min.js',
+            'themeforest/static/src/js/plugins/photoswipe.min.js',
+            'themeforest/static/src/js/plugins/photoswipe-ui.min.js',
+            'themeforest/static/src/js/imagesloaded.pkgd.min.js',
+            'themeforest/static/src/js/plugins/slick.min.js',
+            # 'themeforest/static/src/js/plugins/isInViewport.min.js',
+            # 'themeforest/static/src/js/plugins/jquery.counterup.min.js',
+            # 'themeforest/static/src/js/plugins/waypoints.min.js',
+            # 'themeforest/static/src/js/plugins/jquery.coundown.js',
+            # 'themeforest/static/src/js/plugins/jquery.magnific-popup.js',
+            # 'themeforest/static/src/js/plugins/notify.min.js',
+            # 'themeforest/static/src/js/plugins/nprogress.js',
+            'themeforest/static/src/js/scripts.js',
+
+            'themeforest/static/src/js/elementor.js',
+            'themeforest/static/src/js/themeforest.js',
+            'themeforest/static/src/js/toast.with.css.js',
+        ],
+        
+        'web.assets_qweb': [
+            'themeforest/static/src/xml/themforest.xml',
+        ],
+    },
+    'installable': True,
+    'application': True,
+    
+}

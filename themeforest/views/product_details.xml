@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+  	<template id="e_shop_product_pro" name="Forest Products" inherit_id='website_sale.product'>
+      <xpath expr="//div[@id='wrap']" position="replace">
+      	<t t-set="body_classname" t-value="'product-template-default single single-product postid-2332 wp-embed-responsive theme-farmart woocommerce woocommerce-page woocommerce-js header-v1 full-content fm-preloader fm-show-qty woocommerce-active fm-product-layout-4 fm-product-full-width farmart-not-login elementor-default elementor-kit-13 dokan-theme-farmart'"/>
+      	<div id="product_option_block" style='display:none;'/>
+      	<div id="o_product_terms_and_share" style='display:none;'></div>
+      	<div class="content-area col-md-12" id="primary">
+	      	<div id="product-2332"
+	        class="product type-product post-2332 status-publish first instock product_cat-bouncers product_cat-milks-and-dairies product_cat-nursery product_cat-pushchairs product_cat-toys product_cat-water has-post-thumbnail shipping-taxable purchasable product-type-simple">
+	        	<div class="fm-product-detail clearfix fm-product-thumbnail-vertical has-gallery-image fm-product-bg-full-width">
+	        		<div class="farmart-container oe_website_sale">
+	        			<div class="woocommerce-product-gallery woocommerce-product-gallery--with-images woocommerce-product-gallery--columns-5 images "
+					        data-columns="5" style="opacity: 1;">
+
+					        <div class="product-image-ms ms-image-zoom" style="top: 486.891px;">
+					                <span class="farmart-svg-icon "><svg aria-hidden="true" role="img" focusable="false"
+		                                viewBox="0 0 32 32">
+		                                <path
+		                                        d="M30.19 30.659l-9.509-10.374c2.143-2.242 3.32-5.173 3.32-8.286 0-3.205-1.248-6.219-3.515-8.485s-5.28-3.515-8.485-3.515-6.219 1.248-8.485 3.515-3.515 5.28-3.515 8.485 1.248 6.219 3.515 8.485 5.28 3.515 8.485 3.515c2.761 0 5.38-0.927 7.501-2.633l9.509 10.373c0.158 0.172 0.374 0.259 0.59 0.259 0.193 0 0.387-0.070 0.54-0.21 0.326-0.299 0.348-0.805 0.049-1.13zM1.6 12c0-5.735 4.665-10.4 10.4-10.4s10.4 4.665 10.4 10.4-4.665 10.4-10.4 10.4-10.4-4.665-10.4-10.4zM18.4 11.2h-5.6v-5.6c0-0.442-0.358-0.8-0.8-0.8s-0.8 0.358-0.8 0.8v5.6h-5.6c-0.442 0-0.8 0.358-0.8 0.8s0.358 0.8 0.8 0.8h5.6v5.6c0 0.442 0.358 0.8 0.8 0.8s0.8-0.358 0.8-0.8v-5.6h5.6c0.442 0 0.8-0.358 0.8-0.8s-0.358-0.8-0.8-0.8z">
+		                                </path>
+				                        </svg></span>Mouse over to zoom in
+					        </div>
+					        <div class="product-image-ms ms-image-view hide" style="top: 486.891px;">
+					                <span class="farmart-svg-icon "><svg aria-hidden="false" role="img" focusable="false"
+			                                viewBox="0 0 32 32">
+			                                <path
+			                                        d="M30.19 30.659l-9.509-10.374c2.143-2.242 3.32-5.173 3.32-8.286 0-3.205-1.248-6.219-3.515-8.485s-5.28-3.515-8.485-3.515-6.219 1.248-8.485 3.515-3.515 5.28-3.515 8.485 1.248 6.219 3.515 8.485 5.28 3.515 8.485 3.515c2.761 0 5.38-0.927 7.501-2.633l9.509 10.373c0.158 0.172 0.374 0.259 0.59 0.259 0.193 0 0.387-0.070 0.54-0.21 0.326-0.299 0.348-0.805 0.049-1.13zM1.6 12c0-5.735 4.665-10.4 10.4-10.4s10.4 4.665 10.4 10.4-4.665 10.4-10.4 10.4-10.4-4.665-10.4-10.4zM18.4 11.2h-5.6v-5.6c0-0.442-0.358-0.8-0.8-0.8s-0.8 0.358-0.8 0.8v5.6h-5.6c-0.442 0-0.8 0.358-0.8 0.8s0.358 0.8 0.8 0.8h5.6v5.6c0 0.442 0.358 0.8 0.8 0.8s0.8-0.358 0.8-0.8v-5.6h5.6c0.442 0 0.8-0.358 0.8-0.8s-0.358-0.8-0.8-0.8z">
+			                                </path>
+			                        </svg></span>Click to open expanded view
+					        </div>
+					        <div class="flex-viewport" style="overflow: hidden; position: relative; height: 436.891px;">
+					                <figure class="woocommerce-product-gallery__wrapper"
+					                        style="width: 600%; transition-duration: 0s; transform: translate3d(12px, 0px, 0px);">
+					                        <div data-thumb="https://i0.wp.com/demo4.drfuri.com/farmart2/wp-content/uploads/sites/11/2020/02/01_16a.jpg?fit=100%2C100&amp;ssl=1"
+					                                data-thumb-alt="" class="woocommerce-product-gallery__image flex-active-slide"
+					                                style="width: 436.906px; margin-right: 0px; float: left; display: block; position: relative; overflow: hidden;">
+					                                <a
+					                                        href="#"><img
+					                                                width="600" height="600"
+					                                                t-attf-src="/web/image/product.template/#{product.id}/image_1024"
+
+					                                                class="wp-post-image" alt="" title="01_16a" data-caption=""
+					                                                
+					                                                data-large_image="https://i0.wp.com/demo4.drfuri.com/farmart2/wp-content/uploads/sites/11/2020/02/01_16a.jpg?fit=640%2C640&amp;ssl=1"
+					                                                data-large_image_width="640" data-large_image_height="640"
+					                                                
+					                                                sizes="(max-width: 600px) 100vw, 600px" draggable="false"/></a><img
+					                                        role="presentation" alt=""
+					                                         t-attf-src="/web/image/product.template/#{product.id}/image_1024"
+					                                        class="zoomImg"
+					                                        style="position: absolute; top: -0.929793px; left: -189.213px; opacity: 0; width: 640px; height: 640px; border: none; max-width: none; max-height: none;"/>
+					                        </div>
+					                        <t t-foreach='product.product_template_image_ids' t-as='ex'>
+						                        <div data-thumb="https://i0.wp.com/demo4.drfuri.com/farmart2/wp-content/uploads/sites/11/2019/12/01_17a.jpg?fit=100%2C100&amp;ssl=1"
+						                                data-thumb-alt="" class="woocommerce-product-gallery__image"
+						                                style="width: 436.906px; margin-right: 0px; float: left; display: block; position: relative; overflow: hidden;">
+						                                <a
+					                                        href="#"><img
+					                                                width="600" height="600"
+					                                                t-attf-src="/web/image/product.image/#{ex.id}/image_1024"
+					                                                class="" alt="" title="01_17a" data-caption=""
+					                                                
+					                                                data-large_image="https://i0.wp.com/demo4.drfuri.com/farmart2/wp-content/uploads/sites/11/2019/12/01_17a.jpg?fit=640%2C640&amp;ssl=1"
+					                                                data-large_image_width="640" data-large_image_height="640"
+					                                                
+					                                                sizes="(max-width: 600px) 100vw, 600px" draggable="false"/></a><img
+					                                        role="presentation" alt=""
+					                                         t-attf-src="/web/image/product.image/#{ex.id}/image_1024"
+					                                        class="zoomImg"
+					                                        style="position: absolute; top: 0px; left: 0px; opacity: 0; width: 640px; height: 640px; border: none; max-width: none; max-height: none;"/>
+						                        </div>
+						                        <!-- <div data-thumb="https://i0.wp.com/demo4.drfuri.com/farmart2/wp-content/uploads/sites/11/2019/12/01_18a.jpg?fit=100%2C100&amp;ssl=1"
+						                                data-thumb-alt="" class="woocommerce-product-gallery__image"
+						                                style="width: 436.906px; margin-right: 0px; float: left; display: block; position: relative; overflow: hidden;">
+						                                <a
+						                                        href="https://i0.wp.com/demo4.drfuri.com/farmart2/wp-content/uploads/sites/11/2019/12/01_18a.jpg?fit=640%2C640&amp;ssl=1"><img
+						                                                width="600" height="600"
+						                                                src="https://i0.wp.com/demo4.drfuri.com/farmart2/wp-content/uploads/sites/11/2019/12/01_18a.jpg?fit=600%2C600&amp;ssl=1"
+						                                                class="" alt="" title="01_18a" data-caption=""
+						                                                data-src="https://i0.wp.com/demo4.drfuri.com/farmart2/wp-content/uploads/sites/11/2019/12/01_18a.jpg?fit=640%2C640&amp;ssl=1"
+						                                                data-large_image="https://i0.wp.com/demo4.drfuri.com/farmart2/wp-content/uploads/sites/11/2019/12/01_18a.jpg?fit=640%2C640&amp;ssl=1"
+						                                                data-large_image_width="640" data-large_image_height="640"
+						                                                srcset="https://i0.wp.com/demo4.drfuri.com/farmart2/wp-content/uploads/sites/11/2019/12/01_18a.jpg?w=640&amp;ssl=1 640w, https://i0.wp.com/demo4.drfuri.com/farmart2/wp-content/uploads/sites/11/2019/12/01_18a.jpg?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/demo4.drfuri.com/farmart2/wp-content/uploads/sites/11/2019/12/01_18a.jpg?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/demo4.drfuri.com/farmart2/wp-content/uploads/sites/11/2019/12/01_18a.jpg?resize=600%2C600&amp;ssl=1 600w, https://i0.wp.com/demo4.drfuri.com/farmart2/wp-content/uploads/sites/11/2019/12/01_18a.jpg?resize=100%2C100&amp;ssl=1 100w"
+						                                                sizes="(max-width: 600px) 100vw, 600px" draggable="false"/></a><img
+						                                        role="presentation" alt=""
+						                                        src="https://i0.wp.com/demo4.drfuri.com/farmart2/wp-content/uploads/sites/11/2019/12/01_18a.jpg?fit=640%2C640&amp;ssl=1"
+						                                        class="zoomImg"
+						                                        style="position: absolute; top: 0px; left: 0px; opacity: 0; width: 640px; height: 640px; border: none; max-width: none; max-height: none;"/>
+						                        </div> -->
+						                    </t>
+					                </figure>
+					        </div>
+					        <t t-if='product.product_template_image_ids'>
+						        <ol class="flex-control-nav flex-control-thumbs no-slick">
+						                <li data-index='0'><img onload="this.width = this.naturalWidth; this.height = this.naturalHeight"
+						                    t-attf-src="/web/image/product.template/#{product.id}/image_512"
+						                    class="flex-active" draggable="false" width="100" height="100"/></li>
+						                <t t-set='index' t-value='0'/>
+						                <t t-foreach='product.product_template_image_ids' t-as='ex'>
+						                	<t t-set='index' t-value='index + 1'/>
+							                <li t-att-data-index='index'><img onload="this.width = this.naturalWidth; this.height = this.naturalHeight"
+							                    t-attf-src="/web/image/product.image/#{ex.id}/image_512"
+							                    draggable="false" width="100" height="100" class=""/></li>
+							                
+							            </t>
+						        </ol>
+						    </t>
+					</div>
+	                    <div class="summary entry-summary">
+	                        <div class="entry-summary-content ">
+	                            <ul class="site-breadcrumb">
+	                                <li>
+	                                        <a class="home" href="/"><span>Home
+	                                                </span></a>
+	                                </li>
+	                                <li>
+	                                        <a href="/shop"><span>Shop</span></a>
+	                                </li>
+	                                <t t-if='product.public_categ_ids'>
+		                                <li>
+		                                        <a t-attf-href="/shop/category/{{product.public_categ_ids[0].id}}"><span><t t-esc='product.public_categ_ids[0].name'/></span></a>
+		                                </li>
+		                            </t>
+	                                
+	                                <li>
+	                                        <span><t t-esc='product.name'/></span>
+	                                </li>
+	                            </ul>
+	                            <div class="fm-header-vendor">
+	                                    <div class="meta meta-sold-by">Vendor: <a
+	                                        href="https://demo4.drfuri.com/farmart2/store/admindokan112/">MartFury</a>
+	                                    </div>
+	                            </div>
+	                            <div class="fm-entry-product-header">
+	                                <div class="entry-left">
+	                                    <h1 class="product_title entry-title"><t t-esc='product.name'/></h1>
+	                                    <ul class="entry-meta">
+	                                        <li>
+	                                            <div class="woocommerce-product-rating">
+	                                                <div class="fm-rating">
+	                                                	<div class="rating_wrap">
+					                                        <t t-set="val" t-value="product._get_rating_average()" />
+					                                        <t t-set="val_integer" t-value="val['val_integer']" />
+					                                        <t t-set="val_decimal" t-value="val['val_decimal']" />
+					                                        <t t-set="empty_star" t-value="val['empty_star']" />
+					                                        <div class="o_website_rating_static" t-attf-aria-label="#{val['val_integer']} stars on 5" t-attf-title="#{val['val_integer']} stars on 5" style='display: inline-block;'>
+					                                                <t t-foreach="range(0, val_integer)" t-as="num">
+					                                                        <i class="fa fa-star" role="img"></i>
+					                                                </t>
+					                                                <t t-if="val_decimal">
+					                                                        <i class="fa fa-star-half-o" role="img"></i>
+					                                                </t>
+					                                                <t t-foreach="range(0, empty_star)" t-as="num">
+					                                                        <i class="fa fa-star text-black-25" role="img"></i>
+					                                                </t>
+					                                        </div>
+					                                        <a href="#reviews"
+	                                                        class="woocommerce-review-link"
+	                                                        rel="nofollow">(<span
+	                                                                class="count"><t t-esc='val["total_count"]' /></span>
+	                                                        customer review)
+	                                                		</a>
+					                                        
+					                                    </div>
+					                                </div>
+		                                              
+	                                            </div>
+	                                        </li>
+	                                    </ul>
+	                                </div>
+	                            </div>
+	                            <div class="unit-text"><t t-esc='product.uom_id.name'/></div>
+	                            <p class="price">
+	                            	<span
+                                        class="woocommerce-Price-amount amount"><bdi> <span t-if="combination_info['price']" t-esc="combination_info['price']" t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"/>
+								       <span itemprop="price" style="display:none;" t-esc="combination_info['price']" />
+								       <span itemprop="priceCurrency" style="display:none;" t-esc="website.currency_id.name" /></bdi></span>
+                                       
+	                            </p>
+	                            <div class="fm-stock">
+	                                <p class="stock in-stock"><label>Availability:</label>In stock</p>
+	                            </div>
+	                            <div class="woocommerce-product-details__short-description">
+	                                <ul class="farmart-list">
+	                                    <li>Type: Processed</li>
+	                                    <li>MFG: Jun 23, 2019</li>
+	                                    <li>LIFE: 6 – 12 months</li>
+	                                </ul>
+	                            </div>
+	                            <form action="/shop/cart/update" method="post" t-att-data-publish="product.website_published and 'on' or 'off'" class="cart">
+	                            	<input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
+	                                <div class="single-button-wrapper">
+	                                    <div class="quantity">
+	                                        <label class="label">Quantity:</label>
+	                                        <div class="qty-box"><span
+	                                                        class="farmart-svg-icon decrease"><svg
+	                                                                aria-hidden="false" role="img"
+	                                                                focusable="false"
+	                                                                viewBox="0 0 32 32">
+	                                                                <path
+	                                                                        d="M29.6 17.6h-28.8c-0.442 0-0.8-0.358-0.8-0.8s0.358-0.8 0.8-0.8h28.8c0.442 0 0.8 0.358 0.8 0.8s-0.358 0.8-0.8 0.8z">
+	                                                                </path>
+	                                                        </svg></span> <label
+	                                                        class="screen-reader-text"
+	                                                        for="quantity_6333c61b06ac3">Aptamil
+	                                                        Follow On Baby Milk quantity</label>
+	                                            <input type="number" id="quantity_6333c61b06ac3"
+	                                                    class="input-text qty text" step="1"
+	                                                    min="1" max="0" name="add_qty"
+	                                                    value="1" title="Qty" placeholder=""/>
+	                                            <span class="farmart-svg-icon increase"><svg
+	                                                            aria-hidden="false" role="img"
+	                                                            focusable="false"
+	                                                            viewBox="0 0 32 32">
+	                                                            <path
+	                                                                    d="M29.6 16h-13.6v-13.6c0-0.442-0.358-0.8-0.8-0.8s-0.8 0.358-0.8 0.8v13.6h-13.6c-0.442 0-0.8 0.358-0.8 0.8s0.358 0.8 0.8 0.8h13.6v13.6c0 0.442 0.358 0.8 0.8 0.8s0.8-0.358 0.8-0.8v-13.6h13.6c0.442 0 0.8-0.358 0.8-0.8s-0.358-0.8-0.8-0.8z">
+	                                                            </path>
+	                                                    </svg></span>
+	                                        </div>
+	                                    </div>
+	                                    <div class="buttons-box">
+	                                        <div class="button-vendor">
+	                                            <a href="https://demo4.drfuri.com/farmart2/store/admindokan112/">
+	                                           	<span class="farmart-svg-icon "><svg
+	                                                                    aria-hidden="false"
+	                                                                    role="img"
+	                                                                    focusable="false"
+	                                                                    viewBox="0 0 32 32">
+	                                                                    <path
+	                                                                            d="M28.8 15.2v-1.6c0-0.124-0.029-0.247-0.084-0.358l-3.2-6.4c-0.136-0.271-0.413-0.442-0.716-0.442h-19.2c-0.303 0-0.58 0.171-0.716 0.442l-3.2 6.4c-0.056 0.111-0.084 0.234-0.084 0.358v1.6c0 1.306 0.629 2.467 1.6 3.198v10.402h-0.8c-0.442 0-0.8 0.358-0.8 0.8s0.358 0.8 0.8 0.8h25.6c0.442 0 0.8-0.358 0.8-0.8s-0.358-0.8-0.8-0.8h-0.8v-10.402c0.971-0.73 1.6-1.892 1.6-3.198zM18.4 17.6c-1.323 0-2.4-1.077-2.4-2.4v-0.8h4.8v0.8c0 1.323-1.077 2.4-2.4 2.4zM3.2 15.2v-0.8h4.8v0.8c0 1.323-1.077 2.4-2.4 2.4s-2.4-1.077-2.4-2.4zM14.4 8v4.8h-4.575l1.2-4.8h3.375zM19.375 8l1.2 4.8h-4.575v-4.8h3.375zM9.6 14.4h4.8v0.8c0 1.323-1.077 2.4-2.4 2.4s-2.4-1.077-2.4-2.4v-0.8zM22.4 14.4h4.8v0.8c0 1.323-1.077 2.4-2.4 2.4s-2.4-1.077-2.4-2.4v-0.8zM26.706 12.8h-4.481l-1.2-4.8h3.281l2.4 4.8zM6.094 8h3.281l-1.2 4.8h-4.481l2.4-4.8zM4.8 19.12c0.259 0.053 0.526 0.080 0.8 0.080 1.307 0 2.47-0.63 3.2-1.603 0.73 0.973 1.893 1.603 3.2 1.603s2.47-0.63 3.2-1.603c0.577 0.769 1.425 1.324 2.4 1.522v9.681h-12.8v-9.68zM25.6 28.8h-6.4v-9.68c0.975-0.199 1.823-0.754 2.4-1.522 0.73 0.973 1.893 1.603 3.2 1.603 0.274 0 0.541-0.028 0.8-0.081v9.681zM22.4 23.2c0 0.442-0.358 0.8-0.8 0.8s-0.8-0.358-0.8-0.8c0-0.442 0.358-0.8 0.8-0.8s0.8 0.358 0.8 0.8zM7.2 24c-0.205 0-0.409-0.078-0.566-0.234-0.312-0.312-0.312-0.819 0-1.131l1.6-1.6c0.312-0.312 0.819-0.312 1.131 0s0.312 0.819 0 1.131l-1.6 1.6c-0.156 0.156-0.361 0.234-0.566 0.234zM8.8 27.2c-0.205 0-0.409-0.078-0.566-0.234-0.312-0.312-0.312-0.819 0-1.131l4.8-4.8c0.312-0.312 0.819-0.312 1.131 0s0.312 0.819 0 1.131l-4.8 4.8c-0.156 0.156-0.361 0.234-0.566 0.234zM13.6 27.2c-0.205 0-0.409-0.078-0.566-0.234-0.312-0.312-0.312-0.819 0-1.131l1.6-1.6c0.312-0.312 0.819-0.312 1.131 0s0.312 0.819 0 1.131l-1.6 1.6c-0.156 0.156-0.361 0.234-0.566 0.234z">
+	                                                                    </path>
+	                                                            </svg></span>Store</a>
+	                                        </div>
+	                                        	<t t-set='product_variant_id' t-value='product._get_first_possible_variant_id()'/>
+                                                <input name="product_id" t-att-value="product_variant_id" type="hidden"/>
+                                               <!-- <span class="add-to-cart-text" id="add_to_cart_forest" t-att-data-product_name='product.name'>Add to cart</span> -->
+                                                <button type="button" name="add-to-cart" value="2332"
+                                                    class="add-to-cart-text single_add_to_cart_button quantity_button alt"
+                                                    id="add_to_cart_forest"
+                                                    data-title="add-to-cart" t-att-data-product_name='product.name'>Add to cart 
+                                                </button>
+	                                        <!-- <button type="submit" name="add-to-cart" value="2332"
+	                                                class="single_add_to_cart_button quantity_button alt"
+	                                                data-title="">Add to cart 
+	                                        </button> -->
+	                                    </div>
+	                                    <div class="group-buttons">
+	                                        <div class="fm-wishlist-button">
+	                                            <div class="yith-wcwl-add-to-wishlist add-to-wishlist-2332  wishlist-fragment on-first-load"
+	                                                data-fragment-ref="2332"
+	                                                data-fragment-options="{&quot;base_url&quot;:&quot;&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:true,&quot;show_exists&quot;:false,&quot;product_id&quot;:2332,&quot;parent_product_id&quot;:2332,&quot;product_type&quot;:&quot;simple&quot;,&quot;show_view&quot;:true,&quot;browse_wishlist_text&quot;:&quot;Browse wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The product is already in your wishlist!&quot;,&quot;product_added_text&quot;:&quot;Product added!&quot;,&quot;heading_icon&quot;:&quot;fa-heart-o&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:&quot;after_add_to_cart&quot;,&quot;item&quot;:&quot;add_to_wishlist&quot;}">
+
+	                                                <div class="yith-wcwl-add-button">
+	                                                        <a href="#"
+	                                                                rel="nofollow"
+	                                                                t-att-data-product-template-id="product.id" t-att-data-product-product-id="product_variant_id" data-action="o_wishlist"
+	                                                                class="add_to_wishlist single_add_to_wishlist button alt o_add_wishlist"
+	                                                                data-title="Wishlist" >
+	                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+		                                                              <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+		                                                            </svg>
+	                                                                <span>Wishlist</span>
+	                                                        </a>
+	                                                </div>
+
+	                                            </div>
+	                                        </div>
+	                                        <div class="divider"></div>
+	                                        <div class="compare-button fm-compare-button fm-loop_button">
+	                                            <a href="#" class="compare" title="Compare" t-att-data-product_id='product_variant_id'><span class="farmart-svg-icon "><svg
+	                                                    aria-hidden="false"
+	                                                    role="img"
+	                                                    focusable="false"
+	                                                    viewBox="0 0 32 32">
+	                                                    <path
+	                                                            d="M27.766 5.034l-4.8-4.8c-0.312-0.312-0.819-0.312-1.131 0s-0.312 0.819 0 1.131l3.434 3.434h-21.269c-1.323 0-2.4 1.077-2.4 2.4v14.4c0 0.442 0.358 0.8 0.8 0.8s0.8-0.358 0.8-0.8v-14.4c0-0.441 0.359-0.8 0.8-0.8h21.269l-3.434 3.434c-0.312 0.312-0.312 0.819 0 1.131 0.156 0.156 0.361 0.234 0.566 0.234s0.409-0.078 0.566-0.234l4.8-4.8c0.312-0.312 0.312-0.819 0-1.131zM28 9.6c-0.442 0-0.8 0.358-0.8 0.8v14.4c0 0.441-0.359 0.8-0.8 0.8h-21.269l3.434-3.434c0.312-0.312 0.312-0.819 0-1.131s-0.819-0.312-1.131 0l-4.8 4.8c-0.312 0.312-0.312 0.819 0 1.131l4.8 4.8c0.156 0.156 0.361 0.234 0.566 0.234s0.409-0.078 0.566-0.234c0.312-0.312 0.312-0.819 0-1.131l-3.434-3.434h21.269c1.323 0 2.4-1.077 2.4-2.4v-14.4c0-0.442-0.358-0.8-0.8-0.8z">
+	                                                    </path>
+	                                                </svg></span><span
+	                                                class="text">Compare</span></a>
+	                                        </div>
+	                                    </div>
+	                                </div>
+	                            </form>
+	                            <a href="https://demo4.drfuri.com/farmart2?action=yith-woocompare-add-product&amp;id=2332"
+	                                    class="compare button" data-product_id="2332" rel="nofollow">Compare</a>
+	                            <div class="meta-sku">
+	                                    <span class="meta-label">
+	                                            SKU: </span>
+	                                    <span class="meta-value">
+	                                            SKU-112231 </span>
+	                            </div>
+	                            <div class="fm-entry-meta">
+	                                <div class="meta meta-brand">Brand:
+	                                        <a href="https://demo4.drfuri.com/farmart2/product-brand/envato/"
+	                                                class="meta-value">Envato</a>
+	                                </div>
+	                                <div class="meta meta-sold-by">Vendor: <a
+	                                                href="https://demo4.drfuri.com/farmart2/store/admindokan112/">MartFury</a>
+	                                </div>
+	                                <div class="meta meta-category"><span class="posted_in">Categories: <a
+	                                            href="https://demo4.drfuri.com/farmart2/product-category/milks-and-dairies/bouncers/"
+	                                            rel="tag">Bouncers</a>, <a
+	                                            href="https://demo4.drfuri.com/farmart2/product-category/milks-and-dairies/"
+	                                            rel="tag">Milks and Dairies</a>, <a
+	                                            href="https://demo4.drfuri.com/farmart2/product-category/milks-and-dairies/nursery/"
+	                                            rel="tag">Nursery</a>, <a
+	                                            href="https://demo4.drfuri.com/farmart2/product-category/milks-and-dairies/pushchairs/"
+	                                            rel="tag">Pushchairs</a>, <a
+	                                            href="https://demo4.drfuri.com/farmart2/product-category/milks-and-dairies/toys/"
+	                                            rel="tag">Toys</a>, <a
+	                                            href="https://demo4.drfuri.com/farmart2/product-category/coffees-and-teas/water/"
+	                                            rel="tag">Water</a></span></div>
+	                                <div class="meta meta-tags"></div>
+	                            </div>
+	                            <div class="product_socials socials-with-background">
+	                                <ul class="farmart-social-share socials-inline farmart-social__text">
+	                                    <li><a class="share-facebook farmart-facebook"
+	                                        title="Aptamil Follow On Baby Milk"
+	                                        href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fdemo4.drfuri.com%2Ffarmart2%2Fproduct%2Faptamil-follow-on-baby-milk%2F&amp;t=Aptamil+Follow+On+Baby+Milk"
+	                                        target="_blank"><span
+	                                                class="farmart-svg-icon"><svg
+	                                                        viewBox="0 0 16 28">
+	                                                        <path
+	                                                                d="M14.984 0.187v4.125h-2.453c-1.922 0-2.281 0.922-2.281 2.25v2.953h4.578l-0.609 4.625h-3.969v11.859h-4.781v-11.859h-3.984v-4.625h3.984v-3.406c0-3.953 2.422-6.109 5.953-6.109 1.687 0 3.141 0.125 3.563 0.187z">
+	                                                        </path>
+	                                                </svg></span><span
+	                                                class="text">Facebook</span></a></li>
+	                                    <li><a class="share-twitter farmart-twitter"
+	                                        href="https://twitter.com/share?text=Aptamil+Follow+On+Baby+Milk&amp;url=https%3A%2F%2Fdemo4.drfuri.com%2Ffarmart2%2Fproduct%2Faptamil-follow-on-baby-milk%2F"
+	                                        title="Aptamil Follow On Baby Milk"
+	                                        target="_blank"><span
+	                                                class="farmart-svg-icon"><svg
+	                                                        viewBox="0 0 26 28">
+	                                                        <path
+	                                                                d="M25.312 6.375c-0.688 1-1.547 1.891-2.531 2.609 0.016 0.219 0.016 0.438 0.016 0.656 0 6.672-5.078 14.359-14.359 14.359-2.859 0-5.516-0.828-7.75-2.266 0.406 0.047 0.797 0.063 1.219 0.063 2.359 0 4.531-0.797 6.266-2.156-2.219-0.047-4.078-1.5-4.719-3.5 0.313 0.047 0.625 0.078 0.953 0.078 0.453 0 0.906-0.063 1.328-0.172-2.312-0.469-4.047-2.5-4.047-4.953v-0.063c0.672 0.375 1.453 0.609 2.281 0.641-1.359-0.906-2.25-2.453-2.25-4.203 0-0.938 0.25-1.797 0.688-2.547 2.484 3.062 6.219 5.063 10.406 5.281-0.078-0.375-0.125-0.766-0.125-1.156 0-2.781 2.25-5.047 5.047-5.047 1.453 0 2.766 0.609 3.687 1.594 1.141-0.219 2.234-0.641 3.203-1.219-0.375 1.172-1.172 2.156-2.219 2.781 1.016-0.109 2-0.391 2.906-0.781z">
+	                                                        </path>
+	                                                </svg></span><span
+	                                                class="text">Twitter</span></a></li>
+	                                    <li><a class="share-pinterest farmart-pinterest"
+	                                        href="https://pinterest.com/pin/create/button?media=https%3A%2F%2Fi0.wp.com%2Fdemo4.drfuri.com%2Ffarmart2%2Fwp-content%2Fuploads%2Fsites%2F11%2F2020%2F02%2F08_5a.jpg%3Ffit%3D800%252C800%26ssl%3D1&amp;url=https%3A%2F%2Fdemo4.drfuri.com%2Ffarmart2%2Fproduct%2Faptamil-follow-on-baby-milk%2F&amp;description=Aptamil+Follow+On+Baby+Milk"
+	                                        title="Aptamil Follow On Baby Milk"
+	                                        target="_blank"><span
+	                                                class="farmart-svg-icon"><svg
+	                                                        viewBox="0 0 20 28">
+	                                                        <path
+	                                                                d="M0 9.328c0-5.766 5.281-9.328 10.625-9.328 4.906 0 9.375 3.375 9.375 8.547 0 4.859-2.484 10.25-8.016 10.25-1.313 0-2.969-0.656-3.609-1.875-1.188 4.703-1.094 5.406-3.719 9l-0.219 0.078-0.141-0.156c-0.094-0.984-0.234-1.953-0.234-2.938 0-3.187 1.469-7.797 2.188-10.891-0.391-0.797-0.5-1.766-0.5-2.641 0-1.578 1.094-3.578 2.875-3.578 1.313 0 2.016 1 2.016 2.234 0 2.031-1.375 3.938-1.375 5.906 0 1.344 1.109 2.281 2.406 2.281 3.594 0 4.703-5.187 4.703-7.953 0-3.703-2.625-5.719-6.172-5.719-4.125 0-7.313 2.969-7.313 7.156 0 2.016 1.234 3.047 1.234 3.531 0 0.406-0.297 1.844-0.812 1.844-0.078 0-0.187-0.031-0.266-0.047-2.234-0.672-3.047-3.656-3.047-5.703z">
+	                                                        </path>
+	                                                </svg></span><span
+	                                                class="text">Pinterest</span></a></li>
+	                                    <li><a class="share-google-plus farmart-google-plus"
+	                                        href="https://plus.google.com/share?url=https%3A%2F%2Fdemo4.drfuri.com%2Ffarmart2%2Fproduct%2Faptamil-follow-on-baby-milk%2F&amp;text=Aptamil+Follow+On+Baby+Milk"
+	                                        title="Aptamil Follow On Baby Milk"
+	                                        target="_blank"><span
+	                                                class="farmart-svg-icon"><svg
+	                                                        viewBox="0 0 36 28">
+	                                                        <path
+	                                                                d="M22.453 14.266c0 6.547-4.391 11.188-11 11.188-6.328 0-11.453-5.125-11.453-11.453s5.125-11.453 11.453-11.453c3.094 0 5.672 1.125 7.672 3l-3.109 2.984c-0.844-0.812-2.328-1.766-4.562-1.766-3.906 0-7.094 3.234-7.094 7.234s3.187 7.234 7.094 7.234c4.531 0 6.234-3.266 6.5-4.937h-6.5v-3.938h10.813c0.109 0.578 0.187 1.156 0.187 1.906zM36 12.359v3.281h-3.266v3.266h-3.281v-3.266h-3.266v-3.281h3.266v-3.266h3.281v3.266h3.266z">
+	                                                        </path>
+	                                                </svg></span><span
+	                                                class="text">Google</span></a></li>
+	                                </ul>
+	                            </div>
+	                        </div>
+	                        <div class="entry-summary-sidebar product-sidebar">
+	                            <div id="custom_html-4" class="widget_text widget widget_custom_html">
+	                                <div class="textwidget custom-html-widget">
+	                                    <ul class="fm-products-list fm-sidebar-bg">
+	                                        <li>
+	                                            <img src="https://i0.wp.com/demo4.drfuri.com/farmart2/wp-content/uploads/sites/11/2021/05/homepage-new-image-box-img-1.png?w=640&amp;ssl=1"
+	                                                    title="homepage-new-image-box-img-1"
+	                                                    alt="homepage-new-image-box-img-1"
+	                                                    data-recalc-dims="1" class="lazyloaded"
+	                                                    data-ll-status="loaded"/><noscript><img
+	                                                            src="https://i0.wp.com/demo4.drfuri.com/farmart2/wp-content/uploads/sites/11/2021/05/homepage-new-image-box-img-1.png?w=640&#038;ssl=1"
+	                                                            title="homepage-new-image-box-img-1"
+	                                                            alt="homepage-new-image-box-img-1"
+	                                                            data-recalc-dims="1"/></noscript>
+	                                            <div>
+	                                                    <h6>Free Shipping</h6>
+	                                                    <div class="text">For all orders over
+	                                                            $200</div>
+	                                            </div>
+	                                        </li>
+	                                        <li>
+	                                            <img src="https://i0.wp.com/demo4.drfuri.com/farmart2/wp-content/uploads/sites/11/2021/05/homepage-new-image-box-img-2.png?w=640&amp;ssl=1"
+	                                                    title="homepage-new-image-box-img-2"
+	                                                    alt="homepage-new-image-box-img-2"
+	                                                    data-recalc-dims="1" class="lazyloaded"
+	                                                    data-ll-status="loaded"/><noscript><img
+	                                                            src="https://i0.wp.com/demo4.drfuri.com/farmart2/wp-content/uploads/sites/11/2021/05/homepage-new-image-box-img-2.png?w=640&#038;ssl=1"
+	                                                            title="homepage-new-image-box-img-2"
+	                                                            alt="homepage-new-image-box-img-2"
+	                                                            data-recalc-dims="1"/></noscript>
+	                                            <div>
+	                                                    <h6>1 &amp; 1 Returns</h6>
+	                                                    <div class="text">Cancellation after 1
+	                                                            day</div>
+	                                            </div>
+	                                        </li>
+	                                        <li>
+	                                            <img src="https://i0.wp.com/demo4.drfuri.com/farmart2/wp-content/uploads/sites/11/2021/05/homepage-new-image-box-img-3.png?w=640&amp;ssl=1"
+	                                                    title="homepage-new-image-box-img-3"
+	                                                    alt="homepage-new-image-box-img-3"
+	                                                    data-recalc-dims="1" class="lazyloaded"
+	                                                    data-ll-status="loaded"/><noscript><img
+	                                                            src="https://i0.wp.com/demo4.drfuri.com/farmart2/wp-content/uploads/sites/11/2021/05/homepage-new-image-box-img-3.png?w=640&#038;ssl=1"
+	                                                            title="homepage-new-image-box-img-3"
+	                                                            alt="homepage-new-image-box-img-3"
+	                                                            data-recalc-dims="1"/></noscript>
+	                                            <div>
+	                                                    <h6>Secure Payment</h6>
+	                                                    <div class="text">100% secure payments
+	                                                    </div>
+	                                            </div>
+	                                        </li>
+	                                    </ul>
+	                                </div>
+	                            </div>
+	                            <div id="custom_html-5" class="widget_text widget widget_custom_html">
+	                                <div class="textwidget custom-html-widget">
+	                                        <div class="fm-sidebar-bg">
+	                                                <h6>Hotline Order: </h6>
+	                                                <div class="text">Mon - Fri: 7:00 am - 18:00PM</div>
+	                                                <h3 class="phone">+970 978 - 6290</h3>
+	                                        </div>
+	                                </div>
+	                            </div>
+	                            <div id="custom_html-6" class="widget_text widget widget_custom_html">
+	                                <div class="textwidget custom-html-widget">
+	                                        <div class="text-center" stye="color: #000;">
+	                                                Become a Vendor? <a href="" class="">Register now</a>
+	                                        </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	        		</div>
+	        	</div>
+	        	<div class="fm-product-summary">
+			        <div class="woocommerce-tabs wc-tabs-wrapper clear farmart-container">
+		                <ul class="tabs wc-tabs" role="tablist">
+		                        <li class="description_tab active" id="tab-title-description" role="tab"
+		                                aria-controls="tab-description">
+		                                <a href="#tab-description">
+		                                        Description </a>
+		                        </li>
+		                        <li class="additional_information_tab" id="tab-title-additional_information" role="tab"
+		                                aria-controls="tab-additional_information">
+		                                <a href="#tab-additional_information">
+		                                        Additional information </a>
+		                        </li>
+		                        <li class="reviews_tab" id="tab-title-reviews" role="tab" aria-controls="tab-reviews">
+		                                <a href="#tab-reviews">
+		                                        Reviews (1) </a>
+		                        </li>
+		                        <li class="seller_tab" id="tab-title-seller" role="tab" aria-controls="tab-seller">
+		                                <a href="#tab-seller">
+		                                        Vendor Info </a>
+		                        </li>
+		                        <li class="more_seller_product_tab" id="tab-title-more_seller_product" role="tab"
+		                                aria-controls="tab-more_seller_product">
+		                                <a href="#tab-more_seller_product">
+		                                        More Products </a>
+		                        </li>
+		                        <li id="fm-wc-tab__magic-line" class="fm-wc-tab__magic-line"
+		                                style="width: 205px; left: 30px; display: none;"></li>
+		                </ul>
+		                <div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--description panel entry-content wc-tab"
+		                        id="tab-description" role="tabpanel" aria-labelledby="tab-title-description" style="">
+		                        <p>Raised without antibiotics and full of flavor, this beef is the base of big, juicy burgers,
+		                                savory meat loaf and rich Bolognese sauce. You can enjoy this delicious local ground
+		                                beef for your meatloaf, burgers, meatballs, shepherd’s pie, spicy taco meat and so much
+		                                more.</p>
+		                        <p>As one of Farmart’s premium beef suppliers, <strong>Local Angus</strong> works with a
+		                                coalition of small family farms throughout the Mid-Atlantic region* who feed their
+		                                cattle a diet of primarily grass, supplemented by grain throughout the finishing months.
+		                                Every farm in this program is independently audited for animal welfare practices to
+		                                ensure the best standards of care.</p>
+		                        <figure id="attachment_7076" aria-describedby="caption-attachment-7076" style="width: 1260px"
+		                                class="wp-caption alignnone"><img class="wp-image-7076 size-full lazyloaded"
+		                                        src="https://i0.wp.com/demo4.drfuri.com/farmart2/wp-content/uploads/sites/11/2021/06/single-product-new-img.jpg?resize=640%2C287&amp;ssl=1"
+		                                        alt="" width="640" height="287" data-recalc-dims="1"
+		                                        data-ll-status="loaded"/><noscript><img class="wp-image-7076 size-full"
+		                                                src="https://i0.wp.com/demo4.drfuri.com/farmart2/wp-content/uploads/sites/11/2021/06/single-product-new-img.jpg?resize=640%2C287&#038;ssl=1"
+		                                                alt="" width="640" height="287" data-recalc-dims="1" /></noscript>
+		                                <figcaption id="caption-attachment-7076" class="wp-caption-text">Every farm in this
+		                                        program is independently audited for animal.</figcaption>
+		                        </figure>
+		                        <h4>Preparation and Usage</h4>
+		                        <p>For perfectly cooked beef, our head chef recommends:</p>
+		                        <h6>Storage</h6>
+		                        <p>Keep refrigerated 0-5oC. Consume within the use by date. Once pack is opened use on the same
+		                                day. Suitable for freezing on day of purchase. Use within one month. Defrost fully
+		                                before use. Do not re-freeze once defrosted.</p>
+		                        <h6>Pan Fry</h6>
+		                        <p>Pour a little oil into a frying pan and cook for 4-6 minutes until browned. If preferred,
+		                                drain off excess fat. Add a good beef stock, seasonal vegetables and a sprinkling of sea
+		                                salt and freshly ground black pepper. Bring to the boil and reduce heat to simmer for 20
+		                                minutes until the meat is thoroughly cooked and your kitchen smells delicious. Wash
+		                                hands, knives and surfaces thoroughly before and after preparing raw meat.</p>
+		                        <h6>Return To Address</h6>
+		                        <p>Daylesford near Kingham, Gloucestershire GL56 0YG</p>
+		                        <h6>Country of Origin</h6>
+		                        <p>UK</p>
+		                        <h6>Package Type</h6>
+		                        <p>Box &amp; Sleeve</p>
+		                        <h6>Recycling Information</h6>
+		                        <p>You’ll never be given a plastic carrier bag in our farm shops, and for this packaging we’ve
+		                                chosen a tray that is 70% post-consumer recycled material. Like this FSC-certified
+		                                cardboard, it is fully recyclable &amp; rechangable.</p>
+		                        <h6>Other Information</h6>
+		                        <p>GB-ORG-05, EU Agriculture<br/>
+		                                UK 4707 EC<br/>
+		                                Packaged in a protective atmosphere</p>
+		                        <p>We’ve been farming organically for over 35 years, meaning our animals enjoy their natural
+		                                grass and forage-based diet, growing into strong and healthy animals, free from
+		                                unnecessary chemicals, antibiotics and GM feed.</p>
+		                        <p>We choose British breeds who thrive in their native landscape and encourage healthy
+		                                biodiversity on our farm. We avoid waste of any kind, so manure and kitchen waste
+		                                compost are returned to the soil as rich natural fertilisers. We have built our own
+		                                abattoir to ensure the highest animal welfare and reduced food miles, which results in
+		                                better tasting meat, and we spread our message far beyond the boundaries of our own
+		                                fields.</p>
+		                        <p>Each step of our journey is made with a conscience, and a love for food.</p>
+		                </div>
+
+			        </div>
+			        <div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--additional_information panel entry-content wc-tab"
+                        id="tab-additional_information" role="tabpanel"
+                        aria-labelledby="tab-title-additional_information" style="display: none;">
+	                        <h2>Additional information</h2>
+	                        <table class="woocommerce-product-attributes shop_attributes">
+	                                <tbody>
+	                                        <tr
+	                                                class="woocommerce-product-attributes-item woocommerce-product-attributes-item--attribute_pa_weight">
+	                                                <th class="woocommerce-product-attributes-item__label">Weight</th>
+	                                                <td class="woocommerce-product-attributes-item__value">
+	                                                        <p>500ml</p>
+	                                                </td>
+	                                        </tr>
+	                                </tbody>
+	                        </table>
+	                </div>
+				</div>
+	        </div>
+	    </div>
+      	<!-- <div class="page-breadcrumbs">
+        	<div class="farmart-container">
+                <ul class="site-breadcrumb">
+                    <li>
+                        <a class="home" href="/"><span>Home </span></a>
+                    </li>
+                    <li>
+                        <span><t t-esc='product.name'/></span>
+                    </li>
+                </ul>
+		    </div>
+		</div> -->
+		 <!-- model dialog start -->
+            <div class="modal fade" id="comparemodel" tabindex="-1" role="dialog" aria-labelledby="comparemodel" aria-hidden="false">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true"></span>
+                    </button>
+                  </div>
+                  <div class="modal-body compare_body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        <!-- model dialog end -->
+      </xpath>
+	</template>
+  </data>
+</odoo>
