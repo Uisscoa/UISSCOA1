@@ -12,9 +12,9 @@
 	                        <div class="slick-list draggable">
 	                            <div class="slick-track" style="opacity: 1; width: 1224px; transform: translate3d(0px, 0px, 0px);">
                                         <li class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 1224px;" tabindex="0" role="tabpanel" id="slick-slide00" aria-describedby="slick-slide-control00">
-                                        	<img src="https://demo4.drfuri.com/farmart2/wp-content/uploads/sites/11/2021/05/homepage-new-shop-banner.png"
+                                        	<img src="#"
                                                         alt="" class="lazyloaded" data-ll-status="loaded"/>
-                                            <noscript><img src="https://demo4.drfuri.com/farmart2/wp-content/uploads/sites/11/2021/05/homepage-new-shop-banner.png"
+                                            <noscript><img src="#"
                                                             alt=""/>
                                             </noscript>
                                         </li>
@@ -54,21 +54,21 @@
                                         <ul class="woocommerce-ordering">
                                             <li class="current"><span> Default sorting</span>
                                                     <ul>
-                                                            <li><a href="https://demo4.drfuri.com/farmart2/shop/?orderby=menu_order"
+                                                            <li><a href="#"
                                                                             class="active">Default
                                                                             sorting</a></li>
-                                                            <li><a href="https://demo4.drfuri.com/farmart2/shop/?orderby=popularity"
+                                                            <li><a href="#"
                                                                             class="">Sort by popularity</a>
                                                             </li>
-                                                            <li><a href="https://demo4.drfuri.com/farmart2/shop/?orderby=rating"
+                                                            <li><a href="#"
                                                                             class="">Sort by average
                                                                             rating</a></li>
-                                                            <li><a href="https://demo4.drfuri.com/farmart2/shop/?orderby=date"
+                                                            <li><a href="#"
                                                                             class="">Sort by latest</a></li>
-                                                            <li><a href="https://demo4.drfuri.com/farmart2/shop/?orderby=price"
+                                                            <li><a href="#"
                                                                             class="">Sort by price: low to
                                                                             high</a></li>
-                                                            <li><a href="https://demo4.drfuri.com/farmart2/shop/?orderby=price-desc"
+                                                            <li><a href="#"
                                                                             class="">Sort by price: high to
                                                                             low</a></li>
                                                     </ul>
@@ -900,7 +900,7 @@
 	            		<input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
 	                    <div class="product-inner">
 	                        <div class="product-thumbnail fm-product-thumbnail">
-	                        	<a href="https://demo4.drfuri.com/farmart2/product/hobnobs-the-nobbly-biscuit/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+	                        	<a href="#" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
                                     <style>
                                         .product_item img{
                                             width:300px;
@@ -1488,7 +1488,7 @@
                                 </ul>
                             </div>
                             <form class="cart"
-                                action="https://demo4.drfuri.com/farmart2/product/aptamil-follow-on-baby-milk/"
+                                action="#"
                                 method="post" enctype="multipart/form-data">
                                 <div class="single-button-wrapper">
                                     <div class="quantity">
@@ -1520,7 +1520,7 @@
                                     </div>
                                     <div class="buttons-box">
                                         <div class="button-vendor">
-                                                <a href="https://demo4.drfuri.com/farmart2/store/admindokan112/"><span
+                                                <a href="#"><span
                                                         class="farmart-svg-icon "><svg
                                                                 aria-hidden="true"
                                                                 role="img"
@@ -1570,7 +1570,7 @@
                                             </div>
                                             <div class="divider"></div>
                                             <div class="compare-button fm-compare-button fm-loop_button">
-                                                <a href="https://demo4.drfuri.com/farmart2?action=yith-woocompare-add-product&amp;id=2332" class="compare" title="Compare" data-product_id="2332"><span class="farmart-svg-icon ">
+                                                <a href="#" class="compare" title="Compare" data-product_id="2332"><span class="farmart-svg-icon ">
                                                     <svg aria-hidden="true"
                                                                         role="img"
                                                                         focusable="false"

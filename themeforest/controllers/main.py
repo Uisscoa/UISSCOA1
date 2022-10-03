@@ -94,7 +94,7 @@ class TableCompute(object):
                     self.table[(pos // ppr) + y2][(pos % ppr) + x2] = False
             self.table[pos // ppr][pos % ppr] = {
                 'product': p, 'x': x, 'y': y,
-                'ribbon': p._get_website_ribbon(),
+                'ribbon': p.website_ribbon_id,
             }
             if index <= ppg:
                 maxy = max(maxy, y + (pos // ppr))
@@ -162,18 +162,16 @@ class WebsiteSale(main.WebsiteSale):
         attributes_ids = {v[0] for v in attrib_values}
         attrib_set = {v[1] for v in attrib_values}
 
-        keep = QueryURL('/shop', category=category and int(category), search=search, attrib=attrib_list, min_price=min_price, max_price=max_price, order=post.get('order'))
+        domain = self._get_search_domain(search, category, attrib_values)
+
+        keep = QueryURL('/shop', category=category and int(category), search=search, attrib=attrib_list, order=post.get('order'))
 
         pricelist_context, pricelist = self._get_pricelist_context()
 
         request.context = dict(request.context, pricelist=pricelist.id, partner=request.env.user.partner_id)
 
-        filter_by_price_enabled = request.website.is_view_active('website_sale.filter_products_price')
-        #if filter_by_price_enabled:
         company_currency = request.website.company_id.currency_id
         conversion_rate = request.env['res.currency']._get_conversion_rate(company_currency, pricelist.currency_id, request.website.company_id, fields.Date.today())
-        # else:
-        #     conversion_rate = 1
 
         url = "/shop"
         if search:
@@ -194,26 +192,9 @@ class WebsiteSale(main.WebsiteSale):
             'attrib_values': attrib_values,
             'display_currency': pricelist.currency_id,
         }
-        # No limit because attributes are obtained from complete product list
-        product_count, details, fuzzy_search_term = request.website._search_with_fuzzy("products_only", search,
-            limit=None, order=self._get_search_order(post), options=options)
-        search_product = details[0].get('results', request.env['product.template']).with_context(bin_size=True)
-        if post.get('rating_filter'):
-            rat_product=[]
-            #rang=search_product.search([('rating_avg','<=',int(post.get('rating_filter'))),('rating_avg','>',4)])
-            for sp in search_product:
-                if sp.rating_avg <= int(post.get('rating_filter')) and sp.rating_avg > int(post.get('rating_filter'))-1:
-                    rat_product.append(sp.id)
-                #print(sp.name,"***************************",sp.rating_avg,sp.rating_ids,sp.rating_last_value)
-            search_product=search_product.search([('id','in',rat_product)])
 
-        filter_by_price_enabled = request.website.is_view_active('website_sale.filter_products_price')
-        #if filter_by_price_enabled:
-        # TODO Find an alternative way to obtain the domain through the search metadata.
         Product = request.env['product.template'].with_context(bin_size=True)
-        domain = self._get_search_domain(search, category, attrib_values)
 
-        # This is ~4 times more efficient than a search for the cheapest and most expensive products
         from_clause, where_clause, where_params = Product._where_calc(domain).get_sql()
         query = f"""
             SELECT COALESCE(MIN(list_price), 0) * {conversion_rate}, COALESCE(MAX(list_price), 0) * {conversion_rate}
@@ -222,7 +203,6 @@ class WebsiteSale(main.WebsiteSale):
         """
         request.env.cr.execute(query, where_params)
         available_min_price, available_max_price = request.env.cr.fetchone()
-
         if min_price or max_price:
             # The if/else condition in the min_price / max_price value assignment
             # tackles the case where we switch to a list of products with different
@@ -237,6 +217,7 @@ class WebsiteSale(main.WebsiteSale):
                 max_price = max_price if max_price >= available_min_price else available_max_price
                 post['max_price'] = max_price
 
+        search_product = Product.search(domain, order=self._get_search_order(post))
         website_domain = request.website.website_domain()
         categs_domain = [('parent_id', '=', False)] + website_domain
         if search:
@@ -248,7 +229,21 @@ class WebsiteSale(main.WebsiteSale):
 
         if category:
             url = "/shop/category/%s" % slug(category)
-        
+
+        product_count = len(search_product)
+        pager = request.website.pager(url=url, total=product_count, page=page, step=ppg, scope=7, url_args=post)
+        offset = pager['offset']
+        products = search_product[offset: offset + ppg]
+
+        if post.get('rating_filter'):
+            rat_product=[]
+            #rang=search_product.search([('rating_avg','<=',int(post.get('rating_filter'))),('rating_avg','>',4)])
+            for sp in search_product:
+                if sp.rating_avg <= int(post.get('rating_filter')) and sp.rating_avg > int(post.get('rating_filter'))-1:
+                    rat_product.append(sp.id)
+                #print(sp.name,"***************************",sp.rating_avg,sp.rating_ids,sp.rating_last_value)
+            search_product=search_product.search([('id','in',rat_product)])
+
         if brand:
             search_product=search_product.search([('product_brand_id','=',brand.id)])
             product_count=len(search_product)
@@ -264,10 +259,7 @@ class WebsiteSale(main.WebsiteSale):
         ProductAttribute = request.env['product.attribute']
         if products:
             # get all products without limit
-            attributes = ProductAttribute.search([
-                ('product_tmpl_ids', 'in', search_product.ids),
-                ('visibility', '=', 'visible'),
-            ])
+            attributes = ProductAttribute.search([('product_tmpl_ids', 'in', search_product.ids)])
         else:
             attributes = ProductAttribute.browse(attributes_ids)
 
@@ -277,11 +269,9 @@ class WebsiteSale(main.WebsiteSale):
                 layout_mode = 'list'
             else:
                 layout_mode = 'grid'
-
         brands = request.env['forest.brand'].sudo().search([])
         values = {
-            'search': fuzzy_search_term or search,
-            'original_search': fuzzy_search_term and search,
+            'search': search,
             'category': category,
             'brands':brands,
             'attrib_values': attrib_values,
@@ -300,7 +290,6 @@ class WebsiteSale(main.WebsiteSale):
             'search_categories_ids': search_categories.ids,
             'layout_mode': layout_mode,
         }
-        #if filter_by_price_enabled:
         values['min_price'] = min_price or available_min_price
         values['max_price'] = max_price or available_max_price
         min_floore=math.floor(values['min_price'] / 10)
@@ -320,6 +309,7 @@ class WebsiteSale(main.WebsiteSale):
         values['available_max_price'] = tools.float_round(available_max_price, 2)
         if category:
             values['main_object'] = category
+
         return values
 
     @http.route([

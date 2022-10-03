@@ -35,7 +35,7 @@
 					                <figure class="woocommerce-product-gallery__wrapper"
 					                        style="width: 600%; transition-duration: 0s; transform: translate3d(12px, 0px, 0px);">
 					                        <div  class="woocommerce-product-gallery__image flex-active-slide" style="width: 436.906px; margin-right: 0px; float: left; display: block; position: relative; overflow: hidden;">
-					                        	<a id="Zoom-1" class="MagicZoom" data-options="zoomPosition: inner" 
+					                        	<a iid="Zoom-1" class="MagicZoom" data-options="zoomPosition: inner" 
 									            t-attf-href="/web/image/product.template/#{product.id}/image_1024"
 									            t-attf-data-zoom-image-2x="/web/image/product.template/#{product.id}/image_1024"
 									            t-attf-data-image-2x="/web/image/product.template/#{product.id}/image_1024"
@@ -48,7 +48,7 @@
 					                        
 					                        <t t-foreach='product.product_template_image_ids' t-as='ex'>
 						                        <div class="woocommerce-product-gallery__image" style="width: 436.906px; margin-right: 0px; float: left; display: block; position: relative; overflow: hidden;">
-						                        	<a id="Zoom-1" class="MagicZoom" data-options="zoomPosition: inner" 
+						                        	<a id="Zoom-2" class="MagicZoom" data-options="zoomPosition: inner" 
 										            t-attf-href="/web/image/product.image/#{ex.id}/image_1024"
 										            t-attf-data-zoom-image-2x="/web/image/product.image/#{ex.id}/image_1024"
 										            t-attf-data-image-2x="/web/image/product.image/#{ex.id}/image_1024"

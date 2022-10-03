@@ -1,6 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
   <data>
+  	<template id="assets_frontend_extend" inherit_id="website.assets_frontend" name="Website catalogue backend assets">
+			<xpath expr="." position="inside">
+                <link rel="stylesheet" href="/themeforest/static/src/css/farmartIcon.css" type="text/css" />
+                <link rel="stylesheet" href="/themeforest/static/src/css/style.css" type="text/css" />
+                <link rel="stylesheet" href="/themeforest/static/src/css/dokan.css" type="text/css" />
+                <link rel="stylesheet" href="/themeforest/static/src/css/wcfm-vendor.css" type="text/css" />
+                <link rel="stylesheet" href="/themeforest/static/src/css/woocommerce.css" type="text/css" />
+                <link rel="stylesheet" href="/themeforest/static/src/css/bootstrap.min.css" type="text/css" />
+                <link rel="stylesheet" href="/themeforest/static/src/css/photoswipe.css" type="text/css" />
+                <link rel="stylesheet" href="/themeforest/static/src/css/magnific-popup.css" type="text/css" />
+                <link rel="stylesheet" href="/themeforest/static/src/css/head.css" type="text/css" />
+                <link rel="stylesheet" href="/themeforest/static/src/js/magiczoomplus/magiczoomplus.css" type="text/css" />
+
+              
+                
+                <script src="/themeforest/static/src/js/plugins/photoswipe.min.js"></script>
+                <script src="/themeforest/static/src/js/plugins/photoswipe-ui.min.js"></script>
+                <script src="/themeforest/static/src/js/imagesloaded.pkgd.min.js"></script>
+                <script src="/themeforest/static/src/js/plugins/slick.min.js"></script>
+                <script src="/themeforest/static/src/js/scripts.js"></script>
+                <script src="/themeforest/static/src/js/elementor.js"></script>
+                <script src="/themeforest/static/src/js/themeforest.js"></script>
+                <script src="/themeforest/static/src/js/toast.with.css.js"></script>
+                <script src="/themeforest/static/src/js/magiczoomplus/magiczoomplus.js"></script>
+             </xpath>
+   </template>
    <template id="website_homepage_inherit" inherit_id="website.homepage">
          <xpath expr="//div[@id='wrap']" position="replace">
          	<t t-set="body_classname" t-value="'archive post-type-archive post-type-archive-product wp-embed-responsive theme-farmart woocommerce-shop woocommerce woocommerce-page woocommerce-js header-v1 hfeed sidebar-content fm-preloader fm-show-qty woocommerce-active catalog-view-grid fm-catalog-page catalog-nav-numeric-short catalog-standard catalog-sidebar-content catalog-ajax-filter farmart-not-login elementor-default elementor-kit-13 dokan-theme-farmart'"/>
