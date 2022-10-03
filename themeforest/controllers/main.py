@@ -31,7 +31,6 @@ class Themeforest(http.Controller):
             'products': products,
         })
         #values['products'] = products.with_context(display_default_code=False)
-        print("555555555555555555555555555555",values)
         return values
 
     @http.route('/get/product/data', type='json', auth="public", website=True)

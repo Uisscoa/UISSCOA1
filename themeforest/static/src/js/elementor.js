@@ -9,10 +9,8 @@
     	$('body').addClass('archive post-type-archive post-type-archive-product wp-embed-responsive theme-farmart woocommerce-shop woocommerce woocommerce-page woocommerce-js header-v1 hfeed sidebar-content fm-preloader fm-show-qty woocommerce-active catalog-view-grid fm-catalog-page catalog-nav-numeric-short catalog-standard catalog-sidebar-content catalog-ajax-filter farmart-not-login elementor-default elementor-kit-13 dokan-theme-farmart')
     }*/
     $('.flex-control-nav').on('click',"img",function(e){
-    	console.log($(this),"1111111111111111111111111",$(this).parent().data('index'))
     	var transo_muti=$(this).parent().data('index')
     	var transorm=(-425-transo_muti) * $(this).parent().data('index')
-    	console.log("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%",transorm)
     	if(transorm == 0){
     		transorm = 12
     	}
@@ -20,6 +18,7 @@
     	$('.woocommerce-product-gallery__wrapper').css('transform','translate3d('+transorm+'px, 0px, 0px)')
     })
 
+    //MagicZoom.start('Zoom-1');
     $(document).on("click",".increase",function(e) {
     	var old_qty=$(this).parent().find('.qty').val()
     	$(this).parent().find('.qty').val(parseInt(old_qty) + 1)
@@ -87,7 +86,6 @@
 			});
 
 			var animation = $selector.data('animation');
-			console.log("DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDd",$selector)
 			if (animation) {
 				$selector
 					.on('beforeChange', function () {

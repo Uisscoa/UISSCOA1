@@ -1696,7 +1696,7 @@
                 var count = $thumbnail.find('li').length;
                 if (count > columns) {
                     var options = {
-                        rtl: farmartData.isRTL === '1',
+/*                        rtl: farmartData.isRTL === '1',*/
                         slidesToShow: columns,
                         slidesToScroll: 1,
                         vertical: true,
@@ -1705,7 +1705,7 @@
                         prevArrow: farmart.$iconChevronLeft,
                         nextArrow: farmart.$iconChevronRight,
                     };
-
+                    
                     if ($divProduct.hasClass('fm-product-thumbnail-horizontal')) {
                         options.vertical = false;
                         options.prevArrow = farmart.$iconChevronLeft;

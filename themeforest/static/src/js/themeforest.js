@@ -28,6 +28,12 @@ function getFormData($form){
                 product_ids: product_ids,
                 cookies: JSON.parse(utils.get_cookie('comparelist_product_ids') || '[]'),
             },*/
+$('.wc-tabs li').click(function(e){
+    $('.woocommerce-Tabs-panel').css('display','none')
+    $($(this).find('a').data('href')).css('display','')
+    //$(this).css('display','')
+});
+
 $('.fm-product-quick-view').click(function(e){
     var product_id=$(this).data('product_id')
     ajax.jsonRpc("/get/product/data", 'call',{

@@ -5,9 +5,9 @@
     'description': """Themeforest""",
     'author': "Spellbound Soft Solutions",
     'website': "http://spellboundss.com",
-    'category': 'Uncategorized',
+    'category': 'Theme',
     'version': '0.1',
-    'depends': ['base','web','sale','website','website_sale','website_sale_wishlist','website_sale_comparison'],
+    'depends': ['portal','web','sale','website','website_sale','website_sale_wishlist','website_sale_comparison'],
     'data': [
         'security/ir.model.access.csv',
         #'views/views.xml',
@@ -18,9 +18,7 @@
         'views/forest_brand.xml',
     ],
     'assets': {
-        # 'web.assets_backend': [
-            
-        # ],
+        
         'web.assets_frontend': [
             'https://fonts.googleapis.com/css?family=Muli%3A400%2C600%2C700%7CPlayfair+Display%3A400%2C400i%7COpen+Sans%3A400%2C600%2C700&amp;subset=latin%2Clatin-ext&amp;ver=20190930',
             'https://demo4.drfuri.com/farmart2/wp-content/themes/farmart/css/farmartIcon.css?ver=1.0.0',
@@ -35,10 +33,12 @@
             'themeforest/static/src/css/magnific-popup.css',
             # 'themeforest/static/src/css/style_inspact.css',
             'themeforest/static/src/css/head.css',
-            'themeforest/static/src/css/elementor.css',
+            #'themeforest/static/src/css/elementor.css',
             #'themeforest/static/src/css/shop.css',
             # 'themeforest/static/src/js/plugins/html5shiv.min.js',
             # 'themeforest/static/src/js/plugins/respond.min.js',
+            'themeforest/static/src/js/magiczoomplus/magiczoomplus.css',
+            'themeforest/static/src/js/magiczoomplus/magiczoomplus.js',
             'themeforest/static/src/js/plugins/photoswipe.min.js',
             'themeforest/static/src/js/plugins/photoswipe-ui.min.js',
             'themeforest/static/src/js/imagesloaded.pkgd.min.js',
@@ -61,7 +61,8 @@
             'themeforest/static/src/xml/themforest.xml',
         ],
     },
-    'installable': True,
-    'application': True,
+   'application': False,
+   'auto_install': False,
+   'license': 'LGPL-3',
     
 }

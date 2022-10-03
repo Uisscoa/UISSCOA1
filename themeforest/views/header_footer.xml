@@ -307,6 +307,373 @@
                   </div>
                 </div>
               </div>
+              <div class="header-mobile">
+                <div class="header-items-mobile header-items-mobile--left">
+                    <div class="fm-menu-mobile farmart-menu-mobile">
+                        <div class="menu-box-title">
+                            <div class="fm-icon menu-icon menu-icon-js">
+                                <span class="farmart-svg-icon "><svg aria-hidden="false" role="img"
+                                      focusable="false" viewBox="0 0 1024 1024">
+                                      <path class="path1"
+                                              d="M896 307.2h-768c-14.138 0-25.6-11.462-25.6-25.6s11.462-25.6 25.6-25.6h768c14.139 0 25.6 11.462 25.6 25.6s-11.461 25.6-25.6 25.6z">
+                                      </path>
+                                      <path class="path2"
+                                              d="M896 563.2h-768c-14.138 0-25.6-11.461-25.6-25.6s11.462-25.6 25.6-25.6h768c14.139 0 25.6 11.461 25.6 25.6s-11.461 25.6-25.6 25.6z">
+                                      </path>
+                                      <path class="path3"
+                                              d="M896 819.2h-768c-14.138 0-25.6-11.461-25.6-25.6s11.462-25.6 25.6-25.6h768c14.139 0 25.6 11.461 25.6 25.6s-11.461 25.6-25.6 25.6z">
+                                      </path>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="menu-mobile-wrapper">
+                          <div class="primary-menu-mobile">
+                              <div class="menu-box">
+                                  <div class="top-content">
+                                      <span
+                                          class="farmart-svg-icon go-back close-canvas-mobile-panel"><svg
+                                                  aria-hidden="false" role="img" focusable="false"
+                                                  viewBox="0 0 32 32">
+                                                  <path
+                                                          d="M1.034 16.234l9.6-9.6c0.312-0.312 0.819-0.312 1.131 0s0.312 0.819 0 1.131l-8.234 8.234h26.069c0.442 0 0.8 0.358 0.8 0.8s-0.358 0.8-0.8 0.8h-26.069l8.234 8.234c0.312 0.312 0.312 0.819 0 1.131-0.156 0.156-0.361 0.234-0.566 0.234s-0.409-0.078-0.566-0.234l-9.6-9.6c-0.312-0.312-0.312-0.819 0-1.131z">
+                                                  </path>
+                                          </svg></span>
+                                      <div class="author">
+                                          <a href="https://demo4.drfuri.com/farmart2/my-account/">
+                                            <span
+                                                class="farmart-svg-icon "><svg
+                                                        aria-hidden="false" role="img"
+                                                        focusable="false"
+                                                        viewBox="0 0 1024 1024">
+                                                        <path
+                                                                d="M486.4 563.2c-155.275 0-281.6-126.325-281.6-281.6s126.325-281.6 281.6-281.6 281.6 126.325 281.6 281.6-126.325 281.6-281.6 281.6zM486.4 51.2c-127.043 0-230.4 103.357-230.4 230.4s103.357 230.4 230.4 230.4c127.042 0 230.4-103.357 230.4-230.4s-103.358-230.4-230.4-230.4z">
+                                                        </path>
+                                                        <path
+                                                                d="M896 1024h-819.2c-42.347 0-76.8-34.451-76.8-76.8 0-3.485 0.712-86.285 62.72-168.96 36.094-48.126 85.514-86.36 146.883-113.634 74.957-33.314 168.085-50.206 276.797-50.206 108.71 0 201.838 16.893 276.797 50.206 61.37 27.275 110.789 65.507 146.883 113.634 62.008 82.675 62.72 165.475 62.72 168.96 0 42.349-34.451 76.8-76.8 76.8zM486.4 665.6c-178.52 0-310.267 48.789-381 141.093-53.011 69.174-54.195 139.904-54.2 140.61 0 14.013 11.485 25.498 25.6 25.498h819.2c14.115 0 25.6-11.485 25.6-25.6-0.006-0.603-1.189-71.333-54.198-140.507-70.734-92.304-202.483-141.093-381.002-141.093z">
+                                                        </path>
+                                                </svg></span><span>Login &amp;
+                                                Register
+                                            </span>
+                                          </a>
+                                      </div>
+                                  </div>
+                                  <nav class="menu-content">
+                                      <ul id="menu-primary-menu-new-1"
+                                              class="fm-nav-mobile-menu menu">
+                                          <li id="menu-item-5716"
+                                                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5716">
+                                                  <a
+                                                          href="https://demo4.drfuri.com/farmart2/flash-sale/">Deals
+                                                          Today</a></li>
+                                          <li id="menu-item-5717"
+                                                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5717">
+                                                  <a
+                                                          href="https://demo4.drfuri.com/farmart2/product/hovis-farmhouse-soft-white-bread/">Special
+                                                          Prices</a></li>
+                                          <li id="menu-item-5718"
+                                                  class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-5718">
+                                                  <a
+                                                          href="https://demo4.drfuri.com/farmart2/product-category/fruits-vegetables/">Fresh<span
+                                                                  class="toggle-menu-children"><span
+                                                                          class="farmart-svg-icon"><svg
+                                                                                  viewBox="0 0 1024 1024">
+                                                                                  <path class="path1"
+                                                                                          d="M0 307.2c0-6.552 2.499-13.102 7.499-18.101 9.997-9.998 26.206-9.998 36.203 0l442.698 442.698 442.699-442.698c9.997-9.998 26.206-9.998 36.203 0s9.998 26.206 0 36.203l-460.8 460.8c-9.997 9.998-26.206 9.998-36.203 0l-460.8-460.8c-5-5-7.499-11.55-7.499-18.102z">
+                                                                                  </path>
+                                                                          </svg></span></span></a>
+                                                  <ul class="sub-menu">
+                                                          <li id="menu-item-5719"
+                                                                  class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-5719">
+                                                                  <a
+                                                                          href="https://demo4.drfuri.com/farmart2/product-category/fruits-vegetables/fruit/">Fruit</a>
+                                                          </li>
+                                                          <li id="menu-item-5720"
+                                                                  class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-5720">
+                                                                  <a
+                                                                          href="https://demo4.drfuri.com/farmart2/product-category/fruits-vegetables/meat-poultry/">Meat
+                                                                          &amp; Poultry</a></li>
+                                                          <li id="menu-item-5721"
+                                                                  class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-5721">
+                                                                  <a
+                                                                          href="https://demo4.drfuri.com/farmart2/product-category/fruits-vegetables/milk-butter-eggs/">Milk,
+                                                                          Butter &amp; Eggs</a>
+                                                          </li>
+                                                          <li id="menu-item-5722"
+                                                                  class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-5722">
+                                                                  <a
+                                                                          href="https://demo4.drfuri.com/farmart2/product-category/fruits-vegetables/vegetables/">Vegetables</a>
+                                                          </li>
+                                                  </ul>
+                                          </li>
+                                          <li id="menu-item-5723"
+                                                  class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-5723">
+                                                  <a
+                                                          href="https://demo4.drfuri.com/farmart2/product-category/frozen-seafoods/">Frozen<span
+                                                                  class="toggle-menu-children"><span
+                                                                          class="farmart-svg-icon"><svg
+                                                                                  viewBox="0 0 1024 1024">
+                                                                                  <path class="path1"
+                                                                                          d="M0 307.2c0-6.552 2.499-13.102 7.499-18.101 9.997-9.998 26.206-9.998 36.203 0l442.698 442.698 442.699-442.698c9.997-9.998 26.206-9.998 36.203 0s9.998 26.206 0 36.203l-460.8 460.8c-9.997 9.998-26.206 9.998-36.203 0l-460.8-460.8c-5-5-7.499-11.55-7.499-18.102z">
+                                                                                  </path>
+                                                                          </svg></span></span></a>
+                                                  <ul class="sub-menu">
+                                                          <li id="menu-item-5724"
+                                                                  class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-5724">
+                                                                  <a
+                                                                          href="https://demo4.drfuri.com/farmart2/product-category/frozen-seafoods/buitoni/">Buitoni</a>
+                                                          </li>
+                                                          <li id="menu-item-5725"
+                                                                  class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-5725">
+                                                                  <a
+                                                                          href="https://demo4.drfuri.com/farmart2/product-category/frozen-seafoods/buttercream/">Buttercream</a>
+                                                          </li>
+                                                          <li id="menu-item-5726"
+                                                                  class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-5726">
+                                                                  <a
+                                                                          href="https://demo4.drfuri.com/farmart2/product-category/frozen-seafoods/freshly/">Freshly</a>
+                                                          </li>
+                                                          <li id="menu-item-5727"
+                                                                  class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-5727">
+                                                                  <a
+                                                                          href="https://demo4.drfuri.com/farmart2/product-category/frozen-seafoods/hot-pockets/">Hot
+                                                                          Pockets</a></li>
+                                                  </ul>
+                                          </li>
+                                          <li id="menu-item-6315"
+                                                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-6315">
+                                                  <a
+                                                          href="https://demo4.drfuri.com/farmart2/">Demos</a>
+                                          </li>
+                                          <li id="menu-item-5700"
+                                                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children current-menu-item current_page_item menu-item-5700">
+                                                  <a href="https://demo4.drfuri.com/farmart2/shop/"
+                                                          aria-current="page">Shop<span
+                                                                  class="toggle-menu-children"><span
+                                                                          class="farmart-svg-icon"><svg
+                                                                                  viewBox="0 0 1024 1024">
+                                                                                  <path class="path1"
+                                                                                          d="M0 307.2c0-6.552 2.499-13.102 7.499-18.101 9.997-9.998 26.206-9.998 36.203 0l442.698 442.698 442.699-442.698c9.997-9.998 26.206-9.998 36.203 0s9.998 26.206 0 36.203l-460.8 460.8c-9.997 9.998-26.206 9.998-36.203 0l-460.8-460.8c-5-5-7.499-11.55-7.499-18.102z">
+                                                                                  </path>
+                                                                          </svg></span></span></a>
+                                                  <ul class="sub-menu">
+                                                          <li id="menu-item-5837"
+                                                                  class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item current_page_item menu-item-5837">
+                                                                  <a href="https://demo4.drfuri.com/farmart2/shop/"
+                                                                          aria-current="page">Shop</a>
+                                                          </li>
+                                                          <li id="menu-item-5835"
+                                                                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5835">
+                                                                  <a
+                                                                          href="https://demo4.drfuri.com/farmart2/cart/">Cart</a>
+                                                          </li>
+                                                          <li id="menu-item-5836"
+                                                                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5836">
+                                                                  <a
+                                                                          href="https://demo4.drfuri.com/farmart2/checkout/">Checkout</a>
+                                                          </li>
+                                                          <li id="menu-item-5838"
+                                                                  class="menu-item menu-item-type-post_type menu-item-object-product menu-item-5838">
+                                                                  <a
+                                                                          href="https://demo4.drfuri.com/farmart2/product/famart-farmhouse-soft-white/">Single
+                                                                          Product</a></li>
+                                                  </ul>
+                                          </li>
+                                          <li id="menu-item-5708"
+                                                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5708">
+                                                  <a
+                                                          href="https://demo4.drfuri.com/farmart2/blog/">Blog<span
+                                                                  class="toggle-menu-children"><span
+                                                                          class="farmart-svg-icon"><svg
+                                                                                  viewBox="0 0 1024 1024">
+                                                                                  <path class="path1"
+                                                                                          d="M0 307.2c0-6.552 2.499-13.102 7.499-18.101 9.997-9.998 26.206-9.998 36.203 0l442.698 442.698 442.699-442.698c9.997-9.998 26.206-9.998 36.203 0s9.998 26.206 0 36.203l-460.8 460.8c-9.997 9.998-26.206 9.998-36.203 0l-460.8-460.8c-5-5-7.499-11.55-7.499-18.102z">
+                                                                                  </path>
+                                                                          </svg></span></span></a>
+                                                  <ul class="sub-menu">
+                                                          <li id="menu-item-5709"
+                                                                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5709">
+                                                                  <a
+                                                                          href="https://demo4.drfuri.com/farmart2/blog/">Blog
+                                                                          Default</a></li>
+                                                          <li id="menu-item-5710"
+                                                                  class="hidden menu-item menu-item-type-custom menu-item-object-custom menu-item-5710">
+                                                                  <a
+                                                                          href="https://demo4.drfuri.com/farmart2/blog/?blog_style=small_thumb">Blog
+                                                                          Small Thumbnail</a></li>
+                                                          <li id="menu-item-5711"
+                                                                  class="hidden menu-item menu-item-type-custom menu-item-object-custom menu-item-5711">
+                                                                  <a
+                                                                          href="https://demo4.drfuri.com/farmart2/blog/?blog_style=grid">Blog
+                                                                          Grid</a></li>
+                                                          <li id="menu-item-5712"
+                                                                  class="hidden menu-item menu-item-type-custom menu-item-object-custom menu-item-5712">
+                                                                  <a
+                                                                          href="https://demo4.drfuri.com/farmart2/blog/?blog_style=list">Blog
+                                                                          Listing</a></li>
+                                                          <li id="menu-item-5713"
+                                                                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5713">
+                                                                  <a
+                                                                          href="https://demo4.drfuri.com/farmart2/2019/09/30/forget-food-10-reasons-why-you-no-longer-need-it-2/">Single
+                                                                          Post</a></li>
+                                                  </ul>
+                                          </li>
+                                          <li id="menu-item-5701"
+                                                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5701">
+                                                  <a>Pages<span class="toggle-menu-children"><span
+                                                                          class="farmart-svg-icon"><svg
+                                                                                  viewBox="0 0 1024 1024">
+                                                                                  <path class="path1"
+                                                                                          d="M0 307.2c0-6.552 2.499-13.102 7.499-18.101 9.997-9.998 26.206-9.998 36.203 0l442.698 442.698 442.699-442.698c9.997-9.998 26.206-9.998 36.203 0s9.998 26.206 0 36.203l-460.8 460.8c-9.997 9.998-26.206 9.998-36.203 0l-460.8-460.8c-5-5-7.499-11.55-7.499-18.102z">
+                                                                                  </path>
+                                                                          </svg></span></span></a>
+                                                  <ul class="sub-menu">
+                                                          <li id="menu-item-5702"
+                                                                  class="hidden menu-item menu-item-type-post_type menu-item-object-page menu-item-5702">
+                                                                  <a
+                                                                          href="https://demo4.drfuri.com/farmart2/become-a-vendor/">Become
+                                                                          A Vendor</a></li>
+                                                          <li id="menu-item-5912"
+                                                                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5912">
+                                                                  <a
+                                                                          href="https://demo4.drfuri.com/farmart2/about-us-new/">About
+                                                                          Us</a></li>
+                                                          <li id="menu-item-5911"
+                                                                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5911">
+                                                                  <a
+                                                                          href="https://demo4.drfuri.com/farmart2/contact-us-new/">Contact
+                                                                          Us</a></li>
+                                                          <li id="menu-item-5705"
+                                                                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5705">
+                                                                  <a
+                                                                          href="https://demo4.drfuri.com/farmart2/faqs/">FAQs</a>
+                                                          </li>
+                                                          <li id="menu-item-5706"
+                                                                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5706">
+                                                                  <a
+                                                                          href="https://demo4.drfuri.com/farmart2/404-page">Page
+                                                                          404</a></li>
+                                                          <li id="menu-item-5707"
+                                                                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5707">
+                                                                  <a
+                                                                          href="https://demo4.drfuri.com/farmart2/coming-soon/">Coming
+                                                                          Soon</a></li>
+                                                  </ul>
+                                          </li>
+                                          <li id="menu-item-5714"
+                                                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5714">
+                                                  <a
+                                                          href="https://demo4.drfuri.com/farmart2/product-brand/envato/">Brand</a>
+                                          </li>
+                                      </ul>
+                                  </nav>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="fm-off-canvas-layer"></div>
+                    </div>
+                </div>
+                <div class="header-items-mobile header-items-mobile--center">
+                    <div class="site-branding">
+                        <a href="https://demo4.drfuri.com/farmart2/" class="logo logo-svg">
+                                <img src="https://demo4.drfuri.com/farmart2/wp-content/themes/farmart/images/logo.svg"
+                                        alt="Farmart" class="logo-dark lazyloaded" width="155"
+                                        data-ll-status="loaded"/><noscript><img
+                                                src="https://demo4.drfuri.com/farmart2/wp-content/themes/farmart/images/logo.svg"
+                                                alt="Farmart" class="logo-dark" width="155"/></noscript>
+                        </a>
+                        <p class="site-title">
+                                <a href="https://demo4.drfuri.com/farmart2/" rel="home">Farmart</a>
+                        </p>
+                        <p class="site-description">Just another DrFuri Demo 4 site</p>
+                    </div>
+                </div>
+                <div class="header-items-mobile header-items-mobile--right">
+                    <div class="header-element header-element--cart">
+                      <a class="cart-contents" href="https://demo4.drfuri.com/farmart2/cart/" data-toggle="modal"
+                              data-target="cart-panel">
+                        <span class="cart-content">
+                            <span class="cart-icon">
+                              <span class="mini-item-counter fm-mini-cart-counter">1</span>
+                              <span class="farmart-svg-icon "><svg aria-hidden="false" role="img"
+                                          focusable="false" viewBox="0 0 1024 1024">
+                                          <path
+                                                  d="M409.6 1024c-56.464 0-102.4-45.936-102.4-102.4s45.936-102.4 102.4-102.4 102.4 45.936 102.4 102.4-45.936 102.4-102.4 102.4zM409.6 870.4c-28.232 0-51.2 22.968-51.2 51.2s22.968 51.2 51.2 51.2 51.2-22.968 51.2-51.2-22.968-51.2-51.2-51.2z">
+                                          </path>
+                                          <path
+                                                  d="M768 1024c-56.464 0-102.4-45.936-102.4-102.4s45.936-102.4 102.4-102.4 102.4 45.936 102.4 102.4-45.936 102.4-102.4 102.4zM768 870.4c-28.232 0-51.2 22.968-51.2 51.2s22.968 51.2 51.2 51.2 51.2-22.968 51.2-51.2-22.968-51.2-51.2-51.2z">
+                                          </path>
+                                          <path
+                                                  d="M898.021 228.688c-12.859-15.181-32.258-23.888-53.221-23.888h-626.846l-5.085-30.506c-6.72-40.315-43.998-71.894-84.869-71.894h-51.2c-14.138 0-25.6 11.462-25.6 25.6s11.462 25.6 25.6 25.6h51.2c15.722 0 31.781 13.603 34.366 29.112l85.566 513.395c6.718 40.314 43.997 71.893 84.867 71.893h512c14.139 0 25.6-11.461 25.6-25.6s-11.461-25.6-25.6-25.6h-512c-15.722 0-31.781-13.603-34.366-29.11l-12.63-75.784 510.206-44.366c39.69-3.451 75.907-36.938 82.458-76.234l34.366-206.194c3.448-20.677-1.952-41.243-14.813-56.424zM862.331 276.694l-34.366 206.194c-2.699 16.186-20.043 32.221-36.39 33.645l-514.214 44.714-50.874-305.246h618.314c5.968 0 10.995 2.054 14.155 5.782 3.157 3.73 4.357 9.024 3.376 14.912z">
+                                          </path>
+                                  </svg>
+                              </span> 
+                            </span>
+                        </span>
+                      </a>
+                    </div>
+
+                    <div class="fm-search-form fm-search-form--mobile fm-search-form--mobile-right search-panel">
+                      <a href="#" class="open-search-panel">
+                        <span class="farmart-svg-icon ">
+                            <svg aria-hidden="false" role="img" focusable="false"
+                                  viewBox="0 0 32 32">
+                                  <path
+                                        d="M30.19 30.659l-9.509-10.374c2.143-2.242 3.32-5.173 3.32-8.286 0-3.205-1.248-6.219-3.515-8.485s-5.28-3.515-8.485-3.515-6.219 1.248-8.485 3.515-3.515 5.28-3.515 8.485 1.248 6.219 3.515 8.485 5.28 3.515 8.485 3.515c2.761 0 5.38-0.927 7.501-2.633l9.509 10.373c0.158 0.172 0.374 0.259 0.59 0.259 0.193 0 0.387-0.070 0.54-0.21 0.326-0.299 0.348-0.805 0.049-1.13zM1.6 12c0-5.735 4.665-10.4 10.4-10.4s10.4 4.665 10.4 10.4-4.665 10.4-10.4 10.4-10.4-4.665-10.4-10.4z">
+                                  </path>
+                          </svg>
+                        </span> 
+                      </a>
+                      <div class="search-panel-content">
+                        <div class="top-content">
+                            <form method="get" class="form-search" action="https://demo4.drfuri.com/farmart2/">
+                                <div class="search-inner-content">
+                                  <div class="text-search">
+                                      <div class="search-wrapper">
+                                          <input type="text" name="s" class="search-field"
+                                                  autocomplete="off"
+                                                  placeholder="I’m searching for..."/>
+                                          <input type="hidden" name="post_type"
+                                                  value="product"/>
+                                          <a href="#" class="close-search-results"><span
+                                                          class="farmart-svg-icon "><svg
+                                                                  aria-hidden="false"
+                                                                  role="img"
+                                                                  focusable="false"
+                                                                  viewBox="0 0 32 32">
+                                                                  <path
+                                                                          d="M28 32h-25.6c-1.323 0-2.4-1.077-2.4-2.4v-25.6c0-1.323 1.077-2.4 2.4-2.4h25.6c1.323 0 2.4 1.077 2.4 2.4v25.6c0 1.323-1.077 2.4-2.4 2.4zM2.4 3.2c-0.441 0-0.8 0.359-0.8 0.8v25.6c0 0.441 0.359 0.8 0.8 0.8h25.6c0.441 0 0.8-0.359 0.8-0.8v-25.6c0-0.441-0.359-0.8-0.8-0.8h-25.6zM22.931 22.602l-6.527-5.802 6.527-5.802c0.33-0.294 0.36-0.799 0.066-1.129s-0.799-0.36-1.129-0.066l-6.668 5.928-6.668-5.928c-0.33-0.293-0.836-0.264-1.129 0.066s-0.264 0.836 0.066 1.129l6.527 5.802-6.527 5.802c-0.33 0.294-0.36 0.799-0.066 1.129 0.158 0.178 0.378 0.268 0.598 0.268 0.189 0 0.379-0.067 0.531-0.202l6.669-5.928 6.668 5.928c0.152 0.135 0.342 0.202 0.531 0.202 0.221 0 0.44-0.091 0.598-0.268 0.294-0.33 0.264-0.836-0.066-1.129z">
+                                                                  </path>
+                                                          </svg></span> </a>
+                                          <button type="submit">
+                                            <span class="farmart-svg-icon "><svg
+                                                        aria-hidden="false"
+                                                        role="img"
+                                                        focusable="false"
+                                                        viewBox="0 0 32 32">
+                                                        <path
+                                                              d="M30.19 30.659l-9.509-10.374c2.143-2.242 3.32-5.173 3.32-8.286 0-3.205-1.248-6.219-3.515-8.485s-5.28-3.515-8.485-3.515-6.219 1.248-8.485 3.515-3.515 5.28-3.515 8.485 1.248 6.219 3.515 8.485 5.28 3.515 8.485 3.515c2.761 0 5.38-0.927 7.501-2.633l9.509 10.373c0.158 0.172 0.374 0.259 0.59 0.259 0.193 0 0.387-0.070 0.54-0.21 0.326-0.299 0.348-0.805 0.049-1.13zM1.6 12c0-5.735 4.665-10.4 10.4-10.4s10.4 4.665 10.4 10.4-4.665 10.4-10.4 10.4-10.4-4.665-10.4-10.4z">
+                                                      </path>
+                                                </svg>
+                                            </span>
+                                          </button>
+                                      </div>
+                                      <a href="#" class="close-search-panel">Cancel</a>
+                                  </div>
+                                  <div class="box-search-results">
+                                      <div class="field-notice"><span
+                                                      class="count-results"></span>Search
+                                              results</div>
+                                      <div class="search-results woocommerce"></div>
+                                  </div>
+                                </div>
+                            </form>
+                        </div>
+                      </div>
+                      <div class="fm-off-canvas-layer"></div>
+                    </div>
+                </div>
+              </div>
                <!-- <div class="top-header">
                     <div class="container">
                         <div class="row align-items-center">

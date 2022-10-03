@@ -8033,6 +8033,9 @@ p.woocommerce-notice--success {
 }
 
 @media (max-width: 991px) {
+	.ul.products li.product {
+		border: 1px solid #c9c9c9;
+	}
 	.primary-sidebar.catalog-sidebar {
 		position: fixed;
 		top: 0;
