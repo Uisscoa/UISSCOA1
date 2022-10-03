@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<templates>
+	<t t-name="compareqweb">
+		<p>RRRRRRRRRRRRRRRRRRRRRRRRRRRRRR</p>
+		<t t-esc='data.products'/>
+        <t t-foreach="data.products" t-as="pro">
+        	<p><t t-esc='pro'/></p>
+        </t>
+    </t>
+</templates>

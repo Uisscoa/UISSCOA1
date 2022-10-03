@@ -1,0 +1,1779 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+	<template id="shop_list_page" inherit_id="website_sale.products" name="Products">
+    	<xpath expr="//div[@id='wrap']" position="replace">
+            <t t-set="body_classname" t-value="'archive post-type-archive post-type-archive-product wp-embed-responsive theme-farmart woocommerce-shop woocommerce woocommerce-page woocommerce-js header-v1 hfeed sidebar-content fm-preloader fm-show-qty woocommerce-active catalog-view-grid fm-catalog-page catalog-nav-numeric-short catalog-standard catalog-sidebar-content catalog-ajax-filter farmart-not-login elementor-default elementor-kit-13 dokan-theme-farmart' if layout_mode == 'grid' else 'archive post-type-archive post-type-archive-product wp-embed-responsive theme-farmart woocommerce-shop woocommerce woocommerce-page woocommerce-js header-v1 hfeed sidebar-content fm-preloader fm-show-qty woocommerce-active catalog-view-list fm-catalog-page catalog-nav-numeric-short catalog-standard catalog-sidebar-content catalog-ajax-filter farmart-not-login elementor-default elementor-kit-13 dokan-theme-farmart'"/>
+    		<div id="wrap" class="js_sale oe_website_sale">
+    			<div id="catalog-banners-carousel" class="catalog-banners-carousel banner-header-layout-3 banner-has-bg">
+			        <div class="farmart-container">
+		                <ul id="fm-catalog-banners" class="fm-catalog-banners-carousel slick-initialized slick-slider slick-dotted" data-autoplay="0">
+	                        <div class="slick-list draggable">
+	                            <div class="slick-track" style="opacity: 1; width: 1224px; transform: translate3d(0px, 0px, 0px);">
+                                        <li class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" style="width: 1224px;" tabindex="0" role="tabpanel" id="slick-slide00" aria-describedby="slick-slide-control00">
+                                        	<img src="https://demo4.drfuri.com/farmart2/wp-content/uploads/sites/11/2021/05/homepage-new-shop-banner.png"
+                                                        alt="" class="lazyloaded" data-ll-status="loaded"/>
+                                            <noscript><img src="https://demo4.drfuri.com/farmart2/wp-content/uploads/sites/11/2021/05/homepage-new-shop-banner.png"
+                                                            alt=""/>
+                                            </noscript>
+                                        </li>
+	                            </div>
+	                        </div>
+	                        <ul class="slick-dots" role="tablist">
+	                            <li class="slick-active" role="presentation">
+	                            	<button type="button" role="tab" id="slick-slide-control00" aria-controls="slick-slide00"
+	                                aria-label="1 of 1" tabindex="0" aria-selected="true">1</button>
+	                            </li>
+	                        </ul>
+		                </ul>
+			        </div>
+			    </div>
+			    <div id="content" class="site-content  no-top-spacing">
+			        <div class="farmart-container">
+			            <div class="row">
+			            	<div class="fm-catalog-header__title col-md-12 hidden-lg hidden-md">Shop</div>
+			            	<div class="fm-catalog-header col-md-12">
+			            		<div class="fm-catalog-header__left">
+                                        <h1 class="fm-catalog-header__title hidden-sm hidden-xs">Shop</h1>
+                                        <a href="#" class="hidden-lg hidden-md fm-filter-mobile"
+                                                id="fm-filter-mobile">
+                                            <span class="farmart-svg-icon ">
+                                            	<svg aria-hidden="false" role="img" focusable="false" viewBox="0 0 32 32">
+                                                    <path
+                                                            d="M4 32c-0.442 0-0.8-0.358-0.8-0.8v-12.8c0-0.442 0.358-0.8 0.8-0.8s0.8 0.358 0.8 0.8v12.8c0 0.442-0.358 0.8-0.8 0.8zM4 9.6c-0.442 0-0.8-0.358-0.8-0.8v-8c0-0.442 0.358-0.8 0.8-0.8s0.8 0.358 0.8 0.8v8c0 0.442-0.358 0.8-0.8 0.8zM5.6 16h-3.2c-1.323 0-2.4-1.077-2.4-2.4s1.077-2.4 2.4-2.4h3.2c1.323 0 2.4 1.077 2.4 2.4s-1.077 2.4-2.4 2.4zM2.4 12.8c-0.441 0-0.8 0.359-0.8 0.8s0.359 0.8 0.8 0.8h3.2c0.441 0 0.8-0.359 0.8-0.8s-0.359-0.8-0.8-0.8h-3.2zM15.2 32c-0.442 0-0.8-0.358-0.8-0.8v-6.4c0-0.442 0.358-0.8 0.8-0.8s0.8 0.358 0.8 0.8v6.4c0 0.442-0.358 0.8-0.8 0.8zM15.2 16c-0.442 0-0.8-0.358-0.8-0.8v-14.4c0-0.442 0.358-0.8 0.8-0.8s0.8 0.358 0.8 0.8v14.4c0 0.442-0.358 0.8-0.8 0.8zM16.8 22.4h-3.2c-1.323 0-2.4-1.077-2.4-2.4s1.077-2.4 2.4-2.4h3.2c1.323 0 2.4 1.077 2.4 2.4s-1.077 2.4-2.4 2.4zM13.6 19.2c-0.441 0-0.8 0.359-0.8 0.8s0.359 0.8 0.8 0.8h3.2c0.441 0 0.8-0.359 0.8-0.8s-0.359-0.8-0.8-0.8h-3.2zM26.4 32c-0.442 0-0.8-0.358-0.8-0.8v-16c0-0.442 0.358-0.8 0.8-0.8s0.8 0.358 0.8 0.8v16c0 0.442-0.358 0.8-0.8 0.8zM26.4 6.4c-0.442 0-0.8-0.358-0.8-0.8v-4.8c0-0.442 0.358-0.8 0.8-0.8s0.8 0.358 0.8 0.8v4.8c0 0.442-0.358 0.8-0.8 0.8zM28 12.8h-3.2c-1.323 0-2.4-1.077-2.4-2.4s1.077-2.4 2.4-2.4h3.2c1.323 0 2.4 1.077 2.4 2.4s-1.077 2.4-2.4 2.4zM24.8 9.6c-0.441 0-0.8 0.359-0.8 0.8s0.359 0.8 0.8 0.8h3.2c0.441 0 0.8-0.359 0.8-0.8s-0.359-0.8-0.8-0.8h-3.2z">
+                                                    </path>
+                                                </svg>
+                                            </span>
+                                            <span>Filter</span>
+                                        </a>
+                                </div>
+                                <div class="fm-catalog-header__right catalog-toolbar">
+                                    <div class="fm-catalog-ordering">
+                                    	<span class="text">Sort by:</span>
+                                        <ul class="woocommerce-ordering">
+                                            <li class="current"><span> Default sorting</span>
+                                                    <ul>
+                                                            <li><a href="https://demo4.drfuri.com/farmart2/shop/?orderby=menu_order"
+                                                                            class="active">Default
+                                                                            sorting</a></li>
+                                                            <li><a href="https://demo4.drfuri.com/farmart2/shop/?orderby=popularity"
+                                                                            class="">Sort by popularity</a>
+                                                            </li>
+                                                            <li><a href="https://demo4.drfuri.com/farmart2/shop/?orderby=rating"
+                                                                            class="">Sort by average
+                                                                            rating</a></li>
+                                                            <li><a href="https://demo4.drfuri.com/farmart2/shop/?orderby=date"
+                                                                            class="">Sort by latest</a></li>
+                                                            <li><a href="https://demo4.drfuri.com/farmart2/shop/?orderby=price"
+                                                                            class="">Sort by price: low to
+                                                                            high</a></li>
+                                                            <li><a href="https://demo4.drfuri.com/farmart2/shop/?orderby=price-desc"
+                                                                            class="">Sort by price: high to
+                                                                            low</a></li>
+                                                    </ul>
+                                                    <span class="farmart-svg-icon "><svg aria-hidden="false"
+                                                                    role="img" focusable="false"
+                                                                    viewBox="0 0 32 32">
+                                                                    <path
+                                                                            d="M0 9.6c0-0.205 0.078-0.409 0.234-0.566 0.312-0.312 0.819-0.312 1.131 0l13.834 13.834 13.834-13.834c0.312-0.312 0.819-0.312 1.131 0s0.312 0.819 0 1.131l-14.4 14.4c-0.312 0.312-0.819 0.312-1.131 0l-14.4-14.4c-0.156-0.156-0.234-0.361-0.234-0.566z">
+                                                                    </path>
+                                                            </svg></span>
+                                            </li>
+                                            <li class="cancel-ordering">
+                                                    <a href="#" class="fm-cancel-order">Cancel</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="shop-view">
+                                        <div id="fm-shop-view" class="fm-shop-view">
+                                            <div class="text">View</div>
+                                                <div class="shop-view__icon">
+                                                    <a href="#" t-attf-class="grid {{'current' if layout_mode == 'grid' else ''}}" data-view="grid" data-type="grid">
+                                                        <span class="farmart-svg-icon "><svg aria-hidden="false" role="img"
+                                                        focusable="false" viewBox="0 0 32 32">
+                                                        <path d="M5.6 30.4h-3.2c-1.323 0-2.4-1.077-2.4-2.4v-3.2c0-1.323 1.077-2.4 2.4-2.4h3.2c1.323 0 2.4 1.077 2.4 2.4v3.2c0 1.323-1.077 2.4-2.4 2.4zM2.4 24c-0.441 0-0.8 0.359-0.8 0.8v3.2c0 0.441 0.359 0.8 0.8 0.8h3.2c0.441 0 0.8-0.359 0.8-0.8v-3.2c0-0.441-0.359-0.8-0.8-0.8h-3.2zM16.8 30.4h-3.2c-1.323 0-2.4-1.077-2.4-2.4v-3.2c0-1.323 1.077-2.4 2.4-2.4h3.2c1.323 0 2.4 1.077 2.4 2.4v3.2c0 1.323-1.077 2.4-2.4 2.4zM13.6 24c-0.441 0-0.8 0.359-0.8 0.8v3.2c0 0.441 0.359 0.8 0.8 0.8h3.2c0.441 0 0.8-0.359 0.8-0.8v-3.2c0-0.441-0.359-0.8-0.8-0.8h-3.2zM28 30.4h-3.2c-1.323 0-2.4-1.077-2.4-2.4v-3.2c0-1.323 1.077-2.4 2.4-2.4h3.2c1.323 0 2.4 1.077 2.4 2.4v3.2c0 1.323-1.077 2.4-2.4 2.4zM24.8 24c-0.441 0-0.8 0.359-0.8 0.8v3.2c0 0.441 0.359 0.8 0.8 0.8h3.2c0.441 0 0.8-0.359 0.8-0.8v-3.2c0-0.441-0.359-0.8-0.8-0.8h-3.2zM5.6 19.2h-3.2c-1.323 0-2.4-1.077-2.4-2.4v-3.2c0-1.323 1.077-2.4 2.4-2.4h3.2c1.323 0 2.4 1.077 2.4 2.4v3.2c0 1.323-1.077 2.4-2.4 2.4zM2.4 12.8c-0.441 0-0.8 0.359-0.8 0.8v3.2c0 0.441 0.359 0.8 0.8 0.8h3.2c0.441 0 0.8-0.359 0.8-0.8v-3.2c0-0.441-0.359-0.8-0.8-0.8h-3.2zM16.8 19.2h-3.2c-1.323 0-2.4-1.077-2.4-2.4v-3.2c0-1.323 1.077-2.4 2.4-2.4h3.2c1.323 0 2.4 1.077 2.4 2.4v3.2c0 1.323-1.077 2.4-2.4 2.4zM13.6 12.8c-0.441 0-0.8 0.359-0.8 0.8v3.2c0 0.441 0.359 0.8 0.8 0.8h3.2c0.441 0 0.8-0.359 0.8-0.8v-3.2c0-0.441-0.359-0.8-0.8-0.8h-3.2zM28 19.2h-3.2c-1.323 0-2.4-1.077-2.4-2.4v-3.2c0-1.323 1.077-2.4 2.4-2.4h3.2c1.323 0 2.4 1.077 2.4 2.4v3.2c0 1.323-1.077 2.4-2.4 2.4zM24.8 12.8c-0.441 0-0.8 0.359-0.8 0.8v3.2c0 0.441 0.359 0.8 0.8 0.8h3.2c0.441 0 0.8-0.359 0.8-0.8v-3.2c0-0.441-0.359-0.8-0.8-0.8h-3.2zM5.6 8h-3.2c-1.323 0-2.4-1.077-2.4-2.4v-3.2c0-1.323 1.077-2.4 2.4-2.4h3.2c1.323 0 2.4 1.077 2.4 2.4v3.2c0 1.323-1.077 2.4-2.4 2.4zM2.4 1.6c-0.441 0-0.8 0.359-0.8 0.8v3.2c0 0.441 0.359 0.8 0.8 0.8h3.2c0.441 0 0.8-0.359 0.8-0.8v-3.2c0-0.441-0.359-0.8-0.8-0.8h-3.2zM16.8 8h-3.2c-1.323 0-2.4-1.077-2.4-2.4v-3.2c0-1.323 1.077-2.4 2.4-2.4h3.2c1.323 0 2.4 1.077 2.4 2.4v3.2c0 1.323-1.077 2.4-2.4 2.4zM13.6 1.6c-0.441 0-0.8 0.359-0.8 0.8v3.2c0 0.441 0.359 0.8 0.8 0.8h3.2c0.441 0 0.8-0.359 0.8-0.8v-3.2c0-0.441-0.359-0.8-0.8-0.8h-3.2zM28 8h-3.2c-1.323 0-2.4-1.077-2.4-2.4v-3.2c0-1.323 1.077-2.4 2.4-2.4h3.2c1.323 0 2.4 1.077 2.4 2.4v3.2c0 1.323-1.077 2.4-2.4 2.4zM24.8 1.6c-0.441 0-0.8 0.359-0.8 0.8v3.2c0 0.441 0.359 0.8 0.8 0.8h3.2c0.441 0 0.8-0.359 0.8-0.8v-3.2c0-0.441-0.359-0.8-0.8-0.8h-3.2z">
+                                                        </path>
+                                                        </svg>
+                                                        </span>
+                                                    </a>
+                                                    <a href="#" t-attf-class="list {{'current' if layout_mode == 'list' else ''}}" data-view="list" data-type="list">
+                                                        <span class="farmart-svg-icon "><svg aria-hidden="false" role="img"
+                                                        focusable="false" viewBox="0 0 1024 1024">
+                                                            <path class="path1" d="M896 307.2h-768c-14.138 0-25.6-11.462-25.6-25.6s11.462-25.6 25.6-25.6h768c14.139 0 25.6 11.462 25.6 25.6s-11.461 25.6-25.6 25.6z">
+                                                            </path>
+                                                            <path class="path2"
+                                                            d="M896 563.2h-768c-14.138 0-25.6-11.461-25.6-25.6s11.462-25.6 25.6-25.6h768c14.139 0 25.6 11.461 25.6 25.6s-11.461 25.6-25.6 25.6z">
+                                                            </path>
+                                                            <path class="path3"
+                                                            d="M896 819.2h-768c-14.138 0-25.6-11.461-25.6-25.6s11.462-25.6 25.6-25.6h768c14.139 0 25.6 11.461 25.6 25.6s-11.461 25.6-25.6 25.6z">
+                                                            </path>
+                                                            </svg>
+                                                        </span>
+                                                    </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+			            	</div>
+			            	<div id="primary" class="content-area ">
+			            		<main id="main" class="site-main">
+			            			<header class="woocommerce-products-header">
+                					</header>
+                					<div class="woocommerce-notices-wrapper"></div>
+                					<div id="fm-shop-content" class="fm-shop-content">
+                						<div class="fm-catalog-loading">
+				                                <span class="fm-loader"></span>
+				                        </div>
+				                        <ul class="products columns-5">
+				                        	 <t t-if="bins">
+		                                        <t t-foreach="bins" t-as="tr_product">
+		                                            <t t-foreach="tr_product" t-as="td_product">
+		                                                <t t-if="td_product">
+		                                                    <t t-set="product" t-value="td_product['product']" />
+		                                                        <t t-call="website_sale.products_item">
+		                                                           <t t-set="product_image_big" t-value="td_product['x'] + td_product['y'] &gt; 2"/>
+		                                                        </t>
+		                                                </t>
+		                                            </t>
+		                                        </t>        
+				                            </t>
+				                        </ul>
+                					</div>
+			            		</main>
+                                <!-- model dialog start -->
+                                <div class="modal fade" id="comparemodel" tabindex="-1" role="dialog" aria-labelledby="comparemodel" aria-hidden="false">
+                                  <div class="" role="document">
+                                    <div class="modal-content container">
+                                        <a href="#" class="close-modal" style='padding-top:2px;'>
+                                            <span class="farmart-svg-icon" style='float: right;border: 2px solid;'><svg aria-hidden="false" role="img" focusable="false"
+                                                            viewBox="0 0 32 32">
+                                                <path
+                                                        d="M17.131 16.8l9.034-9.034c0.312-0.312 0.312-0.819 0-1.131s-0.819-0.312-1.131 0l-9.034 9.034-9.034-9.034c-0.312-0.312-0.819-0.312-1.131 0s-0.312 0.819 0 1.131l9.034 9.034-9.034 9.034c-0.312 0.312-0.312 0.819 0 1.131 0.156 0.156 0.361 0.234 0.566 0.234s0.409-0.078 0.566-0.234l9.034-9.034 9.034 9.034c0.156 0.156 0.361 0.234 0.566 0.234s0.409-0.078 0.566-0.234c0.312-0.312 0.312-0.819 0-1.131l-9.034-9.034z">
+                                                </path>
+                                                </svg>
+                                            </span> 
+                                        </a>
+                                      
+                                      <div class="modal-body compare_body">
+                                        ...
+                                      </div>
+                                     <!--  <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                      </div> -->
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="modal fade" id="productdetailmodel" tabindex="-1" role="dialog" aria-labelledby="productdetailmodel" aria-hidden="false">
+                                  <div class="modal_product" role="document">
+                                    
+                                  </div>
+                                </div>
+                                <!-- model dialog end -->
+			            	</div>
+			            	<aside id="primary-sidebar" class="widget-area primary-sidebar catalog-sidebar">
+                                <div class="backdrop"></div>
+                                <div class="catalog-sidebar--inner side-left">
+                                        <div class="fm-catalog-close-sidebar hidden-lg hidden-md" id="fm-catalog-close-sidebar">
+                                                <h2>Filter Products</h2> <a href="#" class="close-sidebar"><span class="farmart-svg-icon "><svg
+                                                                        aria-hidden="false" role="img" focusable="false" viewBox="0 0 1024 1024">
+                                                                        <path class="path1"
+                                                                                d="M990.901 519.499l-307.2-307.2c-9.997-9.997-26.206-9.997-36.203 0-9.998 9.998-9.998 26.206 0 36.205l263.498 263.496h-834.195c-14.138 0-25.6 11.461-25.6 25.6s11.462 25.6 25.6 25.6h834.195l-263.496 263.499c-9.998 9.997-9.998 26.206 0 36.203 4.998 4.998 11.549 7.498 18.101 7.498s13.102-2.499 18.101-7.499l307.2-307.2c9.998-9.997 9.998-26.205 0-36.202z">
+                                                                        </path>
+                                                                </svg></span></a>
+                                        </div>
+                                        <div class="fm-catalog-filter-sidebar-content">
+                                                <div id="fm_product_categories-4" class="widget woocommerce fm_widget_product_categories">
+                                                        <h2 class="widget-title">All Categories</h2>
+                                                        <ul class="product-categories fm-widget-vertical-item show-children-only">
+                                                            <t t-foreach="categories" t-as="c">
+                                                                <li class="cat-item cat-item-45">
+                                                                    <t t-if='c.child_id'>
+                                                                        <span class="cat-menu-close farmart-svg-icon">
+                                                                            <svg viewBox="0 0 32 32">
+                                                                                <path
+                                                                                        d="M0 9.6c0-0.205 0.078-0.409 0.234-0.566 0.312-0.312 0.819-0.312 1.131 0l13.834 13.834 13.834-13.834c0.312-0.312 0.819-0.312 1.131 0s0.312 0.819 0 1.131l-14.4 14.4c-0.312 0.312-0.819 0.312-1.131 0l-14.4-14.4c-0.156-0.156-0.234-0.361-0.234-0.566z">
+                                                                                </path>
+                                                                            </svg>
+                                                                        </span>
+                                                                    </t>
+                                                                    <a t-att-href="keep('/shop/category/' + slug(c), category=0)"><t t-esc='c.name'/> <span class="count"><t t-esc='len(c.product_tmpl_ids)'/></span>
+                                                                    </a>
+                                                                    <t t-if='c.child_id'>
+                                                                        <ul class="children" style="display: none;">
+                                                                            <t t-foreach="c.child_id" t-as="cc">
+                                                                                <li class="cat-item cat-item-47">
+                                                                                    <a t-att-href="keep('/shop/category/' + slug(cc), category=0)"><t t-esc='cc.name'/>
+                                                                                    <span class="count"><t t-esc='len(cc.product_tmpl_ids)'/></span></a>
+                                                                                </li>
+                                                                            </t>
+                                                                        </ul>
+                                                                    </t>
+                                                                </li>
+                                                            </t>
+                                                        </ul>
+                                                </div>
+                                                <div id="farmart-price-filter-list-2"
+                                                        class="widget widget_text farmart-price-filter-list fm-widget-vertical-item">
+                                                        <h2 class="widget-title">Price Range</h2>
+                                                        <div class="textwidget">
+                                                                <ul> 
+                                                                    <t t-foreach="price_filter" t-as="pf">  
+                                                                        <li><a class="" t-attf-href="?min_price={{pf['min']}}&amp;max_price={{pf['max']}}">
+                                                                            <span class="woocommerce-Price-amount amount">
+                                                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span><t t-esc='pf["min"]'/></bdi></span>
+                                                                                - <span class="woocommerce-Price-amount amount">
+                                                                                <bdi><span class="woocommerce-Price-currencySymbol">$</span><t t-esc='pf["max"]'/></bdi></span></a>
+                                                                        </li>
+                                                                    </t>
+                                                                    <li><a class="" t-attf-href="?min_price={{price_filter[-1]['max']}}&amp;max_price={{max_price}}"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span><t t-esc='price_filter[-1]["max"]'/></bdi></span>+</a>
+                                                                        </li>
+                                                                </ul>
+                                                        </div>
+                                                </div>
+                                                <div id="fm_product_brands-3"
+                                                        class="widget woocommerce fm-widget-layered-nav fm-widget-layered-nav-brand woocommerce-widget-layered-nav">
+                                                        <h2 class="widget-title">Brands</h2>
+                                                        <div class="widget-wrapper fm-widget-vertical-item fm-display-vertical">
+                                                                <div class="search_layered_nav"><input type="text" class="fm-input-search-nav"/>
+                                                                </div>
+                                                                <ul class="woocommerce-widget-layered-nav-list " style="">
+                                                                    <t t-foreach="brands" t-as="br">
+                                                                        <li class="woocommerce-widget-layered-nav-list__item wc-layered-nav-term ">
+                                                                            <a t-att-href="keep('/shop/brand/' + slug(br))"
+                                                                                    t-att-data-title="br.name"><t t-esc='br.name'/>
+                                                                                    <span class="count"><t t-esc='br.products_count'/></span>
+                                                                            </a>
+                                                                        </li>
+                                                                    </t>
+                                                                </ul>
+                                                        </div>
+                                                </div>
+                                                <div id="farmart_rating_filter-3" class="widget woocommerce widget_rating_filter">
+                                                        <h2 class="widget-title">Rating &amp; Reviews</h2>
+                                                        <ul>
+                                                            <li class="wc-layered-nav-rating">
+                                                                <a href="?rating_filter=5">
+                                                                    <span class="star-rating">
+                                                                        <span class="max-rating rating-stars">
+                                                                            <span class="farmart-svg-icon">
+                                                                                <svg aria-hidden="false" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                                                                                width="24" height="24"
+                                                                                viewBox="0 0 24 24"
+                                                                                fill="currentColor">
+                                                                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                                                </polygon>
+                                                                                </svg>
+                                                                            </span>
+                                                                            <span class="farmart-svg-icon">
+                                                                                <svg aria-hidden="false" role="img"
+                                                                                focusable="false"
+                                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                                width="24" height="24"
+                                                                                viewBox="0 0 24 24"
+                                                                                fill="currentColor">
+                                                                                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                                                </polygon>
+                                                                                </svg>
+                                                                            </span>
+                                                                            <span class="farmart-svg-icon">
+                                                                                <svg aria-hidden="false" role="img"
+                                                                                    focusable="false"
+                                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                                    width="24" height="24"
+                                                                                    viewBox="0 0 24 24"
+                                                                                    fill="currentColor">
+                                                                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                                                    </polygon>
+                                                                                </svg>
+                                                                            </span>
+                                                                            <span class="farmart-svg-icon">
+                                                                                <svg aria-hidden="false" role="img"
+                                                                                    focusable="false"
+                                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                                    width="24" height="24"
+                                                                                    viewBox="0 0 24 24"
+                                                                                    fill="currentColor">
+                                                                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                                                    </polygon>
+                                                                                </svg>
+                                                                            </span>
+                                                                            <span class="farmart-svg-icon">
+                                                                                <svg aria-hidden="false" role="img"
+                                                                                    focusable="false"
+                                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                                    width="24" height="24"
+                                                                                    viewBox="0 0 24 24"
+                                                                                    fill="currentColor">
+                                                                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                                                    </polygon>
+                                                                                </svg>
+                                                                            </span>
+                                                                        </span>
+                                                                        <span class="user-rating rating-stars" style="width:100%"><span class="farmart-svg-icon">
+                                                                            <svg
+                                                                                aria-hidden="false" role="img"
+                                                                                focusable="false"
+                                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                                width="24" height="24"
+                                                                                viewBox="0 0 24 24"
+                                                                                fill="currentColor">
+                                                                                <polygon
+                                                                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                                                </polygon>
+                                                                                </svg>
+                                                                            </span>
+                                                                            <span class="farmart-svg-icon">
+                                                                                <svg
+                                                                                    aria-hidden="false" role="img"
+                                                                                    focusable="false"
+                                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                                    width="24" height="24"
+                                                                                    viewBox="0 0 24 24"
+                                                                                    fill="currentColor">
+                                                                                    <polygon
+                                                                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                                                    </polygon>
+                                                                                </svg>
+                                                                            </span>
+                                                                            <span class="farmart-svg-icon">
+                                                                                <svg
+                                                                                    aria-hidden="false" role="img"
+                                                                                    focusable="false"
+                                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                                    width="24" height="24"
+                                                                                    viewBox="0 0 24 24"
+                                                                                    fill="currentColor">
+                                                                                    <polygon
+                                                                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                                                    </polygon>
+                                                                                </svg>
+                                                                            </span>
+                                                                            <span class="farmart-svg-icon">
+                                                                                <svg
+                                                                                    aria-hidden="false" role="img"
+                                                                                    focusable="false"
+                                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                                    width="24" height="24"
+                                                                                    viewBox="0 0 24 24"
+                                                                                    fill="currentColor">
+                                                                                    <polygon
+                                                                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                                                    </polygon>
+                                                                                </svg>
+                                                                            </span>
+                                                                            <span
+                                                                                class="farmart-svg-icon"><svg
+                                                                                        aria-hidden="false" role="img"
+                                                                                        focusable="false"
+                                                                                        xmlns="http://www.w3.org/2000/svg"
+                                                                                        width="24" height="24"
+                                                                                        viewBox="0 0 24 24"
+                                                                                        fill="currentColor">
+                                                                                        <polygon
+                                                                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                                                        </polygon>
+                                                                                                    </svg>
+                                                                            </span>
+                                                                        </span>
+                                                                        <span class="screen-reader-text">Rated <strong
+                                                                            class="rating">5</strong> out of
+                                                                                            5</span></span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="wc-layered-nav-rating">
+                                                                <a href="?rating_filter=4"><span class="star-rating">
+                                                                    <span class="max-rating rating-stars">
+                                                                        <span class="farmart-svg-icon">
+                                                                            <svg
+                                                                                aria-hidden="false" role="img"
+                                                                                focusable="false"
+                                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                                width="24" height="24"
+                                                                                viewBox="0 0 24 24"
+                                                                                fill="currentColor">
+                                                                                <polygon
+                                                                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                                                </polygon>
+                                                                            </svg>
+                                                                        </span>
+                                                                        <span
+                                                                            class="farmart-svg-icon"><svg
+                                                                                    aria-hidden="false" role="img"
+                                                                                    focusable="false"
+                                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                                    width="24" height="24"
+                                                                                    viewBox="0 0 24 24"
+                                                                                    fill="currentColor">
+                                                                                    <polygon
+                                                                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                                                    </polygon>
+                                                                                    </svg>
+                                                                        </span>
+                                                                        <span
+                                                                            class="farmart-svg-icon"><svg
+                                                                                    aria-hidden="false" role="img"
+                                                                                    focusable="false"
+                                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                                    width="24" height="24"
+                                                                                    viewBox="0 0 24 24"
+                                                                                    fill="currentColor">
+                                                                                    <polygon
+                                                                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                                                    </polygon>
+                                                                            </svg>
+                                                                        </span>
+                                                                        <span
+                                                                            class="farmart-svg-icon"><svg
+                                                                                    aria-hidden="false" role="img"
+                                                                                    focusable="false"
+                                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                                    width="24" height="24"
+                                                                                    viewBox="0 0 24 24"
+                                                                                    fill="currentColor">
+                                                                                    <polygon
+                                                                                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                                                    </polygon>
+                                                                            </svg>
+                                                                        </span>
+                                                                        <span class="farmart-svg-icon">
+                                                                            <svg aria-hidden="false" role="img"
+                                                                            focusable="false"
+                                                                            xmlns="http://www.w3.org/2000/svg"
+                                                                            width="24" height="24"
+                                                                            viewBox="0 0 24 24"
+                                                                            fill="currentColor">
+                                                                            <polygon
+                                                                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                                            </polygon>
+                                                                            </svg>
+                                                                        </span>
+                                                                    </span>
+                                                                    <span
+                                                                        class="user-rating rating-stars" style="width:80%"><span
+                                                                        class="farmart-svg-icon"><svg
+                                                                                aria-hidden="false" role="img"
+                                                                                focusable="false"
+                                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                                width="24" height="24"
+                                                                                viewBox="0 0 24 24"
+                                                                                fill="currentColor">
+                                                                                <polygon
+                                                                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                                                </polygon>
+                                                                                </svg>
+                                                                            </span>
+                                                                            <span
+                                                                                class="farmart-svg-icon"><svg
+                                                                                        aria-hidden="false" role="img"
+                                                                                        focusable="false"
+                                                                                        xmlns="http://www.w3.org/2000/svg"
+                                                                                        width="24" height="24"
+                                                                                        viewBox="0 0 24 24"
+                                                                                        fill="currentColor">
+                                                                                        <polygon
+                                                                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                                                        </polygon>
+                                                                                </svg></span><span
+                                                                                class="farmart-svg-icon"><svg
+                                                                                        aria-hidden="false" role="img"
+                                                                                        focusable="false"
+                                                                                        xmlns="http://www.w3.org/2000/svg"
+                                                                                        width="24" height="24"
+                                                                                        viewBox="0 0 24 24"
+                                                                                        fill="currentColor">
+                                                                                        <polygon
+                                                                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                                                        </polygon>
+                                                                                </svg></span><span
+                                                                                class="farmart-svg-icon"><svg
+                                                                                        aria-hidden="false" role="img"
+                                                                                        focusable="false"
+                                                                                        xmlns="http://www.w3.org/2000/svg"
+                                                                                        width="24" height="24"
+                                                                                        viewBox="0 0 24 24"
+                                                                                        fill="currentColor">
+                                                                                        <polygon
+                                                                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                                                        </polygon>
+                                                                                </svg></span><span
+                                                                                class="farmart-svg-icon"><svg
+                                                                                        aria-hidden="false" role="img"
+                                                                                        focusable="false"
+                                                                                        xmlns="http://www.w3.org/2000/svg"
+                                                                                        width="24" height="24"
+                                                                                        viewBox="0 0 24 24"
+                                                                                        fill="currentColor">
+                                                                                        <polygon
+                                                                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                                                        </polygon>
+                                                                                </svg></span>
+                                                                            </span>
+                                                                            <span class="screen-reader-text">Rated <strong
+                                                                                                    class="rating">4</strong> out of
+                                                                                            5</span></span> <span class="text">&amp;
+                                                                                    Up</span></a>
+                                                            </li>
+                                                            <li class="wc-layered-nav-rating">
+                                                                <a href="?rating_filter=3"><span
+                                                                class="star-rating"><span
+                                                                        class="max-rating rating-stars"><span
+                                                                                class="farmart-svg-icon"><svg
+                                                                                        aria-hidden="false" role="img"
+                                                                                        focusable="false"
+                                                                                        xmlns="http://www.w3.org/2000/svg"
+                                                                                        width="24" height="24"
+                                                                                        viewBox="0 0 24 24"
+                                                                                        fill="currentColor">
+                                                                                        <polygon
+                                                                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                                                        </polygon>
+                                                                                </svg></span><span
+                                                                                class="farmart-svg-icon"><svg
+                                                                                        aria-hidden="false" role="img"
+                                                                                        focusable="false"
+                                                                                        xmlns="http://www.w3.org/2000/svg"
+                                                                                        width="24" height="24"
+                                                                                        viewBox="0 0 24 24"
+                                                                                        fill="currentColor">
+                                                                                        <polygon
+                                                                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                                                        </polygon>
+                                                                                </svg></span><span
+                                                                                class="farmart-svg-icon"><svg
+                                                                                        aria-hidden="false" role="img"
+                                                                                        focusable="false"
+                                                                                        xmlns="http://www.w3.org/2000/svg"
+                                                                                        width="24" height="24"
+                                                                                        viewBox="0 0 24 24"
+                                                                                        fill="currentColor">
+                                                                                        <polygon
+                                                                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                                                        </polygon>
+                                                                                </svg></span><span
+                                                                                class="farmart-svg-icon"><svg
+                                                                                        aria-hidden="false" role="img"
+                                                                                        focusable="false"
+                                                                                        xmlns="http://www.w3.org/2000/svg"
+                                                                                        width="24" height="24"
+                                                                                        viewBox="0 0 24 24"
+                                                                                        fill="currentColor">
+                                                                                        <polygon
+                                                                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                                                        </polygon>
+                                                                                </svg></span><span
+                                                                                class="farmart-svg-icon"><svg
+                                                                                        aria-hidden="false" role="img"
+                                                                                        focusable="false"
+                                                                                        xmlns="http://www.w3.org/2000/svg"
+                                                                                        width="24" height="24"
+                                                                                        viewBox="0 0 24 24"
+                                                                                        fill="currentColor">
+                                                                                        <polygon
+                                                                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                                                        </polygon>
+                                                                                </svg></span></span><span
+                                                                        class="user-rating rating-stars"
+                                                                        style="width:60%"><span
+                                                                                class="farmart-svg-icon"><svg
+                                                                                        aria-hidden="false" role="img"
+                                                                                        focusable="false"
+                                                                                        xmlns="http://www.w3.org/2000/svg"
+                                                                                        width="24" height="24"
+                                                                                        viewBox="0 0 24 24"
+                                                                                        fill="currentColor">
+                                                                                        <polygon
+                                                                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                                                        </polygon>
+                                                                                </svg></span><span
+                                                                                class="farmart-svg-icon"><svg
+                                                                                        aria-hidden="false" role="img"
+                                                                                        focusable="false"
+                                                                                        xmlns="http://www.w3.org/2000/svg"
+                                                                                        width="24" height="24"
+                                                                                        viewBox="0 0 24 24"
+                                                                                        fill="currentColor">
+                                                                                        <polygon
+                                                                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                                                        </polygon>
+                                                                                </svg></span><span
+                                                                                class="farmart-svg-icon"><svg
+                                                                                        aria-hidden="false" role="img"
+                                                                                        focusable="false"
+                                                                                        xmlns="http://www.w3.org/2000/svg"
+                                                                                        width="24" height="24"
+                                                                                        viewBox="0 0 24 24"
+                                                                                        fill="currentColor">
+                                                                                        <polygon
+                                                                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                                                        </polygon>
+                                                                                </svg></span><span
+                                                                                class="farmart-svg-icon"><svg
+                                                                                        aria-hidden="false" role="img"
+                                                                                        focusable="false"
+                                                                                        xmlns="http://www.w3.org/2000/svg"
+                                                                                        width="24" height="24"
+                                                                                        viewBox="0 0 24 24"
+                                                                                        fill="currentColor">
+                                                                                        <polygon
+                                                                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                                                        </polygon>
+                                                                                </svg></span><span
+                                                                                class="farmart-svg-icon"><svg
+                                                                                        aria-hidden="false" role="img"
+                                                                                        focusable="false"
+                                                                                        xmlns="http://www.w3.org/2000/svg"
+                                                                                        width="24" height="24"
+                                                                                        viewBox="0 0 24 24"
+                                                                                        fill="currentColor">
+                                                                                        <polygon
+                                                                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                                                        </polygon>
+                                                                                </svg></span></span><span
+                                                                        class="screen-reader-text">Rated <strong
+                                                                                class="rating">3</strong> out of
+                                                                        5</span></span> <span class="text">&amp;
+                                                                Up</span></a>
+                                                            </li>
+                                                            <li class="wc-layered-nav-rating">
+                                                                <a href="?rating_filter=2"><span
+                                                                class="star-rating"><span
+                                                                        class="max-rating rating-stars"><span
+                                                                                class="farmart-svg-icon"><svg
+                                                                                        aria-hidden="false" role="img"
+                                                                                        focusable="false"
+                                                                                        xmlns="http://www.w3.org/2000/svg"
+                                                                                        width="24" height="24"
+                                                                                        viewBox="0 0 24 24"
+                                                                                        fill="currentColor">
+                                                                                        <polygon
+                                                                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                                                        </polygon>
+                                                                                </svg></span><span
+                                                                                class="farmart-svg-icon"><svg
+                                                                                        aria-hidden="false" role="img"
+                                                                                        focusable="false"
+                                                                                        xmlns="http://www.w3.org/2000/svg"
+                                                                                        width="24" height="24"
+                                                                                        viewBox="0 0 24 24"
+                                                                                        fill="currentColor">
+                                                                                        <polygon
+                                                                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                                                        </polygon>
+                                                                                </svg></span><span
+                                                                                class="farmart-svg-icon"><svg
+                                                                                        aria-hidden="false" role="img"
+                                                                                        focusable="false"
+                                                                                        xmlns="http://www.w3.org/2000/svg"
+                                                                                        width="24" height="24"
+                                                                                        viewBox="0 0 24 24"
+                                                                                        fill="currentColor">
+                                                                                        <polygon
+                                                                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                                                        </polygon>
+                                                                                </svg></span><span
+                                                                                class="farmart-svg-icon"><svg
+                                                                                        aria-hidden="false" role="img"
+                                                                                        focusable="false"
+                                                                                        xmlns="http://www.w3.org/2000/svg"
+                                                                                        width="24" height="24"
+                                                                                        viewBox="0 0 24 24"
+                                                                                        fill="currentColor">
+                                                                                        <polygon
+                                                                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                                                        </polygon>
+                                                                                </svg></span><span
+                                                                                class="farmart-svg-icon"><svg
+                                                                                        aria-hidden="false" role="img"
+                                                                                        focusable="false"
+                                                                                        xmlns="http://www.w3.org/2000/svg"
+                                                                                        width="24" height="24"
+                                                                                        viewBox="0 0 24 24"
+                                                                                        fill="currentColor">
+                                                                                        <polygon
+                                                                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                                                        </polygon>
+                                                                                </svg></span></span><span
+                                                                        class="user-rating rating-stars"
+                                                                        style="width:40%"><span
+                                                                                class="farmart-svg-icon"><svg
+                                                                                        aria-hidden="false" role="img"
+                                                                                        focusable="false"
+                                                                                        xmlns="http://www.w3.org/2000/svg"
+                                                                                        width="24" height="24"
+                                                                                        viewBox="0 0 24 24"
+                                                                                        fill="currentColor">
+                                                                                        <polygon
+                                                                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                                                        </polygon>
+                                                                                </svg></span><span
+                                                                                class="farmart-svg-icon"><svg
+                                                                                        aria-hidden="false" role="img"
+                                                                                        focusable="false"
+                                                                                        xmlns="http://www.w3.org/2000/svg"
+                                                                                        width="24" height="24"
+                                                                                        viewBox="0 0 24 24"
+                                                                                        fill="currentColor">
+                                                                                        <polygon
+                                                                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                                                        </polygon>
+                                                                                </svg></span><span
+                                                                                class="farmart-svg-icon"><svg
+                                                                                        aria-hidden="false" role="img"
+                                                                                        focusable="false"
+                                                                                        xmlns="http://www.w3.org/2000/svg"
+                                                                                        width="24" height="24"
+                                                                                        viewBox="0 0 24 24"
+                                                                                        fill="currentColor">
+                                                                                        <polygon
+                                                                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                                                        </polygon>
+                                                                                </svg></span><span
+                                                                                class="farmart-svg-icon"><svg
+                                                                                        aria-hidden="false" role="img"
+                                                                                        focusable="false"
+                                                                                        xmlns="http://www.w3.org/2000/svg"
+                                                                                        width="24" height="24"
+                                                                                        viewBox="0 0 24 24"
+                                                                                        fill="currentColor">
+                                                                                        <polygon
+                                                                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                                                        </polygon>
+                                                                                </svg></span><span
+                                                                                class="farmart-svg-icon"><svg
+                                                                                        aria-hidden="false" role="img"
+                                                                                        focusable="false"
+                                                                                        xmlns="http://www.w3.org/2000/svg"
+                                                                                        width="24" height="24"
+                                                                                        viewBox="0 0 24 24"
+                                                                                        fill="currentColor">
+                                                                                        <polygon
+                                                                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                                                        </polygon>
+                                                                                </svg></span></span><span
+                                                                        class="screen-reader-text">Rated <strong
+                                                                                class="rating">2</strong> out of
+                                                                        5</span></span> <span class="text">&amp;
+                                                                Up</span></a>
+                                                            </li>
+                                                            <li class="wc-layered-nav-rating">
+                                                                <a href="?rating_filter=1"><span
+                                                                    class="star-rating"><span
+                                                                            class="max-rating rating-stars"><span
+                                                                                    class="farmart-svg-icon"><svg
+                                                                                            aria-hidden="false" role="img"
+                                                                                            focusable="false"
+                                                                                            xmlns="http://www.w3.org/2000/svg"
+                                                                                            width="24" height="24"
+                                                                                            viewBox="0 0 24 24"
+                                                                                            fill="currentColor">
+                                                                                            <polygon
+                                                                                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                                                            </polygon>
+                                                                                    </svg></span><span
+                                                                                    class="farmart-svg-icon"><svg
+                                                                                            aria-hidden="false" role="img"
+                                                                                            focusable="false"
+                                                                                            xmlns="http://www.w3.org/2000/svg"
+                                                                                            width="24" height="24"
+                                                                                            viewBox="0 0 24 24"
+                                                                                            fill="currentColor">
+                                                                                            <polygon
+                                                                                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                                                            </polygon>
+                                                                                    </svg></span><span
+                                                                                    class="farmart-svg-icon"><svg
+                                                                                            aria-hidden="false" role="img"
+                                                                                            focusable="false"
+                                                                                            xmlns="http://www.w3.org/2000/svg"
+                                                                                            width="24" height="24"
+                                                                                            viewBox="0 0 24 24"
+                                                                                            fill="currentColor">
+                                                                                            <polygon
+                                                                                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                                                            </polygon>
+                                                                                    </svg></span><span
+                                                                                    class="farmart-svg-icon"><svg
+                                                                                            aria-hidden="false" role="img"
+                                                                                            focusable="false"
+                                                                                            xmlns="http://www.w3.org/2000/svg"
+                                                                                            width="24" height="24"
+                                                                                            viewBox="0 0 24 24"
+                                                                                            fill="currentColor">
+                                                                                            <polygon
+                                                                                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                                                            </polygon>
+                                                                                    </svg></span><span
+                                                                                    class="farmart-svg-icon"><svg
+                                                                                            aria-hidden="false" role="img"
+                                                                                            focusable="false"
+                                                                                            xmlns="http://www.w3.org/2000/svg"
+                                                                                            width="24" height="24"
+                                                                                            viewBox="0 0 24 24"
+                                                                                            fill="currentColor">
+                                                                                            <polygon
+                                                                                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                                                            </polygon>
+                                                                                    </svg></span></span><span
+                                                                            class="user-rating rating-stars"
+                                                                            style="width:20%"><span
+                                                                                    class="farmart-svg-icon"><svg
+                                                                                            aria-hidden="false" role="img"
+                                                                                            focusable="false"
+                                                                                            xmlns="http://www.w3.org/2000/svg"
+                                                                                            width="24" height="24"
+                                                                                            viewBox="0 0 24 24"
+                                                                                            fill="currentColor">
+                                                                                            <polygon
+                                                                                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                                                            </polygon>
+                                                                                    </svg></span><span
+                                                                                    class="farmart-svg-icon"><svg
+                                                                                            aria-hidden="false" role="img"
+                                                                                            focusable="false"
+                                                                                            xmlns="http://www.w3.org/2000/svg"
+                                                                                            width="24" height="24"
+                                                                                            viewBox="0 0 24 24"
+                                                                                            fill="currentColor">
+                                                                                            <polygon
+                                                                                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                                                            </polygon>
+                                                                                    </svg></span><span
+                                                                                    class="farmart-svg-icon"><svg
+                                                                                            aria-hidden="false" role="img"
+                                                                                            focusable="false"
+                                                                                            xmlns="http://www.w3.org/2000/svg"
+                                                                                            width="24" height="24"
+                                                                                            viewBox="0 0 24 24"
+                                                                                            fill="currentColor">
+                                                                                            <polygon
+                                                                                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                                                            </polygon>
+                                                                                    </svg></span><span
+                                                                                    class="farmart-svg-icon"><svg
+                                                                                            aria-hidden="false" role="img"
+                                                                                            focusable="false"
+                                                                                            xmlns="http://www.w3.org/2000/svg"
+                                                                                            width="24" height="24"
+                                                                                            viewBox="0 0 24 24"
+                                                                                            fill="currentColor">
+                                                                                            <polygon
+                                                                                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                                                            </polygon>
+                                                                                    </svg></span><span
+                                                                                    class="farmart-svg-icon"><svg
+                                                                                            aria-hidden="false" role="img"
+                                                                                            focusable="false"
+                                                                                            xmlns="http://www.w3.org/2000/svg"
+                                                                                            width="24" height="24"
+                                                                                            viewBox="0 0 24 24"
+                                                                                            fill="currentColor">
+                                                                                            <polygon
+                                                                                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                                                            </polygon>
+                                                                                    </svg></span></span><span
+                                                                            class="screen-reader-text">Rated <strong
+                                                                                    class="rating">1</strong> out of
+                                                                            5</span></span> <span class="text">&amp;
+                                                                    Up</span></a>
+                                                            </li>
+                                                        </ul>
+                                                </div>
+                                        </div>
+                                </div>
+                                </aside>
+			            </div>
+			        </div>
+			    </div>
+    		</div>
+    	</xpath>
+    </template>
+    <template id="themeforest_product_item" name="Product Forest" inherit_id="website_sale.products_item">
+		<xpath expr="//form[1]" position="replace">
+		<!-- 	<style>
+				
+			</style> -->
+			<!-- <div class='col-lg-3 col-md-4 col-6'> -->
+        		<li class="product type-product post-2267 status-publish first instock product_cat-breakfast-cereals product_cat-chocolate-sweets product_cat-crisps-snacks-nuts product_cat-foodcupboard product_cat-tins-cans has-post-thumbnail shipping-taxable purchasable product-type-simple">
+        			 <form action="/shop/cart/update" method="post" t-att-data-publish="product.website_published and 'on' or 'off'" itemscope="itemscope" itemtype="http://schema.org/Product">
+	            		<input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
+	                    <div class="product-inner">
+	                        <div class="product-thumbnail fm-product-thumbnail">
+	                        	<a href="https://demo4.drfuri.com/farmart2/product/hobnobs-the-nobbly-biscuit/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+                                    <style>
+                                        .product_item img{
+                                            width:300px;
+                                            height:132px;
+                                        }
+                                    </style>
+                                    <span t-field="product.image_1920"
+                                    t-options="{'widget': 'image', 'preview_image': 'image_1024' if product_image_big else 'image_256'}"
+                                     class='product_item'/>
+	                              
+	                            </a>
+	                            <div class="product-loop__buttons">
+                                    <t t-set="product_variant" t-value="product_variant or product._create_first_product_variant()"/>
+	                            	<a href="#" data-id="2267"
+	                                class="fm-product-quick-view button fm-loop_button hidden-sm hidden-xs" t-att-data-product_id='product_variant.id'>
+	                                    <span title="Quick View" data-rel="tooltip">
+	                                        <span class="farmart-svg-icon ">
+	                                        	<svg aria-hidden="false" role="img" focusable="false" viewBox="0 0 32 32">
+	                                                <path
+	                                                        d="M12.566 11.434l-9.834-9.834h6.069c0.442 0 0.8-0.358 0.8-0.8s-0.358-0.8-0.8-0.8h-8c-0.442 0-0.8 0.358-0.8 0.8v8c0 0.442 0.358 0.8 0.8 0.8s0.8-0.358 0.8-0.8v-6.069l9.834 9.834c0.156 0.156 0.361 0.234 0.566 0.234s0.409-0.078 0.566-0.234c0.312-0.312 0.312-0.819 0-1.131zM31.2 0h-8c-0.442 0-0.8 0.358-0.8 0.8s0.358 0.8 0.8 0.8h6.069l-9.834 9.834c-0.313 0.312-0.313 0.819 0 1.131 0.156 0.156 0.361 0.234 0.566 0.234s0.409-0.078 0.566-0.234l9.834-9.834v6.069c0 0.442 0.358 0.8 0.8 0.8s0.8-0.358 0.8-0.8v-8c0-0.442-0.358-0.8-0.8-0.8zM12.566 19.434c-0.312-0.312-0.819-0.312-1.131 0l-9.834 9.834v-6.069c0-0.442-0.358-0.8-0.8-0.8s-0.8 0.358-0.8 0.8v8c0 0.442 0.358 0.8 0.8 0.8h8c0.442 0 0.8-0.358 0.8-0.8s-0.358-0.8-0.8-0.8h-6.069l9.834-9.834c0.312-0.312 0.312-0.819 0-1.131zM31.2 22.4c-0.442 0-0.8 0.358-0.8 0.8v6.069l-9.834-9.834c-0.312-0.312-0.819-0.312-1.131 0s-0.312 0.819 0 1.131l9.834 9.834h-6.069c-0.442 0-0.8 0.358-0.8 0.8s0.358 0.8 0.8 0.8h8c0.442 0 0.8-0.358 0.8-0.8v-8c0-0.442-0.358-0.8-0.8-0.8z">
+	                                                </path>
+	                                            </svg>
+	                                        </span>
+	                                    </span>
+	                                </a>
+	                                <div class="yith-wcwl-add-to-wishlist add-to-wishlist-2267  wishlist-fragment on-first-load"
+	                                        >
+
+                                        <div class="yith-wcwl-add-button">
+                                            <t t-set="in_wish" t-value="product._is_in_wishlist()"/>
+                                            <t t-set="product_variant_id" t-value="product._get_first_possible_variant_id()"/>
+                                                <a href="#"
+                                                        class="add_to_wishlist single_add_to_wishlist button o_add_wishlist"
+                                                        data-title="Wishlist"
+                                                        t-att-data-product-template-id="product.id" t-att-data-product-product-id="product_variant_id" data-action="o_wishlist">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                                              <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                                                            </svg>
+                                                        <span>Wishlist</span>
+                                                </a>
+                                        </div>
+
+	                                </div>
+	                                <div class="compare-button fm-compare-button fm-loop_button">
+                                        <t t-set="product_variant" t-value="product_variant or product._create_first_product_variant()"/>
+	                                        <a href="#" class="compare" title="Compare" t-att-data-product_id="product_variant.id">
+                                                   <span
+                                                    class="farmart-svg-icon "><svg
+                                                            aria-hidden="false"
+                                                            role="img"
+                                                            focusable="false"
+                                                            viewBox="0 0 32 32">
+                                                            <path
+                                                                    d="M27.766 5.034l-4.8-4.8c-0.312-0.312-0.819-0.312-1.131 0s-0.312 0.819 0 1.131l3.434 3.434h-21.269c-1.323 0-2.4 1.077-2.4 2.4v14.4c0 0.442 0.358 0.8 0.8 0.8s0.8-0.358 0.8-0.8v-14.4c0-0.441 0.359-0.8 0.8-0.8h21.269l-3.434 3.434c-0.312 0.312-0.312 0.819 0 1.131 0.156 0.156 0.361 0.234 0.566 0.234s0.409-0.078 0.566-0.234l4.8-4.8c0.312-0.312 0.312-0.819 0-1.131zM28 9.6c-0.442 0-0.8 0.358-0.8 0.8v14.4c0 0.441-0.359 0.8-0.8 0.8h-21.269l3.434-3.434c0.312-0.312 0.312-0.819 0-1.131s-0.819-0.312-1.131 0l-4.8 4.8c-0.312 0.312-0.312 0.819 0 1.131l4.8 4.8c0.156 0.156 0.361 0.234 0.566 0.234s0.409-0.078 0.566-0.234c0.312-0.312 0.312-0.819 0-1.131l-3.434-3.434h21.269c1.323 0 2.4-1.077 2.4-2.4v-14.4c0-0.442-0.358-0.8-0.8-0.8z">
+                                                            </path>
+                                                            </svg>
+                                                        </span>
+                                                        <span
+	                                                        class="text">Compare</span>
+                                            </a>
+	                                </div>
+	                            </div>
+	                        </div>
+	                        <div class="product-details">
+	                            <div class="product-content-box">
+	                                <div class="sold-by-meta">
+	                                    <span class="sold-by-label"><span
+                                                class="farmart-svg-icon "><svg
+                                                        aria-hidden="false"
+                                                        role="img"
+                                                        focusable="false"
+                                                        viewBox="0 0 32 32">
+                                                        <path
+                                                                d="M28.8 15.2v-1.6c0-0.124-0.029-0.247-0.084-0.358l-3.2-6.4c-0.136-0.271-0.413-0.442-0.716-0.442h-19.2c-0.303 0-0.58 0.171-0.716 0.442l-3.2 6.4c-0.056 0.111-0.084 0.234-0.084 0.358v1.6c0 1.306 0.629 2.467 1.6 3.198v10.402h-0.8c-0.442 0-0.8 0.358-0.8 0.8s0.358 0.8 0.8 0.8h25.6c0.442 0 0.8-0.358 0.8-0.8s-0.358-0.8-0.8-0.8h-0.8v-10.402c0.971-0.73 1.6-1.892 1.6-3.198zM18.4 17.6c-1.323 0-2.4-1.077-2.4-2.4v-0.8h4.8v0.8c0 1.323-1.077 2.4-2.4 2.4zM3.2 15.2v-0.8h4.8v0.8c0 1.323-1.077 2.4-2.4 2.4s-2.4-1.077-2.4-2.4zM14.4 8v4.8h-4.575l1.2-4.8h3.375zM19.375 8l1.2 4.8h-4.575v-4.8h3.375zM9.6 14.4h4.8v0.8c0 1.323-1.077 2.4-2.4 2.4s-2.4-1.077-2.4-2.4v-0.8zM22.4 14.4h4.8v0.8c0 1.323-1.077 2.4-2.4 2.4s-2.4-1.077-2.4-2.4v-0.8zM26.706 12.8h-4.481l-1.2-4.8h3.281l2.4 4.8zM6.094 8h3.281l-1.2 4.8h-4.481l2.4-4.8zM4.8 19.12c0.259 0.053 0.526 0.080 0.8 0.080 1.307 0 2.47-0.63 3.2-1.603 0.73 0.973 1.893 1.603 3.2 1.603s2.47-0.63 3.2-1.603c0.577 0.769 1.425 1.324 2.4 1.522v9.681h-12.8v-9.68zM25.6 28.8h-6.4v-9.68c0.975-0.199 1.823-0.754 2.4-1.522 0.73 0.973 1.893 1.603 3.2 1.603 0.274 0 0.541-0.028 0.8-0.081v9.681zM22.4 23.2c0 0.442-0.358 0.8-0.8 0.8s-0.8-0.358-0.8-0.8c0-0.442 0.358-0.8 0.8-0.8s0.8 0.358 0.8 0.8zM7.2 24c-0.205 0-0.409-0.078-0.566-0.234-0.312-0.312-0.312-0.819 0-1.131l1.6-1.6c0.312-0.312 0.819-0.312 1.131 0s0.312 0.819 0 1.131l-1.6 1.6c-0.156 0.156-0.361 0.234-0.566 0.234zM8.8 27.2c-0.205 0-0.409-0.078-0.566-0.234-0.312-0.312-0.312-0.819 0-1.131l4.8-4.8c0.312-0.312 0.819-0.312 1.131 0s0.312 0.819 0 1.131l-4.8 4.8c-0.156 0.156-0.361 0.234-0.566 0.234zM13.6 27.2c-0.205 0-0.409-0.078-0.566-0.234-0.312-0.312-0.312-0.819 0-1.131l1.6-1.6c0.312-0.312 0.819-0.312 1.131 0s0.312 0.819 0 1.131l-1.6 1.6c-0.156 0.156-0.361 0.234-0.566 0.234z">
+                                                        </path>
+                                                </svg></span></span>
+	                                    <a t-attf-href="/shop/{{product.id}}">
+	                                       <t t-esc='product.name'/>
+	                                   </a>
+	                                </div>
+	                                <h2 class="woocommerce-loop-product__title"><a
+	                                    t-attf-href="/shop/{{product.id}}"><t t-esc='product.name'/></a>
+                                    </h2>
+                                    <div class="rating_wrap">
+                                        <t t-set="val" t-value="product._get_rating_average()" />
+                                        <t t-set="val_integer" t-value="val['val_integer']" />
+                                        <t t-set="val_decimal" t-value="val['val_decimal']" />
+                                        <t t-set="empty_star" t-value="val['empty_star']" />
+                                        <div class="o_website_rating_static" t-attf-aria-label="#{val['val_integer']} stars on 5" t-attf-title="#{val['val_integer']} stars on 5" style='display: inline-block;'>
+                                                <t t-foreach="range(0, val_integer)" t-as="num">
+                                                        <i class="fa fa-star" role="img"></i>
+                                                </t>
+                                                <t t-if="val_decimal">
+                                                        <i class="fa fa-star-half-o" role="img"></i>
+                                                </t>
+                                                <t t-foreach="range(0, empty_star)" t-as="num">
+                                                        <i class="fa fa-star text-black-25" role="img"></i>
+                                                </t>
+                                        </div>
+                                        <span class="rating_num">(<t t-esc='val["total_count"]' />)
+                                        </span>
+                                    </div>
+
+                                    <span class="unit-text"><t t-esc='product.uom_id.name'/></span>
+	                                <span class="price">
+                                        <span
+                                            class="woocommerce-Price-amount amount"><bdi> <span t-if="combination_info['price']" t-esc="combination_info['price']" t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"/>
+									       <span itemprop="price" style="display:none;" t-esc="combination_info['price']" />
+									       <span itemprop="priceCurrency" style="display:none;" t-esc="website.currency_id.name" /></bdi></span>
+                                        </span>
+    	                                <div
+	                                        class="woocommerce-product-details__short-description">
+	                                        <ul class="farmart-list">
+	                                                <li>Type: Processed</li>
+	                                                <li>MFG: Jun 4, 2020</li>
+	                                                <li>LIFE: 3 months</li>
+	                                        </ul>
+    	                                </div>
+	                            </div>
+	                            <div class="product-bottom-box">
+	                                <span class="price">
+                                        <span class="woocommerce-Price-amount amount">
+                                            <bdi>
+                                                <span class="woocommerce-Price-currencySymbol">$</span>15.00
+                                            </bdi>
+                                        </span>
+                                    </span>
+	                                <div class="product-button">
+                                        <div class="quantity">
+                                                <label class="label">Quantity:</label>
+                                                <div class="qty-box"><span
+                                                                class="farmart-svg-icon decrease"><svg
+                                                                        aria-hidden="false"
+                                                                        role="img"
+                                                                        focusable="false"
+                                                                        viewBox="0 0 32 32">
+                                                                        <path
+                                                                                d="M29.6 17.6h-28.8c-0.442 0-0.8-0.358-0.8-0.8s0.358-0.8 0.8-0.8h28.8c0.442 0 0.8 0.358 0.8 0.8s-0.358 0.8-0.8 0.8z">
+                                                                        </path>
+                                                                </svg></span> <label
+                                                                class="screen-reader-text"
+                                                                for="quantity_6321274f9da43">Hobnobs
+                                                                The Nobbly Biscuit
+                                                                quantity</label>
+                                                        <input type="number"
+                                                                id="quantity_6321274f9da43"
+                                                                class="input-text qty text"
+                                                                step="1" min="1" max="0"
+                                                                name="add_qty"
+                                                                value="1" title="Qty"
+                                                                placeholder=""/>
+                                                        <span
+                                                                class="farmart-svg-icon increase"><svg
+                                                                        aria-hidden="false"
+                                                                        role="img"
+                                                                        focusable="false"
+                                                                        viewBox="0 0 32 32">
+                                                                        <path
+                                                                                d="M29.6 16h-13.6v-13.6c0-0.442-0.358-0.8-0.8-0.8s-0.8 0.358-0.8 0.8v13.6h-13.6c-0.442 0-0.8 0.358-0.8 0.8s0.358 0.8 0.8 0.8h13.6v13.6c0 0.442 0.358 0.8 0.8 0.8s0.8-0.358 0.8-0.8v-13.6h13.6c0.442 0 0.8-0.358 0.8-0.8s-0.358-0.8-0.8-0.8z">
+                                                                        </path>
+                                                                </svg></span>
+                                                </div>
+                                        </div>
+                                        <div class="box-price">
+                                            <span class="title-price">
+                                                    Total: </span>
+                                            <span class="price-symbol">$</span>
+                                            <span class="price-current"
+                                                    data-current="15">15</span>
+                                        </div>
+                                        <a href="#" data-quantity="1"
+                                            class="quantity_button button product_type_simple add_to_cart_button ajax_add_to_cart"
+                                            data-product_id="2267"
+                                            data-product_sku=""
+                                            aria-label="Add “Hobnobs The Nobbly Biscuit” to your cart"
+                                            rel="nofollow"
+                                            data-title="Hobnobs The Nobbly Biscuit">
+                                            <span class="p-icon" title="Add to cart" data-rel="tooltip">
+                                                <span class="farmart-svg-icon ">
+                                                    <svg aria-hidden="false" role="img" focusable="false" viewBox="0 0 1024 1024">
+                                                       <path d="M409.6 1024c-56.464 0-102.4-45.936-102.4-102.4s45.936-102.4 102.4-102.4 102.4 45.936 102.4 102.4-45.936 102.4-102.4 102.4zM409.6 870.4c-28.232 0-51.2 22.968-51.2 51.2s22.968 51.2 51.2 51.2 51.2-22.968 51.2-51.2-22.968-51.2-51.2-51.2z">
+                                                       </path>
+                                                       <path d="M768 1024c-56.464 0-102.4-45.936-102.4-102.4s45.936-102.4 102.4-102.4 102.4 45.936 102.4 102.4-45.936 102.4-102.4 102.4zM768 870.4c-28.232 0-51.2 22.968-51.2 51.2s22.968 51.2 51.2 51.2 51.2-22.968 51.2-51.2-22.968-51.2-51.2-51.2z">
+                                                       </path>
+                                                       <path d="M898.021 228.688c-12.859-15.181-32.258-23.888-53.221-23.888h-626.846l-5.085-30.506c-6.72-40.315-43.998-71.894-84.869-71.894h-51.2c-14.138 0-25.6 11.462-25.6 25.6s11.462 25.6 25.6 25.6h51.2c15.722 0 31.781 13.603 34.366 29.112l85.566 513.395c6.718 40.314 43.997 71.893 84.867 71.893h512c14.139 0 25.6-11.461 25.6-25.6s-11.461-25.6-25.6-25.6h-512c-15.722 0-31.781-13.603-34.366-29.11l-12.63-75.784 510.206-44.366c39.69-3.451 75.907-36.938 82.458-76.234l34.366-206.194c3.448-20.677-1.952-41.243-14.813-56.424zM862.331 276.694l-34.366 206.194c-2.699 16.186-20.043 32.221-36.39 33.645l-514.214 44.714-50.874-305.246h618.314c5.968 0 10.995 2.054 14.155 5.782 3.157 3.73 4.357 9.024 3.376 14.912z">
+                                                       </path>
+                                                   </svg>
+                                               </span>
+                                           </span>
+                                           <t t-set="product_variant_id" t-value="product._get_first_possible_variant_id()"/>
+                                           <input name="product_id" t-att-value="product_variant_id" type="hidden"/>
+                                           <span class="add-to-cart-text" id="add_to_cart_forest" t-att-data-product_name='product.name'>Add to cart</span>
+                                        </a>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+                    </form>
+                </li>
+
+			<!-- <div class="product">
+				<div class="product_img">
+                    <a t-att-href="product_href">
+                        <span t-field="product.image_1920"
+                        t-options="{'widget': 'image', 'preview_image': 'image_1024' if product_image_big else 'image_256'}"
+                        class="d-flex h-100 justify-content-center align-items-center"/>
+                    </a>
+                    <div class="product_action_box">
+                        <ul class="list_none pr_action_btn">
+                            <li class="add-to-cart">
+	                              <t t-set="product_variant_id" t-value="product._get_first_possible_variant_id()"/>
+	                              <input name="product_id" t-att-value="product_variant_id" type="hidden"/>
+	                              <t t-if="product_variant_id">
+						                <a href="#" role="button"  aria-label="Shopping cart" id="add_to_cart" title="Shopping cart">
+						                    <i class="icon-basket-loaded"></i>
+						                    Add To Cart
+						                </a>
+					              </t>
+	                        </li>
+                            <li>
+								<t t-set="product_variant_id" t-value="product._get_first_possible_variant_id()"/>
+									<a t-if="product_variant_id" type="button" role="button" class="o_add_compare" title="Compare" aria-label="Compare" t-att-data-product-product-id="product_variant_id" data-action="o_comparelist"><i class="icon-shuffle"></i></a>
+                            </li>
+                            <li><a href="//bestwebcreator.com/shopwise/demo/shop-quick-view.html" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
+                            <li>
+	                            <t t-set="in_wish" t-value="product._is_in_wishlist()"/>
+	                            <t t-set="product_variant_id" t-value="product._get_first_possible_variant_id()"/>
+	                            <a t-if="product_variant_id" href="#" class='o_add_wishlist' t-att-disabled='in_wish or None' title="Add to Wishlist" t-att-data-product-template-id="product.id" t-att-data-product-product-id="product_variant_id" data-action="o_wishlist">
+	                              <i class="icon-heart"></i>
+	                            </a>
+	                         </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="product_info">
+                    <h6 class="product_title"><a itemprop="name" t-att-href="product_href" t-att-content="product.name" t-field="product.name" /></h6>
+                    <div class="product_price">
+                        <div class="product_price" itemprop="offers" itemscope="itemscope" itemtype="http://schema.org/Offer">
+	                        <del t-attf-class="text-danger mr-2 {{'' if combination_info['has_discounted_price'] else 'd-none'}}" style="white-space: nowrap;" t-esc="combination_info['list_price']" t-options="{'widget': 'monetary', 'display_currency': website.currency_id}" />
+	                        <span t-if="combination_info['price']" t-esc="combination_info['price']" t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"/>
+	                        <span itemprop="price" style="display:none;" t-esc="combination_info['price']" />
+	                        <span itemprop="priceCurrency" style="display:none;" t-esc="website.currency_id.name" />
+	                    </div>
+                    </div>
+                    <div class="rating_wrap">
+						
+                        <t t-set="val" t-value="product._get_rating_average()"/>
+
+                        <t t-set="val_integer" t-value="val['val_integer']"/>
+				        <t t-set="val_decimal" t-value="val['val_decimal']"/>
+				        <t t-set="empty_star" t-value="val['empty_star']"/>
+				        <div class="o_website_rating_static" t-attf-aria-label="#{val['val_integer']} stars on 5" t-attf-title="#{val['val_integer']} stars on 5">
+				            <t t-foreach="range(0, val_integer)" t-as="num">
+				                <i class="fa fa-star" role="img"></i>
+				            </t>
+				            <t t-if="val_decimal">
+				                <i class="fa fa-star-half-o" role="img"></i>
+				            </t>
+				            <t t-foreach="range(0, empty_star)" t-as="num">
+				                <i class="fa fa-star text-black-25" role="img"></i>
+				            </t>
+				        </div>
+				        <span class="rating_num">(<t t-esc='val["total_count"]'/>)</span>
+                    </div>
+
+                    <div class="pr_desc">
+                        <p><t t-esc='product.description'/></p>
+                    </div>
+                  
+                    <div class="list_product_action_box">
+                        <ul class="list_none pr_action_btn">
+                            <li class="add-to-cart">
+	                              <t t-set="product_variant_id" t-value="product._get_first_possible_variant_id()"/>
+	                              <input name="product_id" t-att-value="product_variant_id" type="hidden"/>
+	                              <t t-if="product_variant_id">
+						                <a href="#" role="button"  aria-label="Shopping cart" id="add_to_cart" title="Shopping cart">
+						                    <i class="icon-basket-loaded"></i>
+						                    Add To Cart
+						                </a>
+					              </t>
+	                        </li>
+	                        
+                            <li>
+								<t t-set="product_variant_id" t-value="product._get_first_possible_variant_id()"/>
+									<a t-if="product_variant_id" type="button" role="button" class="o_add_compare" title="Compare" aria-label="Compare" t-att-data-product-product-id="product_variant_id" data-action="o_comparelist"><i class="icon-shuffle"></i></a>
+                            </li>
+                            <li><a href="//bestwebcreator.com/shopwise/demo/shop-quick-view.html" class="popup-ajax"><i class="icon-magnifier-add"></i></a></li>
+                            <li>
+	                            <t t-set="in_wish" t-value="product._is_in_wishlist()"/>
+	                            <t t-set="product_variant_id" t-value="product._get_first_possible_variant_id()"/>
+	                            <a t-if="product_variant_id" href="#" class='o_add_wishlist' t-att-disabled='in_wish or None' title="Add to Wishlist" t-att-data-product-template-id="product.id" t-att-data-product-product-id="product_variant_id" data-action="o_wishlist">
+	                              <i class="icon-heart"></i>
+	                            </a>
+	                         </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+			</div> -->
+			 <div class="o_wsale_product_btn" style='display:none;'/>
+					
+				<!-- </div> -->
+		</xpath>
+	</template>
+	 <template id="sort_forest" inherit_id="website_sale.products" customize_show="True" name="Show Sort by Forest">
+        <xpath expr="//ul[hasclass('woocommerce-ordering')]" position="replace">
+            <t t-set="list_price_desc_label">Catalog price: High to Low</t>
+            <t t-set="list_price_asc_label">Catalog price: Low to High</t>
+            <t t-set="name_asc_label">Name: A to Z</t>
+            <t t-set="name_desc_label">Name: Z to A</t>
+            <t t-set="website_sale_sortable" t-value="[
+                (list_price_desc_label, 'list_price desc'),
+                (list_price_asc_label, 'list_price asc'),
+                (name_asc_label, 'name asc'),
+                (name_desc_label, 'name desc')
+            ]"/>
+            <t t-set="website_sale_sortable_current" t-value="[sort for sort in website_sale_sortable if sort[1]==request.params.get('order', '')]"/>
+            <ul class="woocommerce-ordering">
+                <li class="current"><span> Default sorting</span>
+                        <ul>
+                    	    <t t-foreach="website_sale_sortable" t-as="sortby">
+                    
+		                        	<li role="menuitem" rel="noindex,nofollow" >
+		                        		<a t-att-href="keep('/shop', order=sortby[1])"
+                                                class="active">
+		                            		<span t-raw="sortby[0]"/>
+		                            	</a>
+		                        	</li>
+
+		                    </t>
+                                <!-- <li><a href="https://demo4.drfuri.com/farmart2/shop/?orderby=menu_order"
+                                                class="active">Default
+                                                sorting</a></li>
+                                <li><a href="https://demo4.drfuri.com/farmart2/shop/?orderby=popularity"
+                                                class="">Sort by popularity</a>
+                                </li>
+                                <li><a href="https://demo4.drfuri.com/farmart2/shop/?orderby=rating"
+                                                class="">Sort by average
+                                                rating</a></li>
+                                <li><a href="https://demo4.drfuri.com/farmart2/shop/?orderby=date"
+                                                class="">Sort by latest</a></li>
+                                <li><a href="https://demo4.drfuri.com/farmart2/shop/?orderby=price"
+                                                class="">Sort by price: low to
+                                                high</a></li>
+                                <li><a href="https://demo4.drfuri.com/farmart2/shop/?orderby=price-desc"
+                                                class="">Sort by price: high to
+                                                low</a></li> -->
+                        </ul>
+                        <span class="farmart-svg-icon "><svg aria-hidden="false"
+                                        role="img" focusable="false"
+                                        viewBox="0 0 32 32">
+                                        <path
+                                                d="M0 9.6c0-0.205 0.078-0.409 0.234-0.566 0.312-0.312 0.819-0.312 1.131 0l13.834 13.834 13.834-13.834c0.312-0.312 0.819-0.312 1.131 0s0.312 0.819 0 1.131l-14.4 14.4c-0.312 0.312-0.819 0.312-1.131 0l-14.4-14.4c-0.156-0.156-0.234-0.361-0.234-0.566z">
+                                        </path>
+                                </svg></span>
+                </li>
+                <li class="cancel-ordering">
+                        <a href="#" class="fm-cancel-order">Cancel</a>
+                </li>
+            </ul>
+           <!--  <div class="custom_select">
+                <select class="form-control form-control-sm" onchange="location = this.value;">
+                        <t t-if='len(website_sale_sortable_current)'>
+                           <option value=''> Sorting By</option> 
+                        </t>
+                        <t t-else='1'>
+                           <option value=''> Sorting By</option>
+                        </t>
+                    
+                    <i class="fa fa-sort-amount-asc d-lg-none"/>
+                
+
+                    <t t-foreach="website_sale_sortable" t-as="sortby">
+                        
+                        	<option role="menuitem" rel="noindex,nofollow" t-att-value="keep('/shop', order=sortby[1])" >
+                            <span t-raw="sortby[0]"/>
+                        	</option>
+
+                    </t>
+                    </select>
+                </div> -->
+            <!-- </div>  -->
+        </xpath>
+    </template>
+    <template id='comparetemp'>
+        <div id="wrap" class="js_sale">
+                <div class="oe_structure oe_empty" id="oe_structure_website_sale_comparison_product_compare_1"/>
+                <div class="container oe_website_sale pt-3">
+                    <section class="container">
+                        <h3>Compare Products</h3>
+                        <table class="table table-bordered table-hover text-center mt16 table-comparator" id="o_comparelist_table">
+                            <t t-set="categories" t-value="products._prepare_categories_for_display()"/>
+                            <thead>
+                                <tr>
+                                    <td t-if="len(categories)" class='o_ws_compare_image td-top-left border-bottom-0'/>
+                                    <td t-foreach="products" t-as="product" class="o_ws_compare_image position-relative border-bottom-0">
+                                        <a href="#" t-att-data-product_product_id="product.id" class="o_comparelist_remove" t-if="len(products) &gt; 2">
+                                            <strong>x</strong>
+                                        </a>
+                                        <a t-att-href="product.website_url">
+                                            <img t-attf-src="/web/image/product.product/#{product.id}/image_256" class="img img-fluid" style="margin:auto;" alt="Product image"/>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td t-if="len(categories)" class='td-top-left border-top-0'/>
+                                    <td t-foreach="products" t-as="product" class="border-top-0">
+                                        <t t-set="combination_info" t-value="product._get_combination_info_variant()"/>
+                                        <div class='product_summary'>
+                                            <a class="o_product_comparison_table" t-att-href="product.website_url">
+                                                <span t-esc="combination_info['display_name']"></span><br/>
+                                            </a>
+
+                                            <span>
+                                                <strong>Price:</strong>
+                                                <del t-attf-class="text-danger mr8 {{'' if combination_info['has_discounted_price'] else 'd-none'}}" style="white-space: nowrap;" t-esc="combination_info['list_price']" t-options="{'widget': 'monetary', 'display_currency': website.currency_id}" />
+                                                <span t-esc="combination_info['price']" t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"></span>
+                                                <small class="d-block text-muted" groups="website_sale.group_show_uom_price" t-if="product.base_unit_price">
+                                                    <t t-call='website_sale.base_unit_price'><t t-set='product' t-value='line.product_id' /></t>
+                                                </small>
+                                            </span>
+
+                                            <form action="/shop/cart/update" method="post" class="text-center">
+                                            <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
+                                                <input name="product_id" t-att-value="product.id" type="hidden" t-att-data-product-tracking-info="json.dumps(request.env['product.template'].get_google_analytics_data(combination_info))"/>
+                                                <a role="button" class="btn btn-primary btn-block a-submit" href="#"><i class="fa fa-shopping-cart mr-2"></i>Add to Cart</a>
+                                            </form>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <t t-foreach="categories" t-as="category">
+                                    <t t-if="len(categories) &gt; 1">
+                                        <tr class="clickable" data-toggle="collapse" t-att-data-target="'.o_ws_category_%d' % category.id">
+                                            <th class="text-left" t-att-colspan="len(products) + 1"><i class="fa fa-chevron-circle-down o_product_comparison_collpase" role="img" aria-label="Collapse" title="Collapse"></i><span t-if="category" t-field="category.name"/><span t-else="">Uncategorized</span></th>
+                                        </tr>
+                                    </t>
+                                    <tr t-foreach="categories[category]" t-as="attribute" t-att-class="'collapse show o_ws_category_%d' % category.id" style='display:revert !important;'>
+                                        <td><span t-field="attribute.name"/></td>
+                                        <td t-foreach="categories[category][attribute]" t-as="product">
+                                            <t t-foreach="categories[category][attribute][product]" t-as="ptav">
+                                                <span t-field="ptav.name"/><t t-if="not ptav_last">, </t>
+                                            </t>
+                                        </td>
+                                    </tr>
+                                </t>
+                            </tbody>
+                        </table>
+                    </section>
+                </div>
+                <div class="oe_structure" id="oe_structure_website_sale_comparison_product_compare_2"/>
+            </div>
+    </template>
+    
+    <template id='producttemp'>
+        <div class="modal-content container">
+            <style>
+                .product_item_popup img{
+                   width:100%;
+                   height:100%;
+                }
+            </style>
+            <a href="#" class="close-modal" style='padding-top:2px;'>
+                <span class="farmart-svg-icon" style='float: right;border: 2px solid;'><svg aria-hidden="false" role="img" focusable="false"
+                                viewBox="0 0 32 32">
+                    <path
+                            d="M17.131 16.8l9.034-9.034c0.312-0.312 0.312-0.819 0-1.131s-0.819-0.312-1.131 0l-9.034 9.034-9.034-9.034c-0.312-0.312-0.819-0.312-1.131 0s-0.312 0.819 0 1.131l9.034 9.034-9.034 9.034c-0.312 0.312-0.312 0.819 0 1.131 0.156 0.156 0.361 0.234 0.566 0.234s0.409-0.078 0.566-0.234l9.034-9.034 9.034 9.034c0.156 0.156 0.361 0.234 0.566 0.234s0.409-0.078 0.566-0.234c0.312-0.312 0.312-0.819 0-1.131l-9.034-9.034z">
+                    </path>
+                    </svg>
+                </span> 
+            </a>
+            <div class="product-modal-content" style="padding:50px;">
+                <t t-set="combination_info" t-value="product._get_combination_info_variant()"/>
+                <div id="product-2332"
+                    class="product type-product post-2332 status-publish first instock product_cat-water product_cat-milks-and-dairies product_cat-bouncers product_cat-nursery product_cat-pushchairs product_cat-toys has-post-thumbnail shipping-taxable purchasable product-type-simple">
+                    <div class="farmart-product-detail clearfix ">
+                        <div class="woocommerce-product-gallery--with-images woocommerce-product-gallery--columns-5 images" style='width:50%;display:inline-block;'>
+                            <figure
+                                class="woocommerce-product-gallery__wrapper slick-initialized slick-slider slick-dotted">
+                                <div class="slick-list draggable">
+                                        <div class="slick-track"
+                                                style="opacity: 1; width: 395px; transform: translate3d(0px, 0px, 0px);">
+                                                <div data-thumb="https://i0.wp.com/demo4.drfuri.com/farmart2/wp-content/uploads/sites/11/2020/02/08_5a.jpg?fit=100%2C100&amp;ssl=1"
+                                                        data-thumb-alt=""
+                                                        class="woocommerce-product-gallery__image slick-slide slick-current slick-active"
+                                                        data-slick-index="0" aria-hidden="false"
+                                                        style="width: 395px;" tabindex="0"
+                                                        role="tabpanel" id="slick-slide10"
+                                                        aria-describedby="slick-slide-control10"><a
+                                                        href="https://i0.wp.com/demo4.drfuri.com/farmart2/wp-content/uploads/sites/11/2020/02/08_5a.jpg?fit=800%2C800&amp;ssl=1"
+                                                        tabindex="0">
+                                                            <span t-field="product.image_1920"
+                                                            t-options="{'widget': 'image', 'preview_image': 'image_1024' if product_image_big else 'image_256'}"
+                                                             class='product_item_popup'/>
+                                                        </a>
+                                                </div>
+                                        </div>
+                                </div>
+                                <ul class="slick-dots" role="tablist">
+                                        <li class="slick-active" role="presentation"><button
+                                                        type="button" role="tab"
+                                                        id="slick-slide-control10"
+                                                        aria-controls="slick-slide10"
+                                                        aria-label="1 of 1" tabindex="0"
+                                                        aria-selected="true">1</button>
+                                        </li>
+                                </ul>
+                            </figure>
+                            <!-- <div class="product-image-ms ms-image-zoom">
+                                <span class="farmart-svg-icon "><svg aria-hidden="false" role="img"
+                                                focusable="false" viewBox="0 0 32 32">
+                                    <path
+                                            d="M30.19 30.659l-9.509-10.374c2.143-2.242 3.32-5.173 3.32-8.286 0-3.205-1.248-6.219-3.515-8.485s-5.28-3.515-8.485-3.515-6.219 1.248-8.485 3.515-3.515 5.28-3.515 8.485 1.248 6.219 3.515 8.485 5.28 3.515 8.485 3.515c2.761 0 5.38-0.927 7.501-2.633l9.509 10.373c0.158 0.172 0.374 0.259 0.59 0.259 0.193 0 0.387-0.070 0.54-0.21 0.326-0.299 0.348-0.805 0.049-1.13zM1.6 12c0-5.735 4.665-10.4 10.4-10.4s10.4 4.665 10.4 10.4-4.665 10.4-10.4 10.4-10.4-4.665-10.4-10.4zM18.4 11.2h-5.6v-5.6c0-0.442-0.358-0.8-0.8-0.8s-0.8 0.358-0.8 0.8v5.6h-5.6c-0.442 0-0.8 0.358-0.8 0.8s0.358 0.8 0.8 0.8h5.6v5.6c0 0.442 0.358 0.8 0.8 0.8s0.8-0.358 0.8-0.8v-5.6h5.6c0.442 0 0.8-0.358 0.8-0.8s-0.358-0.8-0.8-0.8z">
+                                    </path>
+                                    </svg>
+                                </span>Mouse over to zoom in
+                            </div> -->
+                            <div class="product-image-ms ms-image-view hide">
+                                <span class="farmart-svg-icon "><svg aria-hidden="false" role="img"
+                                                focusable="false" viewBox="0 0 32 32">
+                                    <path
+                                            d="M30.19 30.659l-9.509-10.374c2.143-2.242 3.32-5.173 3.32-8.286 0-3.205-1.248-6.219-3.515-8.485s-5.28-3.515-8.485-3.515-6.219 1.248-8.485 3.515-3.515 5.28-3.515 8.485 1.248 6.219 3.515 8.485 5.28 3.515 8.485 3.515c2.761 0 5.38-0.927 7.501-2.633l9.509 10.373c0.158 0.172 0.374 0.259 0.59 0.259 0.193 0 0.387-0.070 0.54-0.21 0.326-0.299 0.348-0.805 0.049-1.13zM1.6 12c0-5.735 4.665-10.4 10.4-10.4s10.4 4.665 10.4 10.4-4.665 10.4-10.4 10.4-10.4-4.665-10.4-10.4zM18.4 11.2h-5.6v-5.6c0-0.442-0.358-0.8-0.8-0.8s-0.8 0.358-0.8 0.8v5.6h-5.6c-0.442 0-0.8 0.358-0.8 0.8s0.358 0.8 0.8 0.8h5.6v5.6c0 0.442 0.358 0.8 0.8 0.8s0.8-0.358 0.8-0.8v-5.6h5.6c0.442 0 0.8-0.358 0.8-0.8s-0.358-0.8-0.8-0.8z">
+                                    </path>
+                                    </svg>
+                                </span>Click to open expanded view
+                            </div>
+                        </div>
+                        <div class="summary entry-summary" style='float:right;width:50%;'>
+                            <div class="fm-entry-product-header">
+                                <div class="product-header-left">
+                                    <h1 class="product_title entry-title"><t t-esc='product.name'/></h1>
+                                    <div class="product-entry-meta">
+                                        <div class="meta-rating">
+                                            <div class="woocommerce-product-rating">
+                                                <div class="fm-rating">
+                                                    <div class="star-rating"
+                                                        role="img"
+                                                        aria-label="Rated 4.00 out of 5">
+                                                        <span
+                                                                class="max-rating rating-stars"><span
+                                                                        class="farmart-svg-icon"><svg
+                                                                                aria-hidden="true"
+                                                                                role="img"
+                                                                                focusable="false"
+                                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                                width="24"
+                                                                                height="24"
+                                                                                viewBox="0 0 24 24"
+                                                                                fill="currentColor">
+                                                                                <polygon
+                                                                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                                                </polygon>
+                                                                        </svg></span><span
+                                                                        class="farmart-svg-icon"><svg
+                                                                                aria-hidden="true"
+                                                                                role="img"
+                                                                                focusable="false"
+                                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                                width="24"
+                                                                                height="24"
+                                                                                viewBox="0 0 24 24"
+                                                                                fill="currentColor">
+                                                                                <polygon
+                                                                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                                                </polygon>
+                                                                        </svg></span><span
+                                                                        class="farmart-svg-icon"><svg
+                                                                                aria-hidden="true"
+                                                                                role="img"
+                                                                                focusable="false"
+                                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                                width="24"
+                                                                                height="24"
+                                                                                viewBox="0 0 24 24"
+                                                                                fill="currentColor">
+                                                                                <polygon
+                                                                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                                                </polygon>
+                                                                        </svg></span><span
+                                                                        class="farmart-svg-icon"><svg
+                                                                                aria-hidden="true"
+                                                                                role="img"
+                                                                                focusable="false"
+                                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                                width="24"
+                                                                                height="24"
+                                                                                viewBox="0 0 24 24"
+                                                                                fill="currentColor">
+                                                                                <polygon
+                                                                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                                                </polygon>
+                                                                        </svg></span><span
+                                                                        class="farmart-svg-icon"><svg
+                                                                                aria-hidden="true"
+                                                                                role="img"
+                                                                                focusable="false"
+                                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                                width="24"
+                                                                                height="24"
+                                                                                viewBox="0 0 24 24"
+                                                                                fill="currentColor">
+                                                                                <polygon
+                                                                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                                                </polygon>
+                                                                        </svg></span></span><span
+                                                                class="user-rating rating-stars"
+                                                                style="width:80%"><span
+                                                                        class="farmart-svg-icon"><svg
+                                                                                aria-hidden="true"
+                                                                                role="img"
+                                                                                focusable="false"
+                                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                                width="24"
+                                                                                height="24"
+                                                                                viewBox="0 0 24 24"
+                                                                                fill="currentColor">
+                                                                                <polygon
+                                                                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                                                </polygon>
+                                                                        </svg></span><span
+                                                                        class="farmart-svg-icon"><svg
+                                                                                aria-hidden="true"
+                                                                                role="img"
+                                                                                focusable="false"
+                                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                                width="24"
+                                                                                height="24"
+                                                                                viewBox="0 0 24 24"
+                                                                                fill="currentColor">
+                                                                                <polygon
+                                                                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                                                </polygon>
+                                                                        </svg></span><span
+                                                                        class="farmart-svg-icon"><svg
+                                                                                aria-hidden="true"
+                                                                                role="img"
+                                                                                focusable="false"
+                                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                                width="24"
+                                                                                height="24"
+                                                                                viewBox="0 0 24 24"
+                                                                                fill="currentColor">
+                                                                                <polygon
+                                                                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                                                </polygon>
+                                                                        </svg></span><span
+                                                                        class="farmart-svg-icon"><svg
+                                                                                aria-hidden="true"
+                                                                                role="img"
+                                                                                focusable="false"
+                                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                                width="24"
+                                                                                height="24"
+                                                                                viewBox="0 0 24 24"
+                                                                                fill="currentColor">
+                                                                                <polygon
+                                                                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                                                </polygon>
+                                                                        </svg></span><span
+                                                                        class="farmart-svg-icon"><svg
+                                                                                aria-hidden="true"
+                                                                                role="img"
+                                                                                focusable="false"
+                                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                                width="24"
+                                                                                height="24"
+                                                                                viewBox="0 0 24 24"
+                                                                                fill="currentColor">
+                                                                                <polygon
+                                                                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                                                </polygon>
+                                                                        </svg></span></span><span
+                                                                class="screen-reader-text">Rated
+                                                                <strong
+                                                                        class="rating">4.00</strong>
+                                                                out of 5 based
+                                                                on <span
+                                                                        class="rating">1</span>
+                                                                customer
+                                                                rating</span>
+                                                    </div><span
+                                                            class="count">(1)</span>
+                                                </div> <a href="#reviews"
+                                                    class="woocommerce-review-link"
+                                                    rel="nofollow">(<span
+                                                            class="count">1</span>
+                                                    customer review)</a>
+                                            </div>
+                                        </div>
+                                        <div class="meta-sku">
+                                            <span class="meta-label">
+                                                    SKU: </span>
+                                            <span class="meta-value">
+                                                    SKU-112231 </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="price">
+                                <span
+                                    class="woocommerce-Price-amount amount"><bdi> <span t-if="combination_info['price']" t-esc="combination_info['price']" t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"/>
+                                    <span itemprop="price" style="display:none;" t-esc="combination_info['price']" />
+                                   <span itemprop="priceCurrency" style="display:none;" t-esc="website.currency_id.name" /></bdi>
+                               </span> 
+                            </p>
+                            <div class="fm-summary-meta">
+                                    <p class="stock in-stock"><label>Availability:</label>In stock</p>
+                            </div>
+                            <div class="woocommerce-product-details__short-description">
+                                <ul class="farmart-list">
+                                        <li>Type: Processed</li>
+                                        <li>MFG: Jun 23, 2019</li>
+                                        <li>LIFE: 6 – 12 months</li>
+                                </ul>
+                            </div>
+                            <form class="cart"
+                                action="https://demo4.drfuri.com/farmart2/product/aptamil-follow-on-baby-milk/"
+                                method="post" enctype="multipart/form-data">
+                                <div class="single-button-wrapper">
+                                    <div class="quantity">
+                                        <label class="label">Quantity:</label>
+                                        <div class="qty-box"><span
+                                                        class="farmart-svg-icon decrease"><svg
+                                                                aria-hidden="false" role="img"
+                                                                focusable="false"
+                                                                viewBox="0 0 32 32">
+                                                                <path
+                                                                        d="M29.6 17.6h-28.8c-0.442 0-0.8-0.358-0.8-0.8s0.358-0.8 0.8-0.8h28.8c0.442 0 0.8 0.358 0.8 0.8s-0.358 0.8-0.8 0.8z">
+                                                                </path>
+                                                        </svg></span> <label
+                                                        class="screen-reader-text"
+                                                        for="quantity_6333c2622183a"><t t-esc='product.name'/></label>
+                                            <input type="number" id="quantity_6333c2622183a"
+                                                    class="input-text qty text" step="1"
+                                                    min="1" max="0" name="add_qty"
+                                                    value="1" title="Qty" placeholder=""/>
+                                            <span class="farmart-svg-icon increase"><svg
+                                                            aria-hidden="false" role="img"
+                                                            focusable="false"
+                                                            viewBox="0 0 32 32">
+                                                            <path
+                                                                    d="M29.6 16h-13.6v-13.6c0-0.442-0.358-0.8-0.8-0.8s-0.8 0.358-0.8 0.8v13.6h-13.6c-0.442 0-0.8 0.358-0.8 0.8s0.358 0.8 0.8 0.8h13.6v13.6c0 0.442 0.358 0.8 0.8 0.8s0.8-0.358 0.8-0.8v-13.6h13.6c0.442 0 0.8-0.358 0.8-0.8s-0.358-0.8-0.8-0.8z">
+                                                            </path>
+                                                    </svg></span>
+                                        </div>
+                                    </div>
+                                    <div class="buttons-box">
+                                        <div class="button-vendor">
+                                                <a href="https://demo4.drfuri.com/farmart2/store/admindokan112/"><span
+                                                        class="farmart-svg-icon "><svg
+                                                                aria-hidden="true"
+                                                                role="img"
+                                                                focusable="false"
+                                                                viewBox="0 0 32 32">
+                                                        <path
+                                                                d="M28.8 15.2v-1.6c0-0.124-0.029-0.247-0.084-0.358l-3.2-6.4c-0.136-0.271-0.413-0.442-0.716-0.442h-19.2c-0.303 0-0.58 0.171-0.716 0.442l-3.2 6.4c-0.056 0.111-0.084 0.234-0.084 0.358v1.6c0 1.306 0.629 2.467 1.6 3.198v10.402h-0.8c-0.442 0-0.8 0.358-0.8 0.8s0.358 0.8 0.8 0.8h25.6c0.442 0 0.8-0.358 0.8-0.8s-0.358-0.8-0.8-0.8h-0.8v-10.402c0.971-0.73 1.6-1.892 1.6-3.198zM18.4 17.6c-1.323 0-2.4-1.077-2.4-2.4v-0.8h4.8v0.8c0 1.323-1.077 2.4-2.4 2.4zM3.2 15.2v-0.8h4.8v0.8c0 1.323-1.077 2.4-2.4 2.4s-2.4-1.077-2.4-2.4zM14.4 8v4.8h-4.575l1.2-4.8h3.375zM19.375 8l1.2 4.8h-4.575v-4.8h3.375zM9.6 14.4h4.8v0.8c0 1.323-1.077 2.4-2.4 2.4s-2.4-1.077-2.4-2.4v-0.8zM22.4 14.4h4.8v0.8c0 1.323-1.077 2.4-2.4 2.4s-2.4-1.077-2.4-2.4v-0.8zM26.706 12.8h-4.481l-1.2-4.8h3.281l2.4 4.8zM6.094 8h3.281l-1.2 4.8h-4.481l2.4-4.8zM4.8 19.12c0.259 0.053 0.526 0.080 0.8 0.080 1.307 0 2.47-0.63 3.2-1.603 0.73 0.973 1.893 1.603 3.2 1.603s2.47-0.63 3.2-1.603c0.577 0.769 1.425 1.324 2.4 1.522v9.681h-12.8v-9.68zM25.6 28.8h-6.4v-9.68c0.975-0.199 1.823-0.754 2.4-1.522 0.73 0.973 1.893 1.603 3.2 1.603 0.274 0 0.541-0.028 0.8-0.081v9.681zM22.4 23.2c0 0.442-0.358 0.8-0.8 0.8s-0.8-0.358-0.8-0.8c0-0.442 0.358-0.8 0.8-0.8s0.8 0.358 0.8 0.8zM7.2 24c-0.205 0-0.409-0.078-0.566-0.234-0.312-0.312-0.312-0.819 0-1.131l1.6-1.6c0.312-0.312 0.819-0.312 1.131 0s0.312 0.819 0 1.131l-1.6 1.6c-0.156 0.156-0.361 0.234-0.566 0.234zM8.8 27.2c-0.205 0-0.409-0.078-0.566-0.234-0.312-0.312-0.312-0.819 0-1.131l4.8-4.8c0.312-0.312 0.819-0.312 1.131 0s0.312 0.819 0 1.131l-4.8 4.8c-0.156 0.156-0.361 0.234-0.566 0.234zM13.6 27.2c-0.205 0-0.409-0.078-0.566-0.234-0.312-0.312-0.312-0.819 0-1.131l1.6-1.6c0.312-0.312 0.819-0.312 1.131 0s0.312 0.819 0 1.131l-1.6 1.6c-0.156 0.156-0.361 0.234-0.566 0.234z">
+                                                        </path>
+                                                    </svg></span>Store
+                                                </a>
+                                        </div>
+                                           <!-- <t t-set="product_variant_id" t-value="product._get_first_possible_variant_id()"/> -->
+                                           <form action="/shop/cart/update" method="post" t-att-data-publish="product.website_published and 'on' or 'off'" itemscope="itemscope" itemtype="http://schema.org/Product">
+                                                <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
+                                                <input name="product_id" t-att-value="product.id" type="hidden"/>
+                                               <!-- <span class="add-to-cart-text" id="add_to_cart_forest" t-att-data-product_name='product.name'>Add to cart</span> -->
+                                                <button type="button" name="add-to-cart" value="2332"
+                                                    class="add-to-cart-text single_add_to_cart_button quantity_button alt"
+                                                    id="add_to_cart_forest"
+                                                    data-title="add-to-cart" t-att-data-product_name='product.name'>Add to cart 
+                                                </button>
+                                            </form>
+                                    </div>
+                                    <div class="group-buttons oe_website_sale">
+                                            <div class="fm-wishlist-button">
+                                                <div class="yith-wcwl-add-to-wishlist add-to-wishlist-2332 exists wishlist-fragment on-first-load o_add_wishlist"
+                                                        data-fragment-ref="2332"
+                                                        data-fragment-options="{&quot;base_url&quot;:&quot;&quot;,&quot;in_default_wishlist&quot;:true,&quot;is_single&quot;:false,&quot;show_exists&quot;:false,&quot;product_id&quot;:2332,&quot;parent_product_id&quot;:2332,&quot;product_type&quot;:&quot;simple&quot;,&quot;show_view&quot;:false,&quot;browse_wishlist_text&quot;:&quot;Browse wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The product is already in your wishlist!&quot;,&quot;product_added_text&quot;:&quot;Product added!&quot;,&quot;heading_icon&quot;:&quot;fa-heart-o&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:&quot;after_add_to_cart&quot;,&quot;item&quot;:&quot;add_to_wishlist&quot;}" t-att-data-product-product-id='product.id'>
+                                                        <div
+                                                                class="yith-wcwl-wishlistexistsbrowse">
+                                                                <span class="feedback">
+                                                                        <i
+                                                                                class="yith-wcwl-icon fa fa-heart"></i>
+                                                                        The product is already
+                                                                        in your wishlist!
+                                                                </span>
+                                                                <a href="#"
+                                                                        rel="nofollow"
+                                                                        data-title="Browse wishlist">
+                                                                        <i
+                                                                                class="yith-wcwl-icon fa fa-heart"></i>
+                                                                        <span>Browse
+                                                                                wishlist</span>
+                                                                </a>
+                                                        </div>
+                                                </div>
+                                            </div>
+                                            <div class="divider"></div>
+                                            <div class="compare-button fm-compare-button fm-loop_button">
+                                                <a href="https://demo4.drfuri.com/farmart2?action=yith-woocompare-add-product&amp;id=2332" class="compare" title="Compare" data-product_id="2332"><span class="farmart-svg-icon ">
+                                                    <svg aria-hidden="true"
+                                                                        role="img"
+                                                                        focusable="false"
+                                                                        viewBox="0 0 32 32">
+                                                    <path
+                                                            d="M27.766 5.034l-4.8-4.8c-0.312-0.312-0.819-0.312-1.131 0s-0.312 0.819 0 1.131l3.434 3.434h-21.269c-1.323 0-2.4 1.077-2.4 2.4v14.4c0 0.442 0.358 0.8 0.8 0.8s0.8-0.358 0.8-0.8v-14.4c0-0.441 0.359-0.8 0.8-0.8h21.269l-3.434 3.434c-0.312 0.312-0.312 0.819 0 1.131 0.156 0.156 0.361 0.234 0.566 0.234s0.409-0.078 0.566-0.234l4.8-4.8c0.312-0.312 0.312-0.819 0-1.131zM28 9.6c-0.442 0-0.8 0.358-0.8 0.8v14.4c0 0.441-0.359 0.8-0.8 0.8h-21.269l3.434-3.434c0.312-0.312 0.312-0.819 0-1.131s-0.819-0.312-1.131 0l-4.8 4.8c-0.312 0.312-0.312 0.819 0 1.131l4.8 4.8c0.156 0.156 0.361 0.234 0.566 0.234s0.409-0.078 0.566-0.234c0.312-0.312 0.312-0.819 0-1.131l-3.434-3.434h21.269c1.323 0 2.4-1.077 2.4-2.4v-14.4c0-0.442-0.358-0.8-0.8-0.8z">
+                                                    </path>
+                                                    </svg></span><span class="text">Compare</span>
+                                                </a>
+                                            </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="product_socials socials-with-background">
+                                <ul class="farmart-social-share socials-inline farmart-social__text">
+                                    <li><a class="share-facebook farmart-facebook"
+                                                    title="Aptamil Follow On Baby Milk"
+                                                    href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fdemo4.drfuri.com%2Ffarmart2%2Fproduct%2Faptamil-follow-on-baby-milk%2F&amp;t=Aptamil+Follow+On+Baby+Milk"
+                                                    target="_blank"><span
+                                                            class="farmart-svg-icon"><svg
+                                                                    viewBox="0 0 16 28">
+                                                                    <path
+                                                                            d="M14.984 0.187v4.125h-2.453c-1.922 0-2.281 0.922-2.281 2.25v2.953h4.578l-0.609 4.625h-3.969v11.859h-4.781v-11.859h-3.984v-4.625h3.984v-3.406c0-3.953 2.422-6.109 5.953-6.109 1.687 0 3.141 0.125 3.563 0.187z">
+                                                                    </path>
+                                                            </svg></span><span
+                                                            class="text">Facebook</span></a>
+                                    </li>
+                                    <li>
+                                        <a class="share-twitter farmart-twitter" href="http://twitter.com/share?text=Aptamil+Follow+On+Baby+Milk&amp;url=https%3A%2F%2Fdemo4.drfuri.com%2Ffarmart2%2Fproduct%2Faptamil-follow-on-baby-milk%2F" title="Aptamil Follow On Baby Milk" target="_blank"><span
+                                            class="farmart-svg-icon"><svg
+                                                    viewBox="0 0 26 28">
+                                                    <path
+                                                            d="M25.312 6.375c-0.688 1-1.547 1.891-2.531 2.609 0.016 0.219 0.016 0.438 0.016 0.656 0 6.672-5.078 14.359-14.359 14.359-2.859 0-5.516-0.828-7.75-2.266 0.406 0.047 0.797 0.063 1.219 0.063 2.359 0 4.531-0.797 6.266-2.156-2.219-0.047-4.078-1.5-4.719-3.5 0.313 0.047 0.625 0.078 0.953 0.078 0.453 0 0.906-0.063 1.328-0.172-2.312-0.469-4.047-2.5-4.047-4.953v-0.063c0.672 0.375 1.453 0.609 2.281 0.641-1.359-0.906-2.25-2.453-2.25-4.203 0-0.938 0.25-1.797 0.688-2.547 2.484 3.062 6.219 5.063 10.406 5.281-0.078-0.375-0.125-0.766-0.125-1.156 0-2.781 2.25-5.047 5.047-5.047 1.453 0 2.766 0.609 3.687 1.594 1.141-0.219 2.234-0.641 3.203-1.219-0.375 1.172-1.172 2.156-2.219 2.781 1.016-0.109 2-0.391 2.906-0.781z">
+                                                    </path>
+                                            </svg></span><span
+                                            class="text">Twitter</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="share-pinterest farmart-pinterest" href="http://pinterest.com/pin/create/button?media=https%3A%2F%2Fi0.wp.com%2Fdemo4.drfuri.com%2Ffarmart2%2Fwp-content%2Fuploads%2Fsites%2F11%2F2020%2F02%2F08_5a.jpg%3Ffit%3D800%252C800%26ssl%3D1&amp;url=https%3A%2F%2Fdemo4.drfuri.com%2Ffarmart2%2Fproduct%2Faptamil-follow-on-baby-milk%2F&amp;description=Aptamil+Follow+On+Baby+Milk" title="Aptamil Follow On Baby Milk" target="_blank"><span
+                                            class="farmart-svg-icon"><svg
+                                                    viewBox="0 0 20 28">
+                                                    <path
+                                                            d="M0 9.328c0-5.766 5.281-9.328 10.625-9.328 4.906 0 9.375 3.375 9.375 8.547 0 4.859-2.484 10.25-8.016 10.25-1.313 0-2.969-0.656-3.609-1.875-1.188 4.703-1.094 5.406-3.719 9l-0.219 0.078-0.141-0.156c-0.094-0.984-0.234-1.953-0.234-2.938 0-3.187 1.469-7.797 2.188-10.891-0.391-0.797-0.5-1.766-0.5-2.641 0-1.578 1.094-3.578 2.875-3.578 1.313 0 2.016 1 2.016 2.234 0 2.031-1.375 3.938-1.375 5.906 0 1.344 1.109 2.281 2.406 2.281 3.594 0 4.703-5.187 4.703-7.953 0-3.703-2.625-5.719-6.172-5.719-4.125 0-7.313 2.969-7.313 7.156 0 2.016 1.234 3.047 1.234 3.531 0 0.406-0.297 1.844-0.812 1.844-0.078 0-0.187-0.031-0.266-0.047-2.234-0.672-3.047-3.656-3.047-5.703z">
+                                                    </path>
+                                            </svg></span><span
+                                            class="text">Pinterest</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="share-google-plus farmart-google-plus" href="https://plus.google.com/share?url=https%3A%2F%2Fdemo4.drfuri.com%2Ffarmart2%2Fproduct%2Faptamil-follow-on-baby-milk%2F&amp;text=Aptamil+Follow+On+Baby+Milk"
+                                        title="Aptamil Follow On Baby Milk"
+                                        target="_blank"><span
+                                                class="farmart-svg-icon"><svg
+                                                        viewBox="0 0 36 28">
+                                                        <path
+                                                                d="M22.453 14.266c0 6.547-4.391 11.188-11 11.188-6.328 0-11.453-5.125-11.453-11.453s5.125-11.453 11.453-11.453c3.094 0 5.672 1.125 7.672 3l-3.109 2.984c-0.844-0.812-2.328-1.766-4.562-1.766-3.906 0-7.094 3.234-7.094 7.234s3.187 7.234 7.094 7.234c4.531 0 6.234-3.266 6.5-4.937h-6.5v-3.938h10.813c0.109 0.578 0.187 1.156 0.187 1.906zM36 12.359v3.281h-3.266v3.266h-3.281v-3.266h-3.266v-3.281h3.266v-3.266h3.281v3.266h3.266z">
+                                                        </path>
+                                                </svg></span><span
+                                                class="text">Google</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+  </data>
+</odoo>
+
+
+
+

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+   <template id="website_homepage_inherit" inherit_id="website.homepage">
+         <xpath expr="//div[@id='wrap']" position="replace">
+         	<t t-set="body_classname" t-value="'archive post-type-archive post-type-archive-product wp-embed-responsive theme-farmart woocommerce-shop woocommerce woocommerce-page woocommerce-js header-v1 hfeed sidebar-content fm-preloader fm-show-qty woocommerce-active catalog-view-grid fm-catalog-page catalog-nav-numeric-short catalog-standard catalog-sidebar-content catalog-ajax-filter farmart-not-login elementor-default elementor-kit-13 dokan-theme-farmart'"/>
+            <div id='wrap'>
+            	<div id="content" class="site-content  no-top-spacing no-bottom-spacing">
+            		<article id="post-5636" class="post-5636 page type-page status-publish hentry">
+            			<div class="entry-content">
+            				<div data-elementor-type="wp-page" data-elementor-id="5636" class="elementor elementor-5636">
+            					<section
+								    class="elementor-section elementor-top-section elementor-element elementor-element-63af75dd elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+								    data-id="63af75dd" data-element_type="section"
+								    data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}"
+								    style="width: 1284px; left: 0px;">
+								    <div class="elementor-container elementor-column-gap-default">
+								        <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-22ef607e"
+								            data-id="22ef607e" data-element_type="column">
+								            <div class="elementor-widget-wrap elementor-element-populated">
+								                <div class="elementor-element elementor-element-5d478862 farmart--h-position-center farmart--v-position-middle elementor-widget elementor-widget-farmart-slides"
+								                    data-id="5d478862" data-element_type="widget" data-widget_type="farmart-slides.default">
+								                    <div class="elementor-widget-container">
+								                        <div class="farmart-slides-wrapper align-icon- navigation-arrows navigation-tablet-arrows navigation-mobile-arrows farmart-arrow-bottom"
+								                            dir="ltr">
+								                            <div class="arrows-wrapper">
+								                                <div class="arrows-inner arrows-container-fluid"><span
+								                                        class="slick-prev-arrow farmart-svg-icon slick-arrow slick-disabled"
+								                                        aria-disabled="true" style=""><svg viewBox="0 0 32 32">
+								                                            <path
+								                                                d="M22.4 32c0.205 0 0.409-0.078 0.566-0.234 0.312-0.312 0.312-0.819 0-1.131l-13.834-13.834 13.834-13.834c0.312-0.312 0.312-0.819 0-1.131s-0.819-0.312-1.131 0l-14.4 14.4c-0.312 0.312-0.312 0.819 0 1.131l14.4 14.4c0.156 0.156 0.361 0.234 0.566 0.234z">
+								                                            </path>
+								                                        </svg></span><span class="slick-next-arrow farmart-svg-icon slick-arrow second_click"
+								                                        style="" aria-disabled="false"><svg viewBox="0 0 32 32">
+								                                            <path
+								                                                d="M8 32c-0.205 0-0.409-0.078-0.566-0.234-0.312-0.312-0.312-0.819 0-1.131l13.834-13.834-13.834-13.834c-0.312-0.312-0.312-0.819 0-1.131s0.819-0.312 1.131 0l14.4 14.4c0.312 0.312 0.312 0.819 0 1.131l-14.4 14.4c-0.156 0.156-0.361 0.234-0.566 0.234z">
+								                                            </path>
+								                                        </svg></span></div>
+								                            </div>
+								                            <div class="farmart-slides slick-initialized slick-slider slick-dotted"
+								                                data-slider_options="{&quot;slidesToShow&quot;:1,&quot;autoplaySpeed&quot;:0,&quot;autoplay&quot;:false,&quot;infinite&quot;:false,&quot;pauseOnHover&quot;:false,&quot;speed&quot;:300,&quot;arrows&quot;:true,&quot;dots&quot;:true,&quot;rtl&quot;:false,&quot;fade&quot;:true}">
+								                                <div class="slick-list draggable">
+								                                    <div class="slick-track" style="opacity: 1; width: 1632px;">
+								                                        <div class="elementor-repeater-item-f4a806e item-slider slick-slide slick-current slick-active"
+								                                            data-slick-index="0" aria-hidden="false"
+								                                            style="width: 816px; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;"
+								                                            tabindex="0" role="tabpanel" id="slick-slide00"
+								                                            aria-describedby="slick-slide-control00">
+								                                            <div class="slick-slide-bg"></div>
+								                                            <div class="slick-slide-inner">
+								                                                <div class="farmart-slide-content">
+								                                                    <div class="farmart-slide-heading">Active Summer With<br
+								                                                            class="hidden-xs"/>Juice Milk 300ml</div>
+								                                                    <div class="farmart-slide-description">New arrivals with naturre
+								                                                        fruits, juice<br class="hidden-xs"/>milks, essential for summer
+								                                                    </div><a href="https://demo4.drfuri.com/farmart2/shop/"
+								                                                        class="farmart-button farmart-slide-button" tabindex="0">Shop
+								                                                        Now</a>
+								                                                </div>
+								                                            </div>
+								                                        </div>
+								                                        <div class="elementor-repeater-item-6273942 item-slider slick-slide second_slide"
+								                                            data-slick-index="1" aria-hidden="true"
+								                                            style="width: 816px; position: relative; left: -816px; top: 0px; z-index: 998; opacity: 0;"
+								                                            tabindex="-1" role="tabpanel" id="slick-slide01"
+								                                            aria-describedby="slick-slide-control01">
+								                                            <div class="slick-slide-bg"></div>
+								                                            <div class="slick-slide-inner">
+								                                                <div class="farmart-slide-content">
+								                                                    <div class="farmart-slide-heading">Farmart<br class="hidden-xs"/>Food
+								                                                        Takeaway</div>
+								                                                    <div class="farmart-slide-description">New arrivals with naturre
+								                                                        fruits, juice<br class="hidden-xs"/>milks, essential for summer
+								                                                    </div><a href="https://demo4.drfuri.com/farmart2/shop/"
+								                                                        class="farmart-button farmart-slide-button" tabindex="-1">Shop
+								                                                        Now</a>
+								                                                </div>
+								                                            </div>
+								                                        </div>
+								                                    </div>
+								                                </div>
+								                                <ul class="slick-dots" style="display: block;" role="tablist">
+								                                    <li class="slick-active" role="presentation"><button type="button" role="tab"
+								                                            id="slick-slide-control00" aria-controls="slick-slide00" aria-label="1 of 2"
+								                                            tabindex="0" aria-selected="true">1</button></li>
+								                                    <li role="presentation"><button type="button" role="tab" id="slick-slide-control01"
+								                                            aria-controls="slick-slide01" aria-label="2 of 2" tabindex="-1">2</button>
+								                                    </li>
+								                                </ul>
+								                            </div>
+								                        </div>
+								                    </div>
+								                </div>
+								            </div>
+								        </div>
+								        <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-71100023"
+								            data-id="71100023" data-element_type="column">
+								            <div class="elementor-widget-wrap elementor-element-populated">
+								                <div class="elementor-element elementor-element-162f38aa farmart--v-position-middle elementor-widget elementor-widget-farmart-banner-medium-3"
+								                    data-id="162f38aa" data-element_type="widget" data-widget_type="farmart-banner-medium-3.default">
+								                    <div class="elementor-widget-container">
+								                        <div class="farmart-banner-medium-3">
+								                            <div class="banner-featured-image"></div>
+								                            <a class="link" href="https://demo4.drfuri.com/farmart2/shop/"></a>
+								                            <div class="banner-content">
+								                                <div class="banner-content__inner">
+								                                    <h3 class="banner-title">20% SALE OFF</h3>
+								                                    <div class="banner-desc">Synthetic seeds<br class="hidden-xs"/>Net 2.0 OZ</div> <a
+								                                        class="btn-button" href="https://demo4.drfuri.com/farmart2/shop/">Shop Now</a>
+								                                </div>
+								                            </div>
+								                        </div>
+								                    </div>
+								                </div>
+								            </div>
+								        </div>
+								    </div>
+								</section>
+            				</div>
+            			</div>
+            		</article>
+            	</div>
+			</div>             
+         </xpath>
+     </template>
+   </data>
+</odoo>

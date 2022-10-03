@@ -1,0 +1,1658 @@
+/*
+Theme Name: farmart
+
+Dokan Vendor styles override
+*/
+@keyframes bubble {
+	0%, 100% {
+		transform: scale(0);
+	}
+	50% {
+		transform: scale(1);
+	}
+}
+
+@keyframes farmartFadeInUp {
+	from {
+		opacity: 0;
+		transform: translate3d(0, 80px, 0);
+	}
+	to {
+		opacity: 1;
+		transform: none;
+	}
+}
+
+@keyframes fm-spin-fast {
+	0% {
+		-webkit-transform: rotate(0);
+		transform: rotate(0);
+		animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+	}
+	50% {
+		-webkit-transform: rotate(900deg);
+		transform: rotate(900deg);
+		animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+	}
+	to {
+		-webkit-transform: rotate(1800deg);
+		transform: rotate(1800deg);
+	}
+}
+
+.loading-icon .bubble:nth-child(2n) .dot {
+	animation-delay: -0.3s;
+}
+
+.loading-icon .bubble:nth-child(3n) .dot {
+	animation-delay: 0s;
+}
+
+.loading-icon .bubble {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	margin: 0 5px;
+	transform: scaleY(-50%);
+}
+
+.loading-icon .dot {
+	display: block;
+	border-radius: 50%;
+	background-color: #fff;
+	width: 100%;
+	height: 100%;
+	transform-origin: 50% 50%;
+	animation: bubble 1.2s -0.6s infinite ease-out;
+	-webkit-animation: bubble 1.2s -0.6s infinite ease-out;
+}
+
+.gooey {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 142px;
+	height: 40px;
+	margin: -20px 0 0 -71px;
+	background: white;
+	filter: contrast(20);
+}
+
+.gooey .dot {
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	top: 12px;
+	left: 15px;
+	filter: blur(4px);
+	background: #000;
+	border-radius: 50%;
+	transform: translateX(0);
+	animation: dot 2.8s infinite;
+}
+
+.gooey .dots {
+	transform: translateX(0);
+	margin-top: 12px;
+	margin-left: 31px;
+	animation: dots 2.8s infinite;
+}
+
+.gooey .dots span {
+	display: block;
+	float: left;
+	width: 16px;
+	height: 16px;
+	margin-left: 16px;
+	filter: blur(4px);
+	background: #000;
+	border-radius: 50%;
+	animation: bubble 1.2s -0.6s infinite ease-out;
+}
+
+.gooey .dots span:nth-child(2n) {
+	animation-delay: -1s;
+}
+
+.gooey .dots span:nth-child(3n) {
+	animation-delay: 0s;
+}
+
+@keyframes dot {
+	0%, 100% {
+		transform: scale(0);
+	}
+	50% {
+		transform: scale(1) translateX(96px);
+	}
+}
+
+@keyframes dots {
+	50% {
+		transform: translateX(-31px);
+	}
+}
+
+.visible-effect.show:after {
+	transform: scaleY(0);
+}
+
+.visible-effect:after {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #f9f9f9;
+	display: block;
+	content: '';
+	transform: scaleY(1);
+	transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+	transform-origin: 0 100%;
+	z-index: 999;
+}
+
+@keyframes fm-spin-fast {
+	0% {
+		-webkit-transform: rotate(0);
+		transform: rotate(0);
+		animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+	}
+	50% {
+		-webkit-transform: rotate(900deg);
+		transform: rotate(900deg);
+		animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+	}
+	to {
+		-webkit-transform: rotate(1800deg);
+		transform: rotate(1800deg);
+	}
+}
+
+@keyframes lds-dual-ring {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@-webkit-keyframes lds-dual-ring {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@-o-keyframes lds-dual-ring {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@-ms-keyframes lds-dual-ring {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+/**
+ * Dokan Vendor
+ */
+#dokan-seller-listing-wrap {
+	margin-top: 50px;
+}
+
+#dokan-seller-listing-wrap.grid-view .dokan-seller-wrap .dokan-single-seller .store-wrapper {
+	background-color: #f8f8f8;
+	border: 1px solid #d9d9d9;
+	box-shadow: none;
+}
+
+#dokan-seller-listing-wrap.grid-view .dokan-seller-wrap .dokan-single-seller.no-banner-img .store-content .store-data h2 a,
+#dokan-seller-listing-wrap.grid-view .dokan-seller-wrap .dokan-single-seller.no-banner-img .store-content .store-data p {
+	color: #000;
+}
+
+#dokan-seller-listing-wrap.grid-view .store-content {
+	position: static;
+	background-color: transparent;
+	color: #000;
+	padding: 20px;
+}
+
+#dokan-seller-listing-wrap.grid-view .store-content .store-data-container {
+	padding: 0;
+}
+
+#dokan-seller-listing-wrap.grid-view .store-content .store-data-container .store-data h2 {
+	display: inherit;
+}
+
+#dokan-seller-listing-wrap.grid-view .store-content .store-data-container .store-data h2 a {
+	color: #000;
+	text-shadow: none;
+	font-size: 20px;
+}
+
+#dokan-seller-listing-wrap.grid-view .store-content .store-data-container .store-data .store-phone > .farmart-svg-icon {
+	display: none;
+}
+
+#dokan-seller-listing-wrap.grid-view .store-content .store-data-container .store-data .store-title {
+	display: flex;
+	margin: 0 0 7px;
+}
+
+#dokan-seller-listing-wrap.grid-view .store-content .store-data-container .store-data .store-address {
+	margin: 7px 0 0 0;
+}
+
+#dokan-seller-listing-wrap.grid-view .store-content .store-data-container .store-data .featured-favourite {
+	margin-left: 20px;
+	top: 0;
+}
+
+#dokan-seller-listing-wrap.grid-view .store-content .store-data-container .store-data .featured-favourite .featured-label {
+	background-color: #669900;
+	box-shadow: none;
+	text-transform: uppercase;
+	font-size: 11px;
+	padding: 3px 12px;
+}
+
+#dokan-seller-listing-wrap.grid-view .store-content .store-data-container .store-data .dokan-seller-rating {
+	display: flex;
+	align-items: center;
+}
+
+#dokan-seller-listing-wrap.grid-view .store-content .store-data-container .store-data .dokan-seller-rating p.rating {
+	display: inline-block !important;
+	margin: 0;
+	font-size: 12px;
+	color: #333;
+	margin-left: 7px;
+	position: relative;
+	top: -2px;
+}
+
+#dokan-seller-listing-wrap.list-view .dokan-seller-wrap .dokan-single-seller .store-wrapper {
+	justify-content: space-between;
+	border: 1px solid #d9d9d9;
+	box-shadow: none;
+}
+
+#dokan-seller-listing-wrap.list-view .dokan-seller-wrap .dokan-single-seller .store-wrapper .store-content {
+	padding-left: 17px;
+}
+
+#dokan-seller-listing-wrap.list-view .dokan-seller-wrap .dokan-single-seller .store-wrapper .store-content .store-data-container .store-data h2 {
+	margin-bottom: 0;
+}
+
+#dokan-seller-listing-wrap.list-view .dokan-seller-wrap .dokan-single-seller .store-wrapper .store-content .store-data-container .store-data h2 a {
+	font-size: 25px;
+}
+
+#dokan-seller-listing-wrap.list-view .dokan-seller-wrap .dokan-single-seller .store-wrapper .store-content .store-data-container .featured-favourite .featured-label {
+	background-color: #e84506;
+}
+
+#dokan-seller-listing-wrap.list-view .dokan-seller-wrap .dokan-single-seller .store-wrapper .store-content .store-data-container .store-data {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#dokan-seller-listing-wrap.list-view .dokan-seller-wrap .dokan-single-seller .store-wrapper .store-content .store-data-container .store-data .store-title h2 {
+	display: flex;
+}
+
+#dokan-seller-listing-wrap.list-view .dokan-seller-wrap .dokan-single-seller .store-wrapper .store-content .store-data-container .store-data .dokan-seller-rating[class] {
+	float: left;
+	top: auto;
+	left: auto;
+	display: flex;
+	align-items: center;
+}
+
+#dokan-seller-listing-wrap.list-view .dokan-seller-wrap .dokan-single-seller .store-wrapper .store-content .store-data-container .store-data .dokan-seller-rating[class] p {
+	margin: 0 0 0 7px;
+	position: relative;
+	top: -2px;
+}
+
+#dokan-seller-listing-wrap.list-view .dokan-seller-wrap .dokan-single-seller .store-wrapper .store-content .store-data-container .store-data .store-address {
+	margin-bottom: 0;
+	line-height: 1;
+}
+
+#dokan-seller-listing-wrap.list-view .dokan-seller-wrap .dokan-single-seller .store-wrapper .store-footer[class] {
+	flex-direction: column;
+	align-items: flex-end;
+	padding-right: 30px;
+	margin: 0;
+}
+
+#dokan-seller-listing-wrap.list-view .dokan-seller-wrap .dokan-single-seller .store-wrapper .store-footer[class] > *:first-child {
+	margin-bottom: 20px;
+}
+
+#dokan-seller-listing-wrap.list-view .dokan-seller-wrap .dokan-single-seller .store-wrapper .store-footer[class]:before {
+	display: none;
+}
+
+#dokan-seller-listing-wrap .seller-listing-content .dokan-seller-wrap .dokan-single-seller .store-wrapper .store-data-container {
+	display: flex;
+}
+
+#dokan-seller-listing-wrap .seller-listing-content .dokan-seller-wrap .dokan-single-seller .store-wrapper .store-data {
+	flex: 1;
+}
+
+#dokan-seller-listing-wrap .seller-listing-content .dokan-seller-wrap .dokan-single-seller .store-wrapper .store-data h2 {
+	margin: 0;
+}
+
+#dokan-seller-listing-wrap .seller-listing-content .dokan-seller-wrap .dokan-single-seller .store-wrapper .store-data .dokan-seller-rating i.dashicons {
+	font-size: 14px;
+}
+
+#dokan-seller-listing-wrap .seller-listing-content .dokan-seller-wrap .dokan-single-seller .store-wrapper .store-data .dokan-seller-rating i.dashicons.dashicons-star-filled, #dokan-seller-listing-wrap .seller-listing-content .dokan-seller-wrap .dokan-single-seller .store-wrapper .store-data .dokan-seller-rating i.dashicons.dashicons-star-half {
+	color: #fcb800;
+}
+
+#dokan-seller-listing-wrap .seller-listing-content .dokan-seller-wrap .dokan-single-seller .store-wrapper .store-data .dokan-seller-rating i.dashicons.dashicons-star-empty:before {
+	content: "\f155";
+	color: #ccc;
+}
+
+#dokan-seller-listing-wrap .seller-listing-content .dokan-seller-wrap .dokan-single-seller .store-wrapper .store-data-avatar {
+	flex: 0 1 46px;
+	margin: 0 20px 0 0;
+}
+
+#dokan-seller-listing-wrap ul.dokan-seller-wrap li {
+	margin-bottom: 30px;
+}
+
+#dokan-seller-listing-wrap ul.dokan-seller-wrap li .store-footer {
+	background-color: transparent;
+	padding: 20px;
+	border: none;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 -10px;
+}
+
+#dokan-seller-listing-wrap ul.dokan-seller-wrap li .store-footer > * {
+	width: 50%;
+	padding: 0 10px;
+}
+
+#dokan-seller-listing-wrap ul.dokan-seller-wrap li .store-footer:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 30px;
+	right: 30px;
+	height: 1px;
+	width: calc( 100% - 60px);
+	background-color: #dfe0e1;
+}
+
+#dokan-seller-listing-wrap ul.dokan-seller-wrap li .store-footer .seller-avatar {
+	position: static;
+	width: 46px;
+	height: 46px;
+	border: none;
+	box-shadow: none;
+	float: left;
+	margin-right: 15px;
+}
+
+#dokan-seller-listing-wrap ul.dokan-seller-wrap li .store-footer .rating {
+	display: flex;
+	font-weight: 700;
+	color: #000;
+}
+
+#dokan-seller-listing-wrap ul.dokan-seller-wrap li .store-footer .rating span {
+	font-weight: 400;
+	color: #999;
+	margin-left: 3px;
+}
+
+#dokan-seller-listing-wrap ul.dokan-seller-wrap li .store-footer .dokan-follow-store-button,
+#dokan-seller-listing-wrap ul.dokan-seller-wrap li .store-footer .dokan-visit-store {
+	background-color: #F8F8F8;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	padding: 0 15px 0 10px;
+	color: #000;
+	font-size: 13px;
+	font-weight: 700;
+	height: 36px;
+	line-height: 29px;
+	width: 100%;
+	transition: .5s;
+}
+
+#dokan-seller-listing-wrap ul.dokan-seller-wrap li .store-footer .dokan-follow-store-button:hover,
+#dokan-seller-listing-wrap ul.dokan-seller-wrap li .store-footer .dokan-visit-store:hover {
+	background-color: var(--fm-background-color-secondary);
+	color: #fff;
+	border-color: var(--fm-background-color-secondary);
+}
+
+#dokan-seller-listing-wrap ul.dokan-seller-wrap li .store-footer .dokan-visit-store .farmart-svg-icon {
+	font-size: 20px;
+	position: relative;
+	top: 4px;
+	margin-right: 5px;
+}
+
+#dokan-seller-listing-wrap ul.dokan-seller-wrap li .store-footer .dokan-follow-store-button:before {
+	content: "\e71f";
+	font-family: 'FarmartIcon';
+	font-size: 16px;
+	font-weight: 400;
+	position: relative;
+	top: 2px;
+	margin-right: 5px;
+}
+
+#dokan-store-listing-filter-wrap {
+	box-shadow: none;
+	padding: 0;
+	margin-top: 50px;
+}
+
+#dokan-store-listing-filter-wrap .right .item .dokan-store-list-filter-button {
+	font-size: 16px;
+	font-weight: 700;
+	padding: 11px 35px 12px 63px;
+	border-radius: 0;
+	background-color: var(--fm-background-color-secondary) !important;
+	color: var(--fm-background-text-color-secondary) !important;
+}
+
+#dokan-store-listing-filter-wrap .right .item .dokan-icons {
+	left: 22%;
+}
+
+#dokan-store-listing-filter-wrap .right .item.sort-by {
+	position: relative;
+}
+
+#dokan-store-listing-filter-wrap .right .item.sort-by label {
+	margin-right: 15px;
+}
+
+#dokan-store-listing-filter-wrap .right .item.sort-by select {
+	border: 1px solid #d9d9d9;
+	padding: 10px 80px 11px 20px;
+}
+
+#dokan-store-listing-filter-wrap .right .item.sort-by:before {
+	content: "";
+	background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyNC4wLjEsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMl8xXyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCA2NCA2NCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNjQgNjQ7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGQ9Ik02My42LDE3Yy0wLjYtMC42LTEuNS0wLjYtMi4xLTAuMUwzMi43LDQ0LjJjLTAuNCwwLjQtMSwwLjQtMS40LDBMMi41LDE2LjlDMS45LDE2LjQsMSwxNi40LDAuNCwxNw0KCWMtMC42LDAuNi0wLjUsMS42LDAuMSwyLjFsMjguOCwyNy4zYzAuOCwwLjcsMS44LDEuMSwyLjgsMS4xYzEsMCwyLTAuNCwyLjgtMS4xbDI4LjgtMjcuM0M2NC4xLDE4LjYsNjQuMiwxNy42LDYzLjYsMTd6Ii8+DQo8L3N2Zz4=");
+	height: 14px;
+	width: 14px;
+	color: #000;
+	font-size: 14px;
+	position: absolute;
+	right: 18px;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 9;
+}
+
+#dokan-store-listing-filter-wrap .right .item.toggle-view {
+	display: flex;
+	align-items: center;
+	color: #ccc;
+}
+
+#dokan-store-listing-filter-wrap .right .item.toggle-view > span {
+	font-size: 24px;
+}
+
+#dokan-store-listing-filter-wrap .right .item.toggle-view > span:first-child {
+	margin-right: 10px;
+}
+
+#dokan-store-listing-filter-wrap .right .item.toggle-view .active {
+	color: #000;
+}
+
+#dokan-store-listing-filter-wrap .right .item.toggle-view .dashicons-screenoptions:before,
+#dokan-store-listing-filter-wrap .right .item.toggle-view .dashicons-menu-alt:before {
+	opacity: 0;
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	z-index: 9;
+}
+
+#dokan-store-listing-filter-wrap .farmart-header-filter {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #f8f8f8;
+	border: 1px solid #d9d9d9;
+	color: #999;
+	font-size: 16px;
+	box-shadow: none;
+	padding: 14px 35px;
+	margin-top: 35px;
+}
+
+#dokan-store-listing-filter-form-wrap {
+	background-color: #f8f8f8;
+	border: 1px solid #d9d9d9;
+	box-shadow: none;
+	display: none;
+}
+
+#dokan-store-listing-filter-form-wrap::before {
+	display: none;
+}
+
+#dokan-store-listing-filter-form-wrap .apply-filter {
+	margin-top: 20px;
+}
+
+#dokan-store-listing-filter-form-wrap .apply-filter .dokan-btn-theme {
+	border: 1px solid;
+}
+
+#dokan-store-listing-filter-form-wrap .apply-filter #cancel-filter-btn {
+	border-color: #ccc !important;
+}
+
+#dokan-geolocation-locations-map.dokan-geolocation-locations-map-top {
+	height: 400px !important;
+}
+
+.dokan-store .page-header-layout-2 + .site-content,
+.wcfm-template-themes .page-header-layout-2 + .site-content {
+	padding-top: 60px;
+}
+
+.fm-shop-content .dokan-w3 {
+	width: 23%;
+}
+
+.fm-shop-content .dokan-w8 {
+	width: 74%;
+}
+
+.dokan-single-store .profile-frame .profile-info-box .profile-info-summery-wrapper ul li {
+	margin-bottom: 0;
+}
+
+.dokan-single-store .dokan-store-tabs {
+	margin-top: 40px;
+}
+
+.dokan-single-store .dokan-store-tabs ul.dokan-list-inline {
+	background-color: transparent;
+	border: none;
+}
+
+.dokan-single-store .dokan-store-tabs ul.dokan-list-inline li {
+	margin: 0;
+	border-right: none;
+}
+
+.dokan-single-store .dokan-store-tabs ul.dokan-list-inline li a {
+	font-size: 18px;
+	font-weight: 600;
+	color: #999;
+}
+
+.dokan-single-store .dokan-store-tabs ul.dokan-list-inline li a:hover {
+	color: #222222;
+	background-color: transparent;
+}
+
+.dokan-single-store .dokan-store-tabs ul.dokan-list-inline li.dokan-right .dokan-btn-theme {
+	margin: 5px 0 0 10px;
+	padding: 10px 23px;
+}
+
+.dokan-single-store .dokan-store-tabs ul.dokan-list-inline li.dokan-store-support-btn-wrap {
+	display: inline-flex;
+}
+
+.dokan-single-store .dokan-store-tabs.tabs-fm-custom {
+	display: none;
+}
+
+.dokan-single-store .fm-catalog-toolbar {
+	margin-top: 40px;
+}
+
+.dokan-single-store .profile-frame .profile-layout-fm_custom .profile-info-img {
+	display: none;
+}
+
+.dokan-single-store .profile-frame .profile-layout-fm_custom .profile-info-summery-wrapper {
+	position: relative;
+}
+
+.dokan-single-store .profile-frame .profile-layout-fm_custom .profile-info-summery-wrapper .profile-info-summery {
+	display: flex;
+	align-items: center;
+	background-color: #f1f1f1;
+	width: 100%;
+	overflow: hidden;
+	padding: 0;
+	border: 1px solid #e5e5e5;
+}
+
+.dokan-single-store .profile-frame .profile-layout-fm_custom .profile-info-summery-wrapper .profile-info-summery .profile-info-head {
+	flex: 0 1 300px;
+}
+
+.dokan-single-store .profile-frame .profile-layout-fm_custom .profile-info-summery-wrapper .profile-info-summery .profile-info-head .profile-img {
+	margin-bottom: 0;
+	border: 1px solid #e5e5e5;
+}
+
+.dokan-single-store .profile-frame .profile-layout-fm_custom .profile-info-summery-wrapper .profile-info-summery .profile-info-head .profile-img img {
+	width: 100%;
+}
+
+.dokan-single-store .profile-frame .profile-layout-fm_custom .profile-info-summery-wrapper .profile-info-summery .profile-info-head .profile-img.profile-img-square img {
+	border: none;
+	padding: 0;
+	width: 100%;
+	height: auto;
+}
+
+.dokan-single-store .profile-frame .profile-layout-fm_custom .profile-info-summery-wrapper .profile-info-summery .profile-info {
+	flex: 1;
+	padding: 30px 35px 15px 45px;
+	background-color: #f1f1f1;
+	color: #000;
+}
+
+.dokan-single-store .profile-frame .profile-layout-fm_custom .profile-info-summery-wrapper .profile-info-summery .profile-info .profile-avatar {
+	margin-bottom: 30px;
+}
+
+.dokan-single-store .profile-frame .profile-layout-fm_custom .profile-info-summery-wrapper .profile-info-summery .profile-info .profile-avatar img {
+	border-radius: 50%;
+	max-width: 46px;
+}
+
+.dokan-single-store .profile-frame .profile-layout-fm_custom .profile-info-summery-wrapper .profile-info-summery .profile-info .store-social-wrapper {
+	position: absolute;
+	top: 30px;
+	right: 28px;
+}
+
+.dokan-single-store .profile-frame .profile-layout-fm_custom .profile-info-summery-wrapper .profile-info-summery .profile-info .store-social-wrapper .label {
+	font-weight: 500;
+	color: #000;
+}
+
+.dokan-single-store .profile-frame .profile-layout-fm_custom .profile-info-summery-wrapper .profile-info-summery .profile-info .store-social-wrapper .store-social {
+	margin: 5px 0 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.dokan-single-store .profile-frame .profile-layout-fm_custom .profile-info-summery-wrapper .profile-info-summery .profile-info .store-social-wrapper .store-social li {
+	margin-left: 0;
+	margin-right: 7px;
+}
+
+.dokan-single-store .profile-frame .profile-layout-fm_custom .profile-info-summery-wrapper .profile-info-summery .profile-info .store-social-wrapper .store-social li a {
+	width: 38px;
+	height: 38px;
+	line-height: 38px;
+	text-align: center;
+	background-color: #1b4e9b;
+	color: #fff;
+	border-radius: 3px;
+	display: block;
+}
+
+.dokan-single-store .profile-frame .profile-layout-fm_custom .profile-info-summery-wrapper .profile-info-summery .profile-info .store-social-wrapper .store-social li a .farmart-svg-icon {
+	font-size: 16px;
+	text-shadow: none;
+	display: inline-block;
+}
+
+.dokan-single-store .profile-frame .profile-layout-fm_custom .profile-info-summery-wrapper .profile-info-summery .profile-info .store-social-wrapper .store-social li a .fa-flickr {
+	color: #fff;
+}
+
+.dokan-single-store .profile-frame .profile-layout-fm_custom .profile-info-summery-wrapper .profile-info-summery .profile-info .store-social-wrapper .store-social li .social-gplus {
+	background-color: #cc0000;
+}
+
+.dokan-single-store .profile-frame .profile-layout-fm_custom .profile-info-summery-wrapper .profile-info-summery .profile-info .store-social-wrapper .store-social li .social-twitter {
+	background-color: #00aeef;
+}
+
+.dokan-single-store .profile-frame .profile-layout-fm_custom .profile-info-summery-wrapper .profile-info-summery .profile-info .store-social-wrapper .store-social li .social-pinterest {
+	background-color: #c92228;
+}
+
+.dokan-single-store .profile-frame .profile-layout-fm_custom .profile-info-summery-wrapper .profile-info-summery .profile-info .store-social-wrapper .store-social li .social-linkedin {
+	background-color: #007bb5;
+}
+
+.dokan-single-store .profile-frame .profile-layout-fm_custom .profile-info-summery-wrapper .profile-info-summery .profile-info .store-social-wrapper .store-social li .social-youtube {
+	background-color: #bb0000;
+}
+
+.dokan-single-store .profile-frame .profile-layout-fm_custom .profile-info-summery-wrapper .profile-info-summery .profile-info .store-social-wrapper .store-social li .social-instagram {
+	background-color: #125688;
+}
+
+.dokan-single-store .profile-frame .profile-layout-fm_custom .profile-info-summery-wrapper .profile-info-summery .profile-info .store-social-wrapper .store-social li .social-flickr {
+	background-color: #ff0084;
+}
+
+.dokan-single-store .profile-frame .profile-layout-fm_custom .profile-info-summery-wrapper .profile-info-summery .store-name {
+	font-size: 24px;
+	margin: 0;
+	line-height: 1;
+}
+
+.dokan-single-store .profile-frame .profile-layout-fm_custom .profile-info-summery-wrapper .profile-info-summery .dokan-store-information {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+}
+
+.dokan-single-store .profile-frame .profile-layout-fm_custom .profile-info-summery-wrapper .profile-info-summery .dokan-store-information > *:first-child {
+	margin-right: 40px;
+	flex: 1;
+}
+
+.dokan-single-store .profile-frame .profile-layout-fm_custom .profile-info-summery-wrapper .profile-info-summery .dokan-store-info {
+	margin: 0;
+	padding: 0;
+}
+
+.dokan-single-store .profile-frame .profile-layout-fm_custom .profile-info-summery-wrapper .profile-info-summery .dokan-store-info li {
+	position: relative;
+	list-style: none;
+	display: block;
+	padding-bottom: 0;
+	margin-bottom: 5px;
+}
+
+.dokan-single-store .profile-frame .profile-layout-fm_custom .profile-info-summery-wrapper .profile-info-summery .dokan-store-info li .label {
+	font-weight: 500;
+	color: #000;
+}
+
+.dokan-single-store .profile-frame .profile-layout-fm_custom .profile-info-summery-wrapper .profile-info-summery .dokan-store-info .dokan-store-rating {
+	display: block;
+	margin: 0;
+	color: #666;
+	float: none;
+	padding: 10px 0;
+}
+
+.dokan-single-store .profile-frame .profile-layout-fm_custom .profile-info-summery-wrapper .profile-info-summery .dokan-store-info .dokan-store-rating .seller-rating {
+	display: block;
+	margin-right: 11px;
+}
+
+.dokan-single-store .profile-frame .profile-layout-fm_custom .profile-info-summery-wrapper .profile-info-summery .dokan-store-info .dokan-store-rating .star-rating {
+	float: left;
+	font-size: 18px;
+}
+
+.dokan-single-store .profile-frame .profile-layout-fm_custom .profile-info-summery-wrapper .profile-info-summery .dokan-store-info .dokan-store-rating .star-rating .max-rating .farmart-svg-icon {
+	color: #ccc;
+}
+
+.dokan-single-store .profile-frame .profile-layout-fm_custom .profile-info-summery-wrapper .profile-info-summery .dokan-store-info .dokan-store-rating .text span {
+	color: #26901b;
+}
+
+.dokan-single-store .profile-frame .profile-layout-fm_custom .profile-info-summery-wrapper .profile-info-summery .dokan-store-info .dokan-store-register-date span {
+	color: #999;
+}
+
+.dokan-single-store .profile-frame .profile-layout-fm_custom .profile-info-summery-wrapper .profile-info-summery .dokan-store-info .dokan-store-open-close {
+	color: #26901b;
+	position: relative;
+	padding-left: 20px;
+}
+
+.dokan-single-store .profile-frame .profile-layout-fm_custom .profile-info-summery-wrapper .profile-info-summery .dokan-store-info .dokan-store-open-close:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 8px;
+	height: 8px;
+	background-color: #26901b;
+	border-radius: 50%;
+}
+
+.dokan-single-store .profile-frame .profile-layout-fm_custom .profile-info-summery-wrapper .profile-info-summery .dokan-store-info .dokan-store-email {
+	display: none;
+}
+
+.dokan-single-store .profile-frame .profile-layout-fm_custom .profile-info-summery-wrapper .profile-info-summery .dokan-store-info .store-social-wrapper {
+	position: relative;
+}
+
+.dokan-single-store .profile-frame .profile-layout-fm_custom .profile-info-summery-wrapper .profile-info-summery .dokan-store-info .store-social-wrapper .store-social {
+	padding-left: 0;
+}
+
+.dokan-single-store .catalog-toolbar .catalog-toolbar__bottom {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.dokan-single-store .catalog-toolbar .catalog-toolbar__bottom .products-found {
+	font-size: 21px;
+	margin: 0;
+}
+
+.dokan-single-store .catalog-toolbar .catalog-toolbar__bottom .shop-view__icon {
+	display: flex;
+	align-items: center;
+}
+
+.dokan-single-store .catalog-toolbar .catalog-toolbar__bottom .shop-view__icon a {
+	font-size: 21px;
+	color: #888;
+	position: relative;
+	padding-right: 7px;
+	margin-right: 2px;
+}
+
+.dokan-single-store .catalog-toolbar .catalog-toolbar__bottom .shop-view__icon a.extended {
+	font-size: 19px;
+}
+
+.dokan-single-store .catalog-toolbar .catalog-toolbar__bottom .shop-view__icon a.list {
+	font-size: 28px;
+}
+
+.dokan-single-store .catalog-toolbar .catalog-toolbar__bottom .shop-view__icon a.current {
+	color: var(--fm-color-primary);
+}
+
+.dokan-single-store .catalog-toolbar .catalog-toolbar__bottom .shop-view__icon a:last-child {
+	padding-right: 0;
+	margin-right: 0;
+}
+
+.dokan-single-store .catalog-toolbar .catalog-toolbar__bottom .shop-view__icon a:last-child:after {
+	display: none;
+}
+
+.dokan-single-store .dokan-pagination-container {
+	text-align: left;
+}
+
+.dokan-single-store .dokan-pagination-container .dokan-pagination {
+	margin: 30px 0 80px;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	justify-content: center;
+}
+
+.dokan-single-store .dokan-pagination-container .dokan-pagination li {
+	margin-left: 4px;
+	margin-right: 4px;
+}
+
+.dokan-single-store .dokan-pagination-container .dokan-pagination li a {
+	font-size: 14px;
+	color: #000;
+	display: block;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	width: 35px;
+	height: 35px;
+	line-height: 30px;
+	text-align: center;
+	transition: 0.5s;
+	margin: 0;
+}
+
+.dokan-single-store .dokan-pagination-container .dokan-pagination li a:hover {
+	border-color: var(--fm-background-color-primary);
+	color: var(--fm-background-text-color-primary);
+	background-color: var(--fm-background-color-primary);
+}
+
+.dokan-single-store .dokan-pagination-container .dokan-pagination li.active a {
+	border-color: var(--fm-background-color-primary);
+	color: var(--fm-background-text-color-primary);
+	background-color: var(--fm-background-color-primary);
+}
+
+.dokan-store .site-content {
+	padding-bottom: 20px;
+}
+
+.dokan-widget-area .widget {
+	background-color: #f7f7f7;
+	padding: 35px 20px;
+	margin-bottom: 30px;
+	position: relative;
+	list-style: none;
+}
+
+.dokan-widget-area .widget:last-child {
+	margin-bottom: 0;
+}
+
+.dokan-widget-area .widget .widget-title {
+	margin-bottom: 5px;
+	font-size: 16px;
+	text-transform: uppercase;
+	margin-top: 0;
+}
+
+.dokan-widget-area .widget ul li {
+	padding: 5px 0;
+}
+
+.dokan-widget-area .widget ul li a:hover {
+	box-shadow: none;
+}
+
+.dokan-widget-area .widget ul li .count {
+	font-size: 13px;
+}
+
+.dokan-widget-area .seller-form .dokan-btn {
+	color: var(--fm-background-text-color-primary);
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 1;
+	padding: 14px 23px;
+	text-align: center;
+	background-color: var(--fm-background-color-primary);
+	border-radius: 3px;
+	display: inline-flex;
+	align-items: center;
+	transition: ease .5s;
+	width: 100%;
+}
+
+.dokan-widget-area .seller-form .dokan-btn:hover, .dokan-widget-area .seller-form .dokan-btn:focus, .dokan-widget-area .seller-form .dokan-btn:active {
+	outline: none;
+	background-color: var(--fm-background-color-primary);
+	color: var(--fm-background-text-color-primary);
+}
+
+.dokan-widget-area .seller-form .dokan-btn:hover {
+	background-color: var(--fm-background-color-primary);
+}
+
+.dokan-widget-area .dokan-category-menu,
+.dokan-widget-area .dokan-store-menu,
+.dokan-widget-area .widget-collapse {
+	border: none;
+}
+
+.dokan-widget-area .dokan-category-menu .widget-title,
+.dokan-widget-area .dokan-store-menu .widget-title,
+.dokan-widget-area .widget-collapse .widget-title {
+	margin-bottom: 15px;
+	color: #000;
+	padding: 0;
+	background-color: transparent;
+	border: none;
+}
+
+.dokan-widget-area .dokan-category-menu #cat-drop-stack > ul li.parent-cat-wrap,
+.dokan-widget-area .dokan-store-menu #cat-drop-stack > ul li.parent-cat-wrap,
+.dokan-widget-area .widget-collapse #cat-drop-stack > ul li.parent-cat-wrap {
+	background-color: transparent;
+}
+
+.dokan-widget-area .dokan-category-menu #cat-drop-stack > ul li.parent-cat-wrap a,
+.dokan-widget-area .dokan-store-menu #cat-drop-stack > ul li.parent-cat-wrap a,
+.dokan-widget-area .widget-collapse #cat-drop-stack > ul li.parent-cat-wrap a {
+	color: #000;
+	font-size: 14px;
+	margin: 0;
+	border-bottom: none !important;
+}
+
+.dokan-widget-area .dokan-category-menu #cat-drop-stack > ul li.parent-cat-wrap a:hover,
+.dokan-widget-area .dokan-store-menu #cat-drop-stack > ul li.parent-cat-wrap a:hover,
+.dokan-widget-area .widget-collapse #cat-drop-stack > ul li.parent-cat-wrap a:hover {
+	color: var(--fm-color-primary);
+}
+
+.dokan-widget-area .dokan-category-menu #cat-drop-stack ul,
+.dokan-widget-area .dokan-store-menu #cat-drop-stack ul,
+.dokan-widget-area .widget-collapse #cat-drop-stack ul {
+	margin-top: 0;
+	padding: 0;
+}
+
+.dokan-widget-area .dokan-category-menu #cat-drop-stack ul .children,
+.dokan-widget-area .dokan-store-menu #cat-drop-stack ul .children,
+.dokan-widget-area .widget-collapse #cat-drop-stack ul .children {
+	display: none;
+}
+
+.dokan-widget-area .dokan-category-menu #cat-drop-stack > ul li,
+.dokan-widget-area .dokan-store-menu #cat-drop-stack > ul li,
+.dokan-widget-area .widget-collapse #cat-drop-stack > ul li {
+	padding: 0;
+}
+
+.dokan-widget-area .dokan-category-menu #cat-drop-stack > ul li a,
+.dokan-widget-area .dokan-store-menu #cat-drop-stack > ul li a,
+.dokan-widget-area .widget-collapse #cat-drop-stack > ul li a {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	display: block;
+	position: relative;
+}
+
+.dokan-widget-area .dokan-category-menu #cat-drop-stack > ul li a .caret-icon,
+.dokan-widget-area .dokan-store-menu #cat-drop-stack > ul li a .caret-icon,
+.dokan-widget-area .widget-collapse #cat-drop-stack > ul li a .caret-icon {
+	font-size: 16px;
+	position: absolute;
+	right: -2px;
+	display: inline-block;
+	width: 20px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.dokan-widget-area .dokan-category-menu #cat-drop-stack ul li:last-child.has-children a,
+.dokan-widget-area .dokan-store-menu #cat-drop-stack ul li:last-child.has-children a,
+.dokan-widget-area .widget-collapse #cat-drop-stack ul li:last-child.has-children a {
+	border-bottom: none !important;
+}
+
+.dokan-widget-area .dokan-category-menu #cat-drop-stack > ul li.parent-cat-wrap ul.level-0,
+.dokan-widget-area .dokan-store-menu #cat-drop-stack > ul li.parent-cat-wrap ul.level-0,
+.dokan-widget-area .widget-collapse #cat-drop-stack > ul li.parent-cat-wrap ul.level-0 {
+	background-color: transparent;
+}
+
+.dokan-widget-area .dokan-category-menu #cat-drop-stack > ul li.parent-cat-wrap ul.level-0 li a,
+.dokan-widget-area .dokan-store-menu #cat-drop-stack > ul li.parent-cat-wrap ul.level-0 li a,
+.dokan-widget-area .widget-collapse #cat-drop-stack > ul li.parent-cat-wrap ul.level-0 li a {
+	color: #666;
+}
+
+.dokan-widget-area .dokan-form-control {
+	border-color: #d9d9d9;
+}
+
+.dokan-widget-area .dokan-store-widget .dokan-form-control {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.dokan-widget-area .dokan-store-contact {
+	padding-bottom: 40px;
+}
+
+.dokan-widget-area .dokan-store-contact .dokan-btn {
+	color: var(--fm-background-text-color-primary);
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 1;
+	padding: 14px 23px;
+	text-align: center;
+	background-color: var(--fm-background-color-primary);
+	border-radius: 3px;
+	display: inline-flex;
+	align-items: center;
+	transition: ease .5s;
+	width: 100%;
+	background-color: var(--fm-background-color-secondary);
+	display: block;
+}
+
+.dokan-widget-area .dokan-store-contact .dokan-btn:hover, .dokan-widget-area .dokan-store-contact .dokan-btn:focus, .dokan-widget-area .dokan-store-contact .dokan-btn:active {
+	outline: none;
+	background-color: var(--fm-background-color-primary);
+	color: var(--fm-background-text-color-primary);
+}
+
+.dokan-widget-area .dokan-store-contact .dokan-btn:hover {
+	background-color: var(--fm-background-color-secondary);
+}
+
+.dokan-widget-area .store-cat-stack-dokan ul li .caret-icon .farmart-svg-icon {
+	font-weight: 400;
+	font-size: 16px;
+	color: #888;
+}
+
+.dokan-store-sidebar ul.product_list_widget li {
+	margin-bottom: 15px;
+}
+
+.dokan-store-sidebar ul.product_list_widget li:last-child {
+	margin-bottom: 0;
+}
+
+.dokan-store-sidebar ul.product_list_widget li:after {
+	clear: both;
+	display: block;
+	content: "";
+}
+
+.dokan-store-sidebar ul.product_list_widget li img {
+	float: left;
+	margin-right: 15px;
+	width: 80px;
+	margin-left: 0;
+}
+
+.dokan-store-sidebar ul.product_list_widget li a {
+	font-size: 14px;
+	font-weight: 400;
+	display: inherit;
+	margin-bottom: 5px;
+}
+
+.dokan-store-sidebar ul.product_list_widget .product-title {
+	font-size: 14px;
+	font-weight: 400;
+	display: inherit;
+	margin-bottom: 8px;
+	line-height: 1.2;
+}
+
+.dokan-store-sidebar ul.product_list_widget .woocommerce-Price-amount {
+	font-size: 16px;
+	color: #000;
+	font-weight: 400;
+	padding-top: 5px;
+	display: inline-block;
+}
+
+.dokan-store-sidebar ul.product_list_widget li del {
+	padding-left: 5px;
+}
+
+.dokan-store-sidebar ul.product_list_widget li del .woocommerce-Price-amount {
+	font-size: 14px;
+	text-decoration: line-through;
+	color: #999;
+}
+
+.dokan-store-sidebar .dokan-store-location {
+	background-color: transparent;
+	border: 1px solid #eee;
+	padding: 25px 20px;
+}
+
+.dokan-store-sidebar ul li {
+	display: block;
+	padding: 5px 0;
+}
+
+.dokan-store-sidebar ul li a {
+	color: #000;
+}
+
+.dokan-store-sidebar ul li.current-cat > a,
+.dokan-store-sidebar ul li.current-cat > .count, .dokan-store-sidebar ul li.chosen > a,
+.dokan-store-sidebar ul li.chosen > .count {
+	color: var(--fm-color-primary);
+}
+
+.dokan-store-sidebar ul li.current-cat > a, .dokan-store-sidebar ul li.chosen > a {
+	font-weight: 600;
+}
+
+.dokan-store-sidebar ul li .children {
+	padding-left: 15px;
+	margin-left: 0;
+	margin-top: 7px;
+}
+
+.dokan-store-sidebar ul li .children li:last-child {
+	padding-bottom: 0;
+}
+
+.dokan-store-sidebar ul li .children li a {
+	color: #666666;
+}
+
+.dokan-store-sidebar ul li .children li a:hover {
+	color: #000;
+}
+
+.dokan-store-sidebar ul li .children li.current-cat > a {
+	color: var(--fm-color-primary);
+}
+
+.dokan-store-sidebar > ul > li:last-child {
+	padding-bottom: 0;
+}
+
+.dokan-store-sidebar > ul > li:first-child {
+	padding-top: 0;
+}
+
+.dokan-store-sidebar .widget_shopping_cart .buttons .button {
+	width: 100%;
+}
+
+.dokan-form-group input[type="text"],
+.dokan-form-group input[type="email"],
+.dokan-form-group input[type="url"],
+.dokan-form-group input[type="password"],
+.dokan-form-group input[type="search"],
+.dokan-form-group input[type="number"],
+.dokan-form-group input[type="tel"],
+.dokan-form-group input[type="range"],
+.dokan-form-group input[type="date"],
+.dokan-form-group input[type="month"],
+.dokan-form-group input[type="week"],
+.dokan-form-group input[type="time"],
+.dokan-form-group input[type="datetime"],
+.dokan-form-group input[type="datetime-local"],
+.dokan-form-group input[type="color"],
+.dokan-form-group select {
+	font-size: 14px;
+	min-height: 26px;
+	line-height: 26px;
+	padding: 6px;
+}
+
+select.dokan-form-control {
+	height: 40px;
+}
+
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+	padding: 1px 2px 0 13px;
+}
+
+.select2-container--default .select2-selection--multiple {
+	padding: 1px 2px 0 13px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+	line-height: 48px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+	height: 48px;
+}
+
+input[type="submit"].dokan-btn-theme,
+a.dokan-btn-theme,
+.dokan-btn-theme {
+	color: var(--fm-background-text-color-primary);
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 1;
+	padding: 14px 23px;
+	text-align: center;
+	background-color: var(--fm-background-color-primary);
+	border-radius: 3px;
+	display: inline-flex;
+	align-items: center;
+	transition: ease .5s;
+	background-color: var(--fm-background-color-secondary);
+	border: none;
+	display: block;
+}
+
+input[type="submit"].dokan-btn-theme:hover, input[type="submit"].dokan-btn-theme:focus, input[type="submit"].dokan-btn-theme:active,
+a.dokan-btn-theme:hover,
+a.dokan-btn-theme:focus,
+a.dokan-btn-theme:active,
+.dokan-btn-theme:hover,
+.dokan-btn-theme:focus,
+.dokan-btn-theme:active {
+	outline: none;
+	background-color: var(--fm-background-color-primary);
+	color: var(--fm-background-text-color-primary);
+}
+
+.seller-listing-content .store-wrapper .store-footer .dokan-btn-theme.dokan-btn-round {
+	padding: 0;
+}
+
+.mobile-version .dokan-store-sidebar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1600;
+	display: none;
+	margin-top: 0;
+}
+
+.mobile-version .dokan-store-sidebar .dokan-widget-area {
+	position: absolute;
+	right: 0;
+	top: 63px;
+	height: 100%;
+	width: 100%;
+	max-width: 100%;
+	margin: 0;
+	background: #f7f7f7;
+	transform: translateX(-100%);
+	transition: transform .5s;
+	overflow: auto;
+}
+
+.mobile-version .dokan-store-sidebar .dokan-widget-area .widget {
+	margin-bottom: 0;
+	padding: 20px;
+}
+
+.mobile-version .dokan-store-sidebar .fm_widget_product_categories {
+	margin-bottom: 0;
+}
+
+.mobile-version .dokan-store-sidebar.fm-filter-active .dokan-widget-area {
+	transform: none;
+}
+
+.mobile-version .dokan-store-sidebar.fm-filter-active .fm-widget-products-carousel {
+	display: none;
+}
+
+.mobile-version .dokan-store-sidebar.fm-filter-active ~ .fm-vendor-close-sidebar {
+	transform: translate3d(100%, 0, 0);
+	opacity: 1;
+}
+
+.mobile-version .fm-vendor-close-sidebar {
+	position: fixed;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	z-index: 99999;
+	margin-top: 0;
+	background-color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 15px 15px 13px;
+	border-bottom: 1px solid #dedede;
+	opacity: 0;
+	transition: .5s;
+}
+
+.mobile-version .fm-vendor-close-sidebar h2 {
+	font-size: 16px;
+	margin: 0;
+}
+
+.mobile-version .fm-vendor-close-sidebar .close-sidebar {
+	color: #222;
+	font-size: 20px;
+}
+
+.mobile-version .dokan-single-store {
+	margin-top: 0;
+}
+
+.mobile-version .dokan-single-store .catalog-toolbar .catalog-toolbar__bottom .shop-view__icon a.extended {
+	display: none;
+}
+
+.mobile-version .dokan-single-store .fm-catalog-toolbar {
+	position: relative;
+}
+
+.mobile-version .dokan-single-store .fm-catalog-toolbar:before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 50%;
+	width: 1px;
+	height: 60%;
+	background-color: #ccc;
+	z-index: 1;
+}
+
+.mobile-version .fm-catalog-toolbar .fm-vendor-infor-mobile {
+	display: flex;
+	align-items: center;
+	position: relative;
+	padding-right: 20px;
+}
+
+.mobile-version .fm-catalog-toolbar .fm-vendor-infor-mobile span {
+	margin-left: 5px;
+}
+
+.mobile-version .fm-catalog-toolbar .fm-vendor-infor-mobile .farmart-svg-icon {
+	font-size: 16px;
+}
+
+.mobile-version ul.products li.product .product-button .group-yith .feedback {
+	display: none !important;
+}
+
+.single-product .dokan-single-store .profile-frame .profile-layout-fm_custom .profile-info-summery-wrapper .profile-info-summery .profile-info .profile-avatar {
+	margin-right: 30px;
+	flex: 0 1 46px;
+}
+
+.single-product .dokan-single-store .profile-frame .profile-layout-fm_custom .profile-info-summery-wrapper .profile-info-summery .profile-info .profile-info-content {
+	flex: 1;
+}
+
+.pagination-wrap {
+	margin: 40px 0 70px;
+}
+
+.pagination-wrap ul.pagination {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.pagination-wrap ul.pagination > li {
+	margin-left: 4px;
+	margin-right: 4px;
+	margin-bottom: 10px;
+}
+
+.pagination-wrap ul.pagination > li > .page-numbers {
+	font-size: 14px;
+	color: #000;
+	display: block;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	width: 35px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	padding: 0;
+	transition: 0.5s;
+}
+
+.pagination-wrap ul.pagination > li > .page-numbers:hover {
+	border-color: var(--fm-color-primary);
+	color: var(--fm-color-primary);
+	background-color: transparent;
+}
+
+.pagination-wrap ul.pagination > li > .page-numbers.current {
+	background-color: #eee;
+	color: #000;
+}
+
+.dokan-store-products-filter-area {
+	padding-top: 40px;
+}
+
+/**
+ * Dokan Vendor Responsive
+ */
+@media (max-width: 1199px) {
+	.dokan-single-store .profile-frame .profile-info-box .profile-info-summery-wrapper .profile-info-summery .profile-info .dokan-store-info {
+		top: 0;
+	}
+	.dokan-single-store .profile-frame .profile-info-box .profile-info-summery-wrapper .profile-info-summery .profile-info .dokan-store-info li {
+		text-align: left;
+	}
+	.dokan-single-store .profile-frame .profile-info-box .profile-info-summery-wrapper .profile-info-summery .profile-info-head {
+		top: 0;
+	}
+	.dokan-single-store .profile-frame .profile-layout-fm_custom .profile-info-summery-wrapper .profile-info-summery {
+		align-items: flex-start;
+	}
+	.dokan-single-store .profile-frame .profile-layout-fm_custom .profile-info-summery-wrapper .profile-info-summery .dokan-store-information {
+		flex-direction: column;
+	}
+	.dokan-single-store .profile-frame .profile-layout-fm_custom .profile-info-summery-wrapper .profile-info-summery .dokan-store-information > *:first-child {
+		flex: 0 1 100%;
+		margin: 0;
+	}
+}
+
+@media (max-width: 991px) {
+	.dokan-store-sidebar,
+	.dokan-single-store.dokan-w8 {
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	#dokan-store-listing-filter-wrap .right .item.sort-by select {
+		padding-right: 30px;
+	}
+	.dokan-single-store {
+		margin-top: 50px;
+	}
+	.dokan-single-store .profile-frame .profile-layout-fm_custom .profile-info-summery-wrapper {
+		border: none;
+	}
+	.dokan-single-store .profile-frame .profile-layout-fm_custom .profile-info-summery-wrapper .profile-info-summery {
+		align-items: flex-start;
+	}
+	.dokan-single-store .catalog-toolbar .catalog-toolbar__bottom .products-found {
+		font-size: 16px;
+	}
+	.single-product .dokan-single-store .profile-frame .profile-layout-fm_custom .profile-info-summery-wrapper .profile-info-summery .profile-info .store-social-wrapper {
+		position: static;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	#dokan-seller-listing-wrap ul.dokan-seller-wrap li.coloum-3 {
+		width: 50%;
+	}
+}
+
+@media (max-width: 767px) {
+	.dokan-store-sidebar,
+	.dokan-single-store {
+		width: 100% !important;
+		margin: 0;
+	}
+	#dokan-store-listing-filter-wrap {
+		margin-bottom: 0;
+	}
+	#dokan-store-listing-filter-wrap .farmart-header-filter {
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 15px;
+	}
+	#dokan-store-listing-filter-wrap .right {
+		width: 100%;
+	}
+	#dokan-store-listing-filter-wrap .right .item.sort-by label {
+		display: none;
+	}
+	#dokan-store-listing-filter-wrap .right .item .dokan-store-list-filter-button {
+		padding: 6px 15px 7px 43px;
+	}
+	#dokan-store-listing-filter-wrap .right .item #stores_orderby {
+		padding: 5px 35px 6px 15px;
+	}
+	.dokan-single-store .profile-frame .profile-layout-fm_custom .profile-info-summery-wrapper .profile-info-summery {
+		flex-direction: column;
+		align-items: center;
+		padding: 25px;
+	}
+	.dokan-single-store .profile-frame .profile-layout-fm_custom .profile-info-summery-wrapper .profile-info-summery .store-name {
+		text-align: center;
+	}
+	.dokan-single-store .profile-frame .profile-layout-fm_custom .profile-info-summery-wrapper .profile-info-summery .profile-info {
+		padding: 0;
+		width: 100%;
+	}
+	.dokan-single-store .profile-frame .profile-layout-fm_custom .profile-info-summery-wrapper .profile-info-summery .profile-info .dokan-store-info li {
+		text-align: center;
+		padding-bottom: 5px;
+	}
+	.dokan-single-store .profile-frame .profile-layout-fm_custom .profile-info-summery-wrapper .profile-info-summery .profile-info .profile-avatar {
+		text-align: center;
+		margin: 30px 0 15px 0;
+	}
+	.dokan-single-store .profile-frame .profile-layout-fm_custom .profile-info-summery-wrapper .profile-info-summery .profile-info .store-social-wrapper {
+		position: static;
+	}
+	.dokan-single-store .profile-frame .profile-layout-fm_custom .profile-info-summery-wrapper .profile-info-summery .dokan-store-rating,
+	.dokan-single-store .profile-frame .profile-layout-fm_custom .profile-info-summery-wrapper .profile-info-summery .store-social {
+		justify-content: center;
+	}
+	.dokan-store-tabs ul {
+		display: flex;
+		white-space: nowrap;
+		overflow: auto;
+	}
+	.single-product .dokan-single-store .profile-frame .profile-layout-fm_custom .profile-info-summery-wrapper .profile-info-summery .profile-info-head {
+		flex: 1;
+	}
+	.single-product .dokan-single-store .profile-frame .profile-layout-fm_custom .profile-info-summery-wrapper .profile-info-summery .profile-info {
+		display: inline-block;
+	}
+	.single-product .dokan-single-store .profile-frame .profile-layout-fm_custom .profile-info-summery-wrapper .profile-info-summery .profile-info .profile-avatar {
+		margin-right: 0;
+	}
+	.single-product .dokan-single-store .profile-frame .profile-layout-fm_custom .profile-info-summery-wrapper .profile-info-summery .profile-info .dokan-store-info {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.single-product .dokan-single-store .profile-frame .profile-layout-fm_custom .profile-info-summery-wrapper .profile-info-summery .profile-info .dokan-store-info .dokan-store-open-close {
+		padding-bottom: 0;
+	}
+}
